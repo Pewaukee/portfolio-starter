@@ -29,7 +29,7 @@
       ".next/types/**/*.ts",
       "**/*.ts",
       "**/*.tsx"
-    ],
+, "app/TextAnimation.jsx"    ],
     "exclude": [
       "node_modules"
     ]

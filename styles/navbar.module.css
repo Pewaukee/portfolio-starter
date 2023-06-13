@@ -16,6 +16,7 @@
 
 .logoContainer {
     align-items: center;
+    display: flex;
 }
 
 .nameContainer {
