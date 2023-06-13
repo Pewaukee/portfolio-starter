@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../styles/navbar.module.css";
 import Image from "next/image";
 import { Space_Mono } from 'next/font/google'
+import { motion } from "framer-motion";
 
 const space_font = Space_Mono({subsets: ['latin'], style: 'italic', weight: '700'})
 
