@@ -1,0 +1,13 @@
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    transition: all 1s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.25) rotate(360deg);
+}

@@ -1,10 +1,15 @@
+/* import the Space Mono font globally */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Space+Grotesk:wght@500&family=Space+Mono:ital,wght@1,700&display=swap');
+
 :root {
+  /* set the font family to Space Mono (activate it) */
+  font-family: 'Space Mono', monospace;
+  
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono: 'Space Mono', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
