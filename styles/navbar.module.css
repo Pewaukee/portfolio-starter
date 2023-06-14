@@ -11,23 +11,23 @@
   border-bottom: 3px solid black;
 }
 
-.logoContainer {
+.leftContainer {
   padding-left: 5%;
   align-items: center;
   display: flex;
 }
 
-.logoFont {
+.leftFont {
   font-weight: 800;
 }
 
-.name {
+.middle {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.nameContainer {
+.middleContainer {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -72,7 +72,7 @@
   }
 }
 
-.linkContainer {
+.rightContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,19 +80,19 @@
   padding-right: 5%;
 }
 
-.linkContainer ul {
+.rightContainer ul {
   white-space: nowrap;
 }
 
 /* https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
-.linkContainer a {
+.rightContainer a {
   display: inline-block;
   position: relative;
   margin-right: 20px;
   text-decoration: none;
 }
 
-.linkContainer a::after {
+.rightContainer a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -105,7 +105,7 @@
   transition: transform 0.25s ease-out;
 }
 
-.linkContainer a:hover::after {
+.rightContainer a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

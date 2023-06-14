@@ -10,22 +10,22 @@ const Navbar: React.FC = () => {
         <div className={styles.main}>
 
             {/** add in the name with animation */}
-            <div className={styles.logoContainer}>
+            <div className={styles.leftContainer}>
                 {/* add in some text style here like typing out of a terminal */}
-                <div className={styles.logoFont}>
+                <div className={styles.leftFont}>
                     <TypingEffect text={"> Karthik Shankar"} />   
                 </div>
             </div>            
 
             {/** add in the center logo */}
-            <div className={styles.name}>
+            <div className={styles.middle}>
                 <Link href="/">
-                    <div className={styles.nameContainer}>KS</div>
+                    <div className={styles.middleContainer}>KS</div>
                 </Link>
             </div>
 
             {/** add in the links */}
-            <div className={styles.linkContainer}>
+            <div className={styles.rightContainer}>
                 <ul>
                     <Link href="/">Home</Link>
                     <Link href="/posts">Posts</Link>
