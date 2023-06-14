@@ -1,8 +1,10 @@
 // create the navbar component
+'use client'; // for framer motion
 import Link from "next/link";
 import styles from "../styles/navbar.module.css";
 import Image from "next/image";
-import { Space_Mono } from 'next/font/google'
+import { Space_Mono } from 'next/font/google';
+import TypingEffect from "./TextAnimation.js";
 import { motion } from "framer-motion";
 
 const space_font = Space_Mono({subsets: ['latin'], style: 'italic', weight: '700'})
@@ -15,7 +17,9 @@ const Navbar: React.FC = () => {
             <div className={styles.logo}>
                 <div className={styles.logoContainer}>
                     {/* add in some text style here like typing out of a terminal */}
-                    <p className={space_font.className}>&gt; <span>Karthik Shankar</span></p>
+                    <div className={space_font.className}>
+                        <TypingEffect text={"> Karthik Shankar"} />   
+                    </div>
                 </div>
             </div>
 
