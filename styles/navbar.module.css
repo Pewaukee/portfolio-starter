@@ -42,10 +42,6 @@
   transition-duration: 0.5s;
 }
 
-.nameContainer:hover {
-  transform: scale(1.1);
-}
-
 /* set the color animation to change colors in succesive time intervals */
 @keyframes colorAnimation {
   0% {

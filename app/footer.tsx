@@ -1,31 +1,33 @@
 // create the footer component
 import Link from "next/link";
 import styles from "../styles/footer.module.css";
-import CustomComponent from "./component.js";
+import ThreeComponent from "./component.js";
 import Logo from "./Logo";
 
 const Footer: React.FC = () => {
 
-    // create the logo components
-    //TODO: some of these don't load
-    const nextjs = <Logo url="https://nextjs.org/" src="/svg/nextjs.svg" alt="NextJS Logo" width={100} height={100} />
-    const vercel = <Logo url="https://vercel.com/" src="/svg/vercel.svg" alt="Vercel Logo" width={100} height={100} />
-    const framer = <Logo url="https://www.framer.co m/motion/" src="/images/framer.svg" alt="Framer Motion Logo" width={100} height={100} />
+    // create the source components
+    const nextjs = <div className={styles.invert}><Logo url="https://nextjs.org/" src="/svg/next.svg" alt="NextJS Logo" width={50} height={50} /></div>
+    const vercel = <div className={styles.invert}><Logo url="https://vercel.com/" src="/svg/vercel.svg" alt="Vercel Logo" width={50} height={50} /></div>
+    const framer = <Logo url="https://www.framer.com/motion/" src="/images/framer.png" alt="Framer Motion Logo" width={30} height={30} />
 
-    // initialize the social media logos
+    // initialize the social media dimensions
     const width = 30;
     const height = 30;
+
+    // initialize the social media logos
     const github = <Logo url="https://github.com/pewaukee" src="/svg/github.svg" alt="Github Logo" width={width} height={height} />
     const linkedin = <Logo url="https://www.linkedin.com/in/karthik-shankar-6943b122a/" src="/svg/linkedin.svg" alt="LinkedIn Logo" width={width} height={height} />
     const twitter = <Logo url="https://twitter.com/pewaukee710" src="/svg/twitter.svg" alt="Twitter Logo" width={width} height={height} />
     const youtube = <Logo url="https://www.youtube.com/channel/UCQ6ZI2qKlZqO5yf2wvzX2jQ" src="/svg/youtube.svg" alt="Youtube Logo" width={width} height={height} />
 
-    const left = <div className={styles.list}>Made with {nextjs}, {vercel}, and {framer}.</div>
+    // initiailze the footer components
+    const left = <div className={styles.list}><span>Made with</span>{nextjs}<span>,</span> {vercel}<span>, and</span> {framer}.</div>
     const center = <p>karthik.shankar710@gmail.com</p>
     const right = <div className={styles.list}>{github} {linkedin} {twitter} {youtube}</div>
 
     return (
-        <CustomComponent left={left} center={center} right={right} styles={styles} />
+        <ThreeComponent left={left} center={center} right={right} styles={styles} />
     )
 }
 
