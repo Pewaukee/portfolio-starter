@@ -21,11 +21,11 @@ const Footer: React.FC = () => {
     const youtube = <Logo url="https://www.youtube.com/channel/UCQ6ZI2qKlZqO5yf2wvzX2jQ" src="/svg/youtube.svg" alt="Youtube Logo" width={width} height={height} />
 
     const left = <div className={styles.list}>Made with {nextjs}, {vercel}, and {framer}.</div>
-    const middle = <p>karthik.shankar710@gmail.com</p>
+    const center = <p>karthik.shankar710@gmail.com</p>
     const right = <div className={styles.list}>{github} {linkedin} {twitter} {youtube}</div>
 
     return (
-        <CustomComponent left={left} center={middle} right={right} styles={styles} />
+        <CustomComponent left={left} center={center} right={right} styles={styles} />
     )
 }
 

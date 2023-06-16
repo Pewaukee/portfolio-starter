@@ -19,29 +19,12 @@
   }
   
   .centerContainer {
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    /* set the color animation */
-    animation-name: colorAnimation;
-    animation-duration: 15s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-  
-    /* add transition duration */
-    transition-duration: 0.5s;
-  }
-  
-  .nameContainer:hover {
-    transform: scale(1.1);
   }
   
   /* set the color animation to change colors in succesive time intervals */
