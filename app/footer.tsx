@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
 
     // initiailze the footer components
     const left = <div className={styles.list}><span>Made with</span>{nextjs}<span>,</span> {vercel}<span>, and</span> {framer}.</div>
-    const center = <p>karthik.shankar710@gmail.com</p>
+    const center = <a href="mailto:karthik.shankar710@gmail.com">karthik.shankar710@gmail.com</a>
     const right = <div className={styles.list}>{github} {linkedin} {twitter} {youtube}</div>
 
     return (
