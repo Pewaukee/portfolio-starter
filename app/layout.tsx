@@ -16,6 +16,7 @@ export default function RootLayout({ children }: Props) {
       </Head>
       <body>
         <Navbar />
+        {/** all pages have the navbar main content and footer */}
         {children}
         <Footer />
       </body>

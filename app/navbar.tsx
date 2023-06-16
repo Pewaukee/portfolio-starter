@@ -8,7 +8,7 @@ import CustomComponent from "./component";
 const Navbar: React.FC = () => {
 
     {/** add in the name with animation */}
-    const left = <TypingEffect text={"> Karthik Shankar"} />   
+    const left = <TypingEffect text={"> Karthik Shankar"} speed={0.08}/>   
 
     {/** add in the center logo */}
     const center = <Link href="/">KS</Link>
