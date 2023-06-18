@@ -3,6 +3,7 @@ import ThreeComponent from "./component";
 import styles from '../styles/page.module.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TypingEffect from "./TextAnimation";
 
 export default function CCDC() {
     // initialize AOS
@@ -39,6 +40,7 @@ export default function CCDC() {
         top: '370px',
         left: '300px',
     }
+    // create the ccdc image with svg images in the corners
     const ccdc = 
     <div className={styles.imageContainer} 
         style={containerStyle}
@@ -74,7 +76,7 @@ export default function CCDC() {
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1>NECCDC</h1>
         <br/>
-        <p>{ccdcTxt}</p>
+        <TypingEffect text={ccdcTxt} speed={0.02}/>
     </div>
 
     return (

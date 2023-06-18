@@ -7,6 +7,8 @@
   animation-name: loadContent;
   animation-duration: 0.75s;
   animation-timing-function: ease-in-out;
+
+  background: radial-gradient(circle at center, rgb(47, 39, 39) 0, rgb(41, 41, 43), rgb(56, 59, 56) 100%);
 }
 
 @keyframes loadContent {
@@ -89,3 +91,20 @@
   height: 400px;
   margin-right: 10%;
 }
+
+.descContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: radial-gradient(circle at center, rgb(0,0,0) 0, rgb(50,50,50), rgb(20,20,20) 100%);
+}
+
+.eventContainer h1 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+

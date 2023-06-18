@@ -41,7 +41,7 @@ export default function Info() {
         top: '325px',
         left: '150px',
     }
-
+    // create the ccdc image with svg images in the corners
     const profilePic = 
     <div className={styles.imageContainer} 
         style={containerStyle}
