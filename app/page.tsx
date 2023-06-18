@@ -4,17 +4,24 @@ import styles from '../styles/page.module.css'
 import ThreeComponent from './component'
 import TypingEffect from './TextAnimation'
 
+// import the animation on scroll library
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 const Home: React.FC = () => {
+
+  // initialize the animation on scroll library
+  AOS.init(); // can be used with data-aos attribute
 
   // define components for the three component layout
   // profile picture
   const left = 
-  <div className={styles.profilePicture}>
+  <div className={styles.profilePicture} data-aos="fade-up">
     <Image src="/images/avatar.jpeg" alt='profile picture' width={350} height={350}/>
   </div>
 
   // vertical line
-  const center = <div></div> // empty, no information needed
+  const center = <div data-aos="fade-up"></div> // empty, no information needed for the vertical line container
 
   // about me {whoami}
   const aboutMe = `
@@ -29,16 +36,20 @@ const Home: React.FC = () => {
       learning. Thank you for checking out my work!
       `
   const right = 
-  <div className={styles.rightContainer}>
+  <div className={styles.rightContainer} data-aos="fade-up">
     <h1>$ whoami</h1>
     <br/> 
     {/** add in the about me with a fast typing animation */}
     <TypingEffect text={aboutMe} speed={0.02}/> 
   </div>
 
+  // define the acomplishments section variables
+
   return (
     // pass into component prop with custom styles
-    <ThreeComponent left={left} center={center} right={right} styles={styles}/>
+    <div>
+      <ThreeComponent left={left} center={center} right={right} styles={styles}/>
+    </div>
 
     // define the accomplishments
   )
