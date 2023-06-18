@@ -16,8 +16,8 @@ export default function CCDC() {
     In specific, I worked on Linux hardening, wrote various incident responses, \n
     and helped to secure the network. 
     `
-    const ccdc = <div data-aos="fade-up" data-aos-duration="1000">
-        <Image src={"/images/ccdc.png"} alt={"ccdc"} width={381} height={470} />
+    const ccdc = <div className={styles.image} data-aos="fade-up" data-aos-duration="1000">
+        <Image src={"/images/ccdc.png"} alt={"ccdc"} width={381} height={470}/>
     </div>
 
     // vertical line
