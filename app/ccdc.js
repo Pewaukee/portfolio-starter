@@ -1,12 +1,12 @@
 import Image from "next/image";
 import ThreeComponent from "./component";
 import styles from '../styles/page.module.css';
-import Aos from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function CCDC() {
     // initialize AOS
-    Aos.init();
+    AOS.init();
     // define the acomplishments section variables
     const ccdcTxt = 
     `
@@ -28,13 +28,38 @@ export default function CCDC() {
         border: '3px solid grey',
         borderRadius: '25px',
     }
+    // styles for corner image svg's
+    const cornerImage1 = {
+        position: 'absolute',
+        top: '-100px',
+        left: '-100px',
+    }
+    const cornerImage2 = {
+        position: 'absolute',
+        top: '370px',
+        left: '300px',
+    }
     const ccdc = 
     <div className={styles.imageContainer} 
         style={containerStyle}
         data-aos="fade-up" 
         data-aos-duration="1000">
-        <Image /*using style instead of className*/
-            style={imageStyle} 
+        <Image 
+            style={cornerImage1} 
+            src={"/svg/defense.svg"}
+            alt={"defense"}
+            width={200}
+            height={200}
+        />
+        <Image 
+            style={cornerImage2} 
+            src={"/svg/hacker.svg"}
+            alt={"hacker"}
+            width={200}
+            height={200}
+        />
+        <Image 
+            style={imageStyle} /*using style instead of className*/
             src={"/images/ccdc.png"} 
             alt={"ccdc"} 
             width={381} 

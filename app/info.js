@@ -24,12 +24,50 @@ export default function Info() {
         border: '3px solid grey',
         borderRadius: '50%',
     }
+    // styles for corner image svg's
+    const cornerImage1 = {
+        position: 'absolute',
+        top: '0px',
+        left: '0px',
+    }
+    const cornerImage2 = {
+        position: 'absolute',
+        top: '0px',
+        left: '275px',
+        filter: 'invert(1)',
+    }
+    const cornerImage3 = {
+        position: 'absolute',
+        top: '325px',
+        left: '150px',
+    }
 
     const profilePic = 
     <div className={styles.imageContainer} 
         style={containerStyle}
         data-aos="fade-up" 
         data-aos-duration="1000">
+        <Image 
+            style={cornerImage1}
+            src={"/svg/code.svg"}
+            alt={"defense"}
+            width={100}
+            height={100}
+        />
+        <Image 
+            style={cornerImage2}
+            src={"/svg/music.svg"}
+            alt={"defense"}
+            width={100}
+            height={100}
+        />
+        <Image 
+            style={cornerImage3}
+            src={"/svg/book.svg"}
+            alt={"defense"}
+            width={100}
+            height={100}
+        />
         <Image /*note this key change*/
             style={imageStyle} 
             src="/images/avatar.jpeg" 
