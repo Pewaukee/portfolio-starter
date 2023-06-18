@@ -1,7 +1,8 @@
 // file to return the ThreeComponent of the intro part of the home page
+import React from "react";
 import Image from "next/image";
 import ThreeComponent from "./component";
-import styles from '../styles/Info.module.css';
+import styles from '../styles/page.module.css';
 import TypingEffect from "./TextAnimation";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -12,9 +13,30 @@ export default function Info() {
 
     // define components for the three component layout
     // profile picture
+    const containerStyle = {
+        // container style specifically for this info class
+        width: "400px",
+        height: "400px",
+        borderRadius: "50%",
+    }
+    const imageStyle = {
+        // image style specifically for this info class
+        border: '3px solid grey',
+        borderRadius: '50%',
+    }
+
     const profilePic = 
-    <div className={styles.profilePicture} data-aos="fade-up" data-aos-duration="1000">
-        <Image src="/images/avatar.jpeg" alt='profile picture' width={350} height={350}/>
+    <div className={styles.imageContainer} 
+        style={containerStyle}
+        data-aos="fade-up" 
+        data-aos-duration="1000">
+        <Image /*note this key change*/
+            style={imageStyle} 
+            src="/images/avatar.jpeg" 
+            alt='profile picture' 
+            width={350} 
+            height={350}
+        />
     </div>
 
     // vertical line
@@ -23,7 +45,7 @@ export default function Info() {
     // about me {whoami}
     const aboutMe = 
     `
-    My name is Karthik Shankar. \n
+    Hello! My name is Karthik Shankar. \n
     I am currently a student at the \n
     University of Massachusetts Amherst \n
     studying Computer Science. In my free time, \n

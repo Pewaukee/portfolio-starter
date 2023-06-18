@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ThreeComponent from "./component";
-import styles from '../styles/CCDC.module.css';
+import styles from '../styles/page.module.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -16,8 +16,30 @@ export default function CCDC() {
     In specific, I worked on Linux hardening, wrote various incident responses, \n
     and helped to secure the network. 
     `
-    const ccdc = <div className={styles.image} data-aos="fade-up" data-aos-duration="1000">
-        <Image src={"/images/ccdc.png"} alt={"ccdc"} width={381} height={470}/>
+    // define custom styles for the image
+    const containerStyle = {
+        // container style specifically for this info class
+        width: "425px",
+        height: "525px",
+        borderRadius: "25px",
+    }
+    const imageStyle = {
+        // image style specifically for this info class
+        border: '3px solid grey',
+        borderRadius: '25px',
+    }
+    const ccdc = 
+    <div className={styles.imageContainer} 
+        style={containerStyle}
+        data-aos="fade-up" 
+        data-aos-duration="1000">
+        <Image /*using style instead of className*/
+            style={imageStyle} 
+            src={"/images/ccdc.png"} 
+            alt={"ccdc"} 
+            width={381} 
+            height={470}
+        />
     </div>
 
     // vertical line
