@@ -9,14 +9,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 /**
- * 
+ * HomePicture component
  * @param {containerStyle} style for the container of the image
  * @param {mainImage} mainImage style and other components for the main image
  * @param {icons} array of icons to be placed in the corners of the image   
  * @param {descriptionText} description of picture, with title and text
+ * @param {coordinateStyles} style for the corner images' respective positions
  * @returns ThreeComponent with the picture, vertical line, and text 
  */
-export default function HomePicture( {containerStyle, mainImage, icons, descriptionText} ) {
+export default function HomePicture( {containerStyle, mainImage, icons, descriptionText, coordinateStyles} ) {
     // initialize AOS with useEffect to prevent ReferenceError: document is not defined
     useEffect(() => {
         AOS.init()
@@ -24,7 +25,8 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
     
     // random list to place the corner images
     // [top left, top right, bottom left, bottom right]
-    const coordinateList = [0, 0, 0, 0];
+    // represent occupied spaces
+    const coordinateList = [false, false, false, false];
 
     const picture = 
     <div className={styles.imageContainer} 
@@ -33,42 +35,26 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
         data-aos-duration="1000">
         {icons.map((icon) => {
             // get the random coordinates first
-            let index = 4; // one index larger than list
-            while (coordinateList[index] === 1) {
+            let index = Math.floor(Math.random() * 4); // one index larger than list
+            while (coordinateList[index] === true) {
                 index = Math.floor(Math.random() * 4);
             }
-            coordinateList[index] = 1;
+            coordinateList[index] = true;
 
             // place the image in the given coordinates for styles
-            let coordinateStyles = {};
+            let coordinateStyle = {};
             switch (index) {
                 case 0:
-                    coordinateStyles = {
-                        position: 'absolute',
-                        top: '-50px',
-                        left: '-50px',
-                    }
+                    coordinateStyle = coordinateStyles[0]
                     break;
                 case 1:
-                    coordinateStyles = {
-                        position: 'absolute',
-                        top: '-50px',
-                        left: '300px',
-                    }
+                    coordinateStyle = coordinateStyles[1]
                     break;
                 case 2:
-                    coordinateStyles = {
-                        position: 'absolute',
-                        top: '350px',
-                        left: '-50px',
-                    }
+                    coordinateStyle = coordinateStyles[2]
                     break;
                 case 3:
-                    coordinateStyles = {
-                        position: 'absolute',
-                        top: '350px',
-                        left: '300px',
-                    }
+                    coordinateStyle = coordinateStyles[3]
                     break;
                 default:
                     break;
@@ -76,7 +62,7 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
             return (
                 <Image 
                     key={icon.alt} // key needed for mapping to differentiate between images
-                    style={coordinateStyles}
+                    style={coordinateStyle}
                     src={icon.src}
                     alt={icon.alt}
                     width={icon.width}

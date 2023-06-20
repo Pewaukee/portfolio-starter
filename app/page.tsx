@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     // pass into component prop with custom styles
     <div>
 
-      {/** first component of intro */}
+      {/** intro */}
       <HomePicture 
         containerStyle={{
           width: "400px",
@@ -32,14 +32,14 @@ const Home: React.FC = () => {
             {
             src: '/svg/code.svg',
             alt: 'code',
-            width: 100,
-            height: 100,
+            width: 150,
+            height: 150,
             },
             {
             src: '/svg/book.svg',
             alt: 'book',
-            width: 100,
-            height: 100,
+            width: 150,
+            height: 150,
             },
           ]
         }
@@ -57,9 +57,33 @@ const Home: React.FC = () => {
           learning. Thank you for checking out my work!
           `
         }}
+        coordinateStyles={
+          [
+            {
+              position: 'absolute',
+              top: '-25px',
+              left: '-25px',
+            },
+            {
+              position: 'absolute',
+              top: '-25px',
+              left: '250px',
+            },
+            {
+              position: 'absolute',
+              top: '250px',
+              left: '-25px',
+            },
+            {
+              position: 'absolute',
+              top: '250px',
+              left: '250px',
+            }
+          ]
+        }
       />
 
-      {/** second component of snowboarding */}
+      {/** snowboarding */}
       <HomePicture 
         containerStyle={{
           width: "425px",
@@ -101,9 +125,35 @@ const Home: React.FC = () => {
           I've been to California, Nevada, Utah, Colorado, Wyoming, and Montana resorts \n
           for some powder. My personal favorite is Big Sky, Montana.`
         }}
+        coordinateStyles={
+          [
+            {
+              position: 'absolute',
+              top: '-50px',
+              left: '-50px',
+            },
+            {
+              position: 'absolute',
+              top: '-50px',
+              left: '300px',
+            },
+            {
+              position: 'absolute',
+              top: '350px',
+              left: '-50px',
+            },
+            {
+              position: 'absolute',
+              top: '350px',
+              left: '300px',
+            }
+          ]
+        }
       />
 
-      {/** third component of ccdc */}
+      {/** chess game */}
+
+      {/** ccdc */}
       <HomePicture 
         containerStyle={{
           width: "425px",
@@ -146,11 +196,34 @@ const Home: React.FC = () => {
           In specific, I worked on Linux hardening, wrote various incident responses, \n
           and helped to secure the network. `
         }}
+        coordinateStyles={
+          [
+            {
+              position: 'absolute',
+              top: '-50px',
+              left: '-50px',
+            },
+            {
+              position: 'absolute',
+              top: '-50px',
+              left: '300px',
+            },
+            {
+              position: 'absolute',
+              top: '350px',
+              left: '-50px',
+            },
+            {
+              position: 'absolute',
+              top: '350px',
+              left: '300px',
+            }
+          ]
+        }
 
       />
     </div>
 
-    // define the accomplishments
   )
 }
 
