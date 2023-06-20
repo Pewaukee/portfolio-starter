@@ -3,19 +3,7 @@ import styles from '../styles/page.module.css'
 
 import Info from './info'
 import CCDC from './ccdc'
-
-/**
- * <Info />
-      <div className={styles.descContainer}>
-        <h1>About Me</h1>
-      </div>
-      {/** define hobbies and more *}
-      
-      <div className={styles.descContainer}>
-        <h1>Events</h1>
-      </div>
-      <CCDC />
- */
+import Snowboarding from './snowboarding'
 
 const Home: React.FC = () => { 
 
@@ -23,12 +11,16 @@ const Home: React.FC = () => {
     // pass into component prop with custom styles
     <div>
       <Info />
+
+      {/** about me header */}
       <div className={styles.descContainer}>
         <h1>About Me</h1>
       </div>
 
       {/** define hobbies and more */}
-      
+      <Snowboarding />
+
+      {/** events header */}
       <div className={styles.descContainer}>
         <h1>Events</h1>
       </div>
