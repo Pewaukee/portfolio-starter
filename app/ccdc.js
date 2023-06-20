@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Image from "next/image";
 import ThreeComponent from "./component";
 import styles from '../styles/page.module.css';
@@ -6,8 +7,11 @@ import "aos/dist/aos.css";
 import TypingEffect from "./TextAnimation";
 
 export default function CCDC() {
-    // initialize AOS
-    AOS.init();
+    // initialize AOS with useEffect to prevent ReferenceError: document is not defined
+    useEffect(() => {
+        AOS.init()
+    }, []);
+
     // define the acomplishments section variables
     const ccdcTxt = 
     `

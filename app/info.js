@@ -1,5 +1,5 @@
 // file to return the ThreeComponent of the intro part of the home page
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import ThreeComponent from "./component";
 import styles from '../styles/page.module.css';
@@ -8,8 +8,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function Info() {
-    // initialize AOS
-    AOS.init();
+    // initialize AOS with useEffect to prevent ReferenceError: document is not defined
+    useEffect(() => {
+        AOS.init()
+    }, []);
 
     // define components for the three component layout
     // profile picture
