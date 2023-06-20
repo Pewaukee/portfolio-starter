@@ -32,7 +32,7 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
     <div className={styles.imageContainer} 
         style={containerStyle}
         data-aos="fade-up" 
-        data-aos-duration="1000">
+        data-aos-duration="500">
         {icons.map((icon) => {
             // get the random coordinates first
             let index = -1; // one index larger than list
@@ -81,11 +81,11 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
     </div>
 
     // vertical line
-    const verticalLine = <div data-aos="fade-up" data-aos-duration="1000"></div> // empty, no information needed for the vertical line container
+    const verticalLine = <div data-aos="fade-up" data-aos-duration="500"></div> // empty, no information needed for the vertical line container
     
     // create description text with typing effect
     const description = 
-    <div data-aos="fade-up" data-aos-duration="1000">
+    <div data-aos="fade-up" data-aos-duration="500">
         <h1>{descriptionText.title}</h1>
         <br/>
         <TypingEffect text={descriptionText.text} speed={0.02}/>
