@@ -86,8 +86,14 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
     // create description text with typing effect
     const description = 
     <div data-aos="fade-up" data-aos-duration="500">
-        <h1>{descriptionText.title}</h1>
-        <br/>
+        {descriptionText.title.map((t) => {
+            return (
+                <div key={t}>
+                    <h1>{t}</h1>
+                    <br/>
+                </div>
+            )
+        })}
         <TypingEffect text={descriptionText.text} speed={0.02}/>
     </div>
 

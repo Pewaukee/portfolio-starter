@@ -1,5 +1,4 @@
 import styles from '../styles/page.module.css'
-import Image from 'next/image'
 import HomePicture from './HomePicture'
 
 const Home: React.FC = () => { 
@@ -44,7 +43,7 @@ const Home: React.FC = () => {
           ]
         }
         descriptionText={{
-          title: '$ whoami',
+          title: ['$ whoami'],
           text:`
           Hello! My name is Karthik Shankar. \n
           I am currently a student at the \n
@@ -83,6 +82,10 @@ const Home: React.FC = () => {
         }
       />
 
+      <div className={styles.textContainer}>
+        <h1><i>About Me!</i></h1>
+      </div>
+      
       {/** snowboarding */}
       <HomePicture 
         containerStyle={{
@@ -119,7 +122,7 @@ const Home: React.FC = () => {
           ]
         }
         descriptionText={{
-          title: '$ cat snowboarding.txt',
+          title: ['$ cd ~/hobbies', '$ cat snowboarding.txt'],
           text:`One of my favorite hobbies is snowboarding. I have been snowboarding for \n
           over 10 years now, and I have been to many mountains in the Western US. \n
           I've been to California, Nevada, Utah, Colorado, Wyoming, and Montana resorts \n
@@ -187,7 +190,7 @@ const Home: React.FC = () => {
           ]
         }
         descriptionText={{
-          title: '$ cat chess.txt',
+          title: ['$ cd ~/hobbies', '$ cat chess.txt'],
           text:`I have been playing chess consistently for a little \n
           over a year now. I am currently rated around 1000 on chess.com! \n
           Here is a gif of a recent game I played. I had a huge attack here, \n
@@ -219,6 +222,10 @@ const Home: React.FC = () => {
           ]
         }
       />
+
+      <div className={styles.textContainer}>
+        <h1><i>Events</i></h1>
+      </div>
 
       {/** ccdc */}
       <HomePicture 
@@ -256,12 +263,12 @@ const Home: React.FC = () => {
           ]
         }
         descriptionText={{
-          title: '$ cat ccdc.txt',
+          title: ['$ cd ~/events', '$ cat ccdc.txt'],
           text:`I competed in the 2023 Northeast Collegiate Cyber Defense Competition (NECCDC) \n
           with the UMass Amherst Cybersecurity Club, where we got third place! I was a member \n
           of the Blue Team, which was tasked with defending a network from a Red Team of hackers. \n
-          In specific, I worked on Linux hardening, wrote various incident responses, \n
-          and helped to secure the network. `
+          In specific, I worked on Linux hardening and writing various incident responses, \n
+          and securing the network. `
         }}
         coordinateStyles={
           [
