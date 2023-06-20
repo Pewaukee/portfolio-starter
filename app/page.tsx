@@ -1,5 +1,5 @@
 import styles from '../styles/page.module.css'
-
+import Image from 'next/image'
 import HomePicture from './HomePicture'
 
 const Home: React.FC = () => { 
@@ -30,16 +30,16 @@ const Home: React.FC = () => {
         icons={
           [
             {
-            src: '/svg/code.svg',
+            src: '/svg/hobbies/code.svg',
             alt: 'code',
-            width: 150,
-            height: 150,
+            width: 100,
+            height: 100,
             },
             {
-            src: '/svg/book.svg',
+            src: '/svg/hobbies/book.svg',
             alt: 'book',
-            width: 150,
-            height: 150,
+            width: 100,
+            height: 100,
             },
           ]
         }
@@ -61,23 +61,23 @@ const Home: React.FC = () => {
           [
             {
               position: 'absolute',
-              top: '-25px',
-              left: '-25px',
+              top: '0px',
+              left: '0px',
             },
             {
               position: 'absolute',
-              top: '-25px',
-              left: '250px',
+              top: '0px',
+              left: '300px',
             },
             {
               position: 'absolute',
-              top: '250px',
-              left: '-25px',
+              top: '300px',
+              left: '0px',
             },
             {
               position: 'absolute',
-              top: '250px',
-              left: '250px',
+              top: '300px',
+              left: '300px',
             }
           ]
         }
@@ -105,16 +105,16 @@ const Home: React.FC = () => {
         icons={
           [
             {
-              src: '/svg/snowboard.svg',
+              src: '/svg/hobbies/snowboard.svg',
               alt: 'snowboard',
-              width: 200,
-              height: 200,
+              width: 100,
+              height: 100,
             },
             {
-              src: '/svg/snow.svg',
+              src: '/svg/hobbies/snow.svg',
               alt: 'snow',
-              width: 200,
-              height: 200,
+              width: 100,
+              height: 100,
             }
           ]
         }
@@ -135,23 +135,90 @@ const Home: React.FC = () => {
             {
               position: 'absolute',
               top: '-50px',
-              left: '300px',
+              left: '350px',
             },
             {
               position: 'absolute',
-              top: '350px',
+              top: '450px',
               left: '-50px',
             },
             {
               position: 'absolute',
-              top: '350px',
-              left: '300px',
+              top: '450px',
+              left: '350px',
             }
           ]
         }
       />
 
       {/** chess game */}
+      <HomePicture 
+        containerStyle={{
+          width: "450px",
+          height: "450px",
+          borderRadius: "20px",
+        }}
+        mainImage={
+          [
+            {
+              border: '3px solid grey',
+              borderRadius: '10px',
+            },
+            '/images/chess.gif',
+            'chess',
+            400,
+            400,
+          ]
+        }
+        icons={
+          [
+            {
+              src: '/svg/hobbies/chess/chess_clock.svg',
+              alt: 'chess',
+              width: 100,
+              height: 100,
+            },
+            {
+              src: '/svg/hobbies/chess/king.svg',
+              alt: 'king',
+              width: 100,
+              height: 100,
+            }
+          ]
+        }
+        descriptionText={{
+          title: '$ cat chess.txt',
+          text:`I have been playing chess consistently for a little \n
+          over a year now. I am currently rated around 1000 on chess.com! \n
+          Here is a gif of a recent game I played. I had a huge attack here, \n
+          usually my games don't go this well...
+          `
+        }}
+        coordinateStyles={
+          [
+            {
+              position: 'absolute',
+              top: '-75px',
+              left: '-75px',
+            },
+            {
+              position: 'absolute',
+              top: '-75px',
+              left: '375px',
+            },
+            {
+              position: 'absolute',
+              top: '375px',
+              left: '-75px',
+            },
+            {
+              position: 'absolute',
+              top: '375px',
+              left: '375px',
+            }
+          ]
+        }
+      />
 
       {/** ccdc */}
       <HomePicture 
@@ -175,16 +242,16 @@ const Home: React.FC = () => {
         icons={
           [
             {
-              src: '/svg/hacker.svg',
+              src: '/svg/hacker/hacker.svg',
               alt: 'hacker',
-              width: 200,
-              height: 200,
+              width: 100,
+              height: 100,
             },
             {
-              src: '/svg/defense.svg',
+              src: '/svg/hacker/defense.svg',
               alt: 'defense',
-              width: 200,
-              height: 200,
+              width: 100,
+              height: 100,
             }
           ]
         }
@@ -200,23 +267,23 @@ const Home: React.FC = () => {
           [
             {
               position: 'absolute',
-              top: '-50px',
-              left: '-50px',
+              top: '-25px',
+              left: '-25px',
             },
             {
               position: 'absolute',
-              top: '-50px',
-              left: '300px',
+              top: '-25px',
+              left: '350px',
             },
             {
               position: 'absolute',
-              top: '350px',
-              left: '-50px',
+              top: '450px',
+              left: '-25px',
             },
             {
               position: 'absolute',
-              top: '350px',
-              left: '300px',
+              top: '450px',
+              left: '350px',
             }
           ]
         }

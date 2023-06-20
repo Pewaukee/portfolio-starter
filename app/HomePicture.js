@@ -35,10 +35,11 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
         data-aos-duration="1000">
         {icons.map((icon) => {
             // get the random coordinates first
-            let index = Math.floor(Math.random() * 4); // one index larger than list
-            while (coordinateList[index] === true) {
+            let index = -1; // one index larger than list
+            do { 
                 index = Math.floor(Math.random() * 4);
             }
+            while (coordinateList[index] === true);
             coordinateList[index] = true;
 
             // place the image in the given coordinates for styles
