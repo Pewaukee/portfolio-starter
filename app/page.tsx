@@ -22,10 +22,10 @@ const Home: React.FC = () => {
   return (
     // pass into component prop with custom styles
     <div>
-      {/* <Info />
+      <Info />
       <div className={styles.descContainer}>
         <h1>About Me</h1>
-      </div> */}
+      </div>
 
       {/** define hobbies and more */}
       
