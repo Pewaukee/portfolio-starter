@@ -4,21 +4,25 @@ import styles from '../styles/page.module.css'
 import Info from './info'
 import CCDC from './ccdc'
 
-const Home: React.FC = () => { 
-
-  return (
-    // pass into component prop with custom styles
-    <div>
-      <Info />
+/**
+ * <Info />
       <div className={styles.descContainer}>
         <h1>About Me</h1>
       </div>
-      {/** define hobbies and more */}
+      {/** define hobbies and more *}
       
       <div className={styles.descContainer}>
         <h1>Events</h1>
       </div>
       <CCDC />
+ */
+
+const Home: React.FC = () => { 
+
+  return (
+    // pass into component prop with custom styles
+    <div>
+      
     </div>
 
     // define the accomplishments
