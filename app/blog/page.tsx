@@ -1,0 +1,1 @@
+// page that is rendered when going to the /blog page
