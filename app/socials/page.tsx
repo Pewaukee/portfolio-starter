@@ -1,11 +1,9 @@
-// this is the page rendered on the /socials route
+// this is the page rendered when going to the /blog page
 
-const Home: React.FC = () => {
-    return (
-        <>
-            
-        </>
-    )
+import React from 'react';
+
+export default function SocialsPage() {
+  return (
+    <></>
+  )
 }
-
-export default Home;
