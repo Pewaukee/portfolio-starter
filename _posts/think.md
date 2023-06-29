@@ -1,6 +1,6 @@
 ---
 title: 'How to Think - The Principal of Thought from a 20 y/o'
-date: '2020-06-15'
+date: '2023-06-15'
 ---
 
 The way thought has evolved has changed drastically ever since the advert of comfort. No more do we need to spend a significant portion of our brain’s capacity running away from the cheetah or (hopefully) wondering where our next meal will come from. Now thought evolves in non-survivalist ways but still is in the aim of expanding the capabilities of the human race. However, in today’s world, it takes some time and patience to find people who understand the complexities of thought and what it actually means to ponder about our subjective experience. Anyways, let this not simply be the theory chamber, and let’s dive into some practical ways to define thinking and how we can think in our own lives.
