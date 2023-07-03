@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+Welcome to my personal portfolio! This repository contains the source code and assests for my personal portfolio website, hosted [here](https://karthikshankar.in).
 
-First, run the development server:
+## Getting Started 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This assumes you have npm (Node Package Manager) installed. If not, download [here](https://nodejs.org/en).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the project locally, follow these steps:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* Clone the repository: 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```git clone https://github.com/your-username/portfolio-website.git```
 
-## Learn More
+* Navigate to the project directory: 
 
-To learn more about Next.js, take a look at the following resources:
+```cd portfolio-website```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Install the dependencies: 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```npm install```
 
-## Deploy on Vercel
+* Start the development server: 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```npm run dev```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Open your web browser and visit http://localhost:3000 to see the website.
+
+## Customization
+Feel free to customize the website to your needs. Substitute out pictures, styles, or whatever necessary. 
+## Deployment
+While working with NextJS, deployment on Vercel is the way to go, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
+### Acknowledgements
+This website was made possible to the free resources of NextJS and Vercel, TailwindCSS for styling, Framer Notion for animation and Reshot for cool svg logos.
+
+### Contact
+If you have any questions, please feel free to contact me at `karthik.shankar710@gmail.com`
