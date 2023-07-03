@@ -8,6 +8,7 @@ author: 'Karthik'
 
 The way thought has evolved has changed drastically ever since the advert of comfort. No more do we need to spend a significant portion of our brain’s capacity running away from the cheetah or (hopefully) wondering where our next meal will come from. Now thought evolves in non-survivalist ways but still is in the aim of expanding the capabilities of the human race. However, in today’s world, it takes some time and patience to find people who understand the complexities of thought and what it actually means to ponder about our subjective experience. Anyways, let this not simply be the theory chamber, and let’s dive into some practical ways to define thinking and how we can think in our own lives.
 
+---
 ## What is thinking?
 
 I started the How to Think Podcast episode with the following idea:
@@ -21,10 +22,12 @@ Simply put, our beliefs are merely things we have regarded as somewhat factual s
 
 Challenging our own ideas is hard, I don’t like to do it. Growing the muscle of getting destroyed in arguments by a single phrase, not even a single sentence, is difficult, it’s demoralizing. Wait, is it?
 
+---
 ## The Swords of Argument: The Way to a Thoughtful Mind
 
 If we view people as sources of information or simply teachers, then we see the lightbulb that is each person’s unique brain and their contributions to a subject matter. It is not demoralizing, it’s everyone pouring their energy into an aspect of the human condition in the most grandest sense. It’s actually fun to banter and bicker with close friends or people you don’t even know, because sometimes that’s actually when you learn the most about life, when you hear about it from other people’s perspectives. Also, growing physical muscles is fun, and we can make growing mind muscles fun too. Right?
 
+---
 ## Conclusion
 
 This writing might have been on a high level and made a lot of confusing abstractions into the way we think. Take it as a lightbulb from my mind to yours. It is a complicated lightbulb for me to understand anyways, but let’s share it no?
