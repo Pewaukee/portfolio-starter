@@ -6,7 +6,7 @@ export default function Blog() {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
 
   return (
-    <div className="container mx-auto px-5">
+    <div className="container mx-auto px-5 my-6">
       <main>
         <h1 className="text-center text-3xl">All Posts</h1>
 

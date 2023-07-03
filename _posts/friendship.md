@@ -1,6 +1,7 @@
 ---
 title: 'The Beauty of Friendship - From a 20 y/o’s Perspective'
 date: '2023-06-10'
+coverImage: '/images/blog/friends.jpg'
 ---
 
 We are simply a product of our environment. No matter how much we want to disprove our “characteristic” nature, we are most certainly brought up with a lot of nurture, and this definitely plays into the role we take on in society. However, although perhaps my tone is a bit negative, I believe this is an agency that we can manage to keep under our control. The beauty of friendship is such that we can find and choose any person in the world (due to the advent of technology) to be our friend and therefore nurture us. In the olden days, people could sometimes not even linger around (much less befriend) someone of a different race, background, and whatever else. Today I will dive into what this beauty is and what it provides, and how to try to gain it.
