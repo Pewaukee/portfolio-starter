@@ -10,7 +10,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   return (
     <div className="container mx-auto">
       <main>
-        <div className="w-full h-16 text-white">
+        <div className="w-full h-auto text-white">
           <p className="text-2xl">{post.title}</p>
           <p className="text-gray-400">{post.author}</p>
           <div

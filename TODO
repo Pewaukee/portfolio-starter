@@ -1,7 +1,9 @@
-figure out text animation using framer motion
 add code style to name block when typed out
-work with logos and social media in another navbar menu section
 
 fix the styling, its a little all over the place
 
-fix error in vercel
+because of async await, the text for the posts gets
+rendered in after the footer's position has been set
+this needs to change
+the footer's bottom y position should be set to zero relative to 
+the parent container? and shouldn't have position:fixed;

@@ -2,6 +2,8 @@
 title: 'When Environment Destroys Willpower (Always)'
 date: '2023-06-28'
 coverImage: '/images/blog/env.jpg'
+excerpt: 'A discussion on the benefits of using your environment over pure willpower.'
+author: 'Karthik'
 ---
 
 # Environment vs. Willpower

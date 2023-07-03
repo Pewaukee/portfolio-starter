@@ -267,7 +267,7 @@ const Home: React.FC = () => {
           text:`I competed in the 2023 Northeast Collegiate Cyber Defense Competition (NECCDC) \n
           with the UMass Amherst Cybersecurity Club, where we got third place! I was a member \n
           of the Blue Team, which was tasked with defending a network from a Red Team of hackers. \n
-          In specific, I worked on Linux hardening and writing various incident responses, \n
+          In specific, I worked on Linux hardening, writing various incident responses \n
           and securing the network. `
         }}
         coordinateStyles={

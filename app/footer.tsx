@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     const height = 30;
 
     // initialize the social media logos
-    const github = <Logo url="https://github.com/pewaukee" src="/svg/socials/github.svg" alt="Github Logo" width={width} height={height} />
+    const github = <div className="invert"><Logo url="https://github.com/pewaukee" src="/svg/socials/github.svg" alt="Github Logo" width={width} height={height} /></div>
     const linkedin = <Logo url="https://www.linkedin.com/in/karthik-shankar-6943b122a/" src="/svg/socials/linkedin.svg" alt="LinkedIn Logo" width={width} height={height} />
     const twitter = <Logo url="https://twitter.com/pewaukee710" src="/svg/socials/twitter.svg" alt="Twitter Logo" width={width} height={height} />
     const youtube = <Logo url="https://www.youtube.com/channel/UCQ6ZI2qKlZqO5yf2wvzX2jQ" src="/svg/socials/youtube.svg" alt="Youtube Logo" width={width} height={height} />

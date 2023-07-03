@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Navbar from './navbar'
 import Footer from './footer'
@@ -15,8 +14,8 @@ export default function RootLayout({ children }: Props) {
         <title>Karthik Shankar</title>
       </Head>
       <body>
+        {/** all pages have the navbar, main content, and footer */}
         <Navbar />
-        {/** all pages have the navbar main content and footer */}
         {children}
         <Footer />
       </body>
