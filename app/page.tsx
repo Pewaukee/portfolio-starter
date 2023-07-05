@@ -1,5 +1,4 @@
 import { CSSProperties } from 'react';
-import styles from '../styles/page.module.css'
 import HomeElement from './components/HomeElement'
 
 const Home: React.FC = () => { 
@@ -10,7 +9,7 @@ const Home: React.FC = () => {
 
   return (
     // pass into component prop with custom styles
-    <div>
+    <>
 
       {/** intro */}
       <HomeElement 
@@ -305,7 +304,7 @@ const Home: React.FC = () => {
         }
 
       />
-    </div>
+    </>
 
   )
 }

@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
     {/** add in the links */}
     const right = <ul>
                     <Link href="/">Home</Link>
-                    <Link href="/blog">Posts</Link>
+                    <Link href="/posts">Posts</Link>
                     <Link href="/deep-plea">The Deep Plea</Link>
                     <Link href="/socials">Socials</Link>
                   </ul>
