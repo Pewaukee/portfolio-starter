@@ -2,7 +2,7 @@
 import Link from "next/link";
 import styles from "../../styles/navbar.module.css";
 import TypingEffect from "./TextAnimation";
-import CustomComponent from "./ThreeComponent";
+import ThreeComponent from "./ThreeComponent";
 
 const Navbar: React.FC = () => {
 
@@ -15,14 +15,13 @@ const Navbar: React.FC = () => {
     {/** add in the links */}
     const right = <ul>
                     <Link href="/">Home</Link>
+                    <Link href="/portfolio">Portfolio</Link>
                     <Link href="/posts">Posts</Link>
-                    <Link href="/deep-plea">The Deep Plea</Link>
-                    <Link href="/socials">Socials</Link>
                   </ul>
 
     {/* pass into component prop with custom styles */}
     return (
-        <CustomComponent left={left} center={center} right={right} styles={styles} />
+        <ThreeComponent left={left} center={center} right={right} styles={styles} />
     )
 }
 

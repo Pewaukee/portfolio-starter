@@ -1,7 +1,6 @@
 // more general component for logos
 // takes in a logo image and a link to the logo's website
 import Image from 'next/image';
-import styles from '../styles/Logo.module.css';
 
 type LogoProps = {
     url: string;
