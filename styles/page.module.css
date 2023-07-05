@@ -124,7 +124,9 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(127, 119, 119, 0) 70%);
+  background: rgb(102,119,122);
+  background: radial-gradient(circle, rgba(102,119,122,1) 23%, rgba(82,85,85,1) 80%);
+  font-size: 2.5rem;
 }
 
 .textContainer h1 {
