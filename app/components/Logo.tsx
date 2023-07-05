@@ -13,12 +13,12 @@ type LogoProps = {
 
 const Logo: React.FC<LogoProps> = ({ url, src, alt, width, height }) => {
     return (
-        <div className={styles.logoContainer}>
+        <div className="flex items-center justify-center">
             <a href={url} target="_blank" rel="noopener noreferrer">
                 <Image
                     src={src}
                     alt={alt}
-                    className={styles.logo}
+                    className="transition-all duration-500 ease-in-out hover:scale-105"
                     width={width}
                     height={height}
                 />

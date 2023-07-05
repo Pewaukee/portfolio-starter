@@ -1,6 +1,6 @@
 // create the navbar component
 import Link from "next/link";
-import styles from "../styles/navbar.module.css";
+import styles from "../../styles/navbar.module.css";
 import TypingEffect from "./TextAnimation";
 import CustomComponent from "./ThreeComponent";
 

@@ -1,6 +1,6 @@
 // create framer animation for text reveal as though typing
 'use client';
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function TypingEffect ({text, speed}) {
     {/** take some text and render it character by character */}

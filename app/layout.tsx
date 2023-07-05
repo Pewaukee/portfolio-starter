@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 type Props = {
   children: React.ReactNode

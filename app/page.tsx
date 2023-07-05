@@ -1,7 +1,12 @@
+import { CSSProperties } from 'react';
 import styles from '../styles/page.module.css'
-import HomeElement from './HomeElement'
+import HomeElement from './components/HomeElement'
 
 const Home: React.FC = () => { 
+
+  const textShadow: CSSProperties = {
+    textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 4px rgba(0, 0, 0, 0.5)',
+  };
 
   return (
     // pass into component prop with custom styles
@@ -82,8 +87,10 @@ const Home: React.FC = () => {
         }
       />
 
-      <div className={styles.textContainer}>
-        <h1><i>About Me!</i></h1>
+      <div className="flex justify-center 
+      items-center p-10 bg-gradient-to-br 
+      from-gray-400 to-gray-800 text-3xl">
+        <h1 className="text-yellow-400" style={textShadow}><i>About Me!</i></h1>
       </div>
       
       {/** snowboarding */}
@@ -223,8 +230,10 @@ const Home: React.FC = () => {
         }
       />
 
-      <div className={styles.textContainer}>
-        <h1><i>Events</i></h1>
+      <div className="flex justify-center 
+      items-center p-10 bg-gradient-to-br 
+      from-gray-400 to-gray-800 text-3xl">
+        <h1 className="text-yellow-400" style={textShadow}><i>Events</i></h1>
       </div>
 
       {/** ccdc */}

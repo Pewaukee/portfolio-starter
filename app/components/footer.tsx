@@ -1,5 +1,5 @@
 // create the footer component
-import styles from "../styles/footer.module.css";
+import styles from "../../styles/footer.module.css";
 import ThreeComponent from "./ThreeComponent";
 import Logo from "./Logo";
 
