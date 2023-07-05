@@ -1,7 +1,6 @@
 // create the footer component
-import Link from "next/link";
 import styles from "../styles/footer.module.css";
-import ThreeComponent from "./component.js";
+import ThreeComponent from "./ThreeComponent";
 import Logo from "./Logo";
 
 const Footer: React.FC = () => {

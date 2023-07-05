@@ -1,28 +1,54 @@
-// refactor of Home page of the picture, container, and corner logo images
+// refactor of Home page of the Element, container, and corner logo images
 'use client';
 import React, { useEffect } from "react";
 import Image from "next/image";
-import ThreeComponent from "./component";
+import ThreeComponent from "./ThreeComponent";
 import styles from '../styles/page.module.css';
 import TypingEffect from "./TextAnimation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-/**
- * HomePicture component
- * @param {containerStyle} style for the container of the image
- * @param {mainImage} mainImage style and other components for the main image
- * @param {icons} array of icons to be placed in the corners of the image   
- * @param {descriptionText} description of picture, with title and text
- * @param {coordinateStyles} style for the corner images' respective positions
- * @returns ThreeComponent with the picture, vertical line, and text 
- */
-export default function HomePicture( {containerStyle, mainImage, icons, descriptionText, coordinateStyles} ) {
+type HomeElementProps = {
+    containerStyle: React.CSSProperties;
+    mainImage: [
+        {
+            border: string;
+            borderRadius: string;
+        },
+        string, // image source
+        string, // alt text
+        number, // width
+        number, // height
+    ];
+    icons: {
+        src: string;
+        alt: string;
+        width: number;
+        height: number;
+    }[];
+    descriptionText: {
+        title: string[];
+        text: string;
+    };
+    coordinateStyles: {
+        position: string;
+        top: string;
+        left: string;
+    }[];
+};
+
+const HomeElement: React.FC<HomeElementProps> = ({
+    containerStyle,
+    mainImage,
+    icons,
+    descriptionText,
+    coordinateStyles,
+    }) => {
     // initialize AOS with useEffect to prevent ReferenceError: document is not defined
     useEffect(() => {
         AOS.init()
     }, []);
-    
+
     // random list to place the corner images
     // [top left, top right, bottom left, bottom right]
     // represent occupied spaces
@@ -35,7 +61,7 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
         data-aos-duration="500">
         {icons.map((icon) => {
             // get the random coordinates first
-            let index = -1; // one index larger than list
+            let index = -1;
             do { 
                 index = Math.floor(Math.random() * 4);
             }
@@ -82,7 +108,7 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
 
     // vertical line
     const verticalLine = <div data-aos="fade-up" data-aos-duration="500"></div> // empty, no information needed for the vertical line container
-    
+
     // create description text with typing effect
     const description = 
     <div data-aos="fade-up" data-aos-duration="500">
@@ -99,5 +125,7 @@ export default function HomePicture( {containerStyle, mainImage, icons, descript
 
     return (
         <ThreeComponent left={picture} center={verticalLine} right={description} styles={styles}/>
-    )
+    );   
 }
+
+export default HomeElement;

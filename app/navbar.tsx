@@ -1,9 +1,8 @@
 // create the navbar component
-'use client'; // for framer motion
 import Link from "next/link";
 import styles from "../styles/navbar.module.css";
-import TypingEffect from "./TextAnimation.js";
-import CustomComponent from "./component";
+import TypingEffect from "./TextAnimation";
+import CustomComponent from "./ThreeComponent";
 
 const Navbar: React.FC = () => {
 

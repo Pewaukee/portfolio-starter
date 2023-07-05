@@ -1,5 +1,5 @@
 // create framer animation for text reveal as though typing
-
+'use client';
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function TypingEffect ({text, speed}) {
@@ -30,7 +30,7 @@ export default function TypingEffect ({text, speed}) {
             initial="hidden"
             animate="visible"
         >
-            {text.split("").map((char, index) => {
+            {text.split("").map((char: string, index: string) => {
                 return (
                     <motion.span key={char + "-" + index} variants={letter}>
                         {char}

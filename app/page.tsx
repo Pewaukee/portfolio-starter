@@ -1,5 +1,5 @@
 import styles from '../styles/page.module.css'
-import HomePicture from './HomePicture'
+import HomeElement from './HomeElement'
 
 const Home: React.FC = () => { 
 
@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <div>
 
       {/** intro */}
-      <HomePicture 
+      <HomeElement 
         containerStyle={{
           width: "400px",
           height: "400px",
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
       </div>
       
       {/** snowboarding */}
-      <HomePicture 
+      <HomeElement 
         containerStyle={{
           width: "425px",
           height: "525px",
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
       />
 
       {/** chess game */}
-      <HomePicture 
+      <HomeElement 
         containerStyle={{
           width: "450px",
           height: "450px",
@@ -228,7 +228,7 @@ const Home: React.FC = () => {
       </div>
 
       {/** ccdc */}
-      <HomePicture 
+      <HomeElement 
         containerStyle={{
           width: "425px",
           height: "525px",
