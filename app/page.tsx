@@ -1,5 +1,6 @@
 import { CSSProperties } from 'react';
 import HomeElement from './components/HomeElement'
+import '../styles/globals.css'
 
 const Home: React.FC = () => { 
 
