@@ -1,3 +1,6 @@
 add code style to name block when typed out
 
 fix the styling, its a little all over the place
+
+the icons for portfolio are not moving past 50%,
+probably conflicts with styling from page.module.css

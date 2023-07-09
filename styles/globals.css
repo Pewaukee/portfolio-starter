@@ -5,6 +5,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* add a custom utility to the utilities layer
+for spacing icons in the container */
+@layer utilities {
+  .top-near {
+    top: -5%;
+  }
+  .top-far {
+    top: 85%;
+  }
+  .left-near {
+    left: -5%;
+  }
+  .left-far {
+    left: 90%;
+  }
+}
+
 :root {
   /* set the font family to Space Mono (activate it) */
   font-family: 'Space Mono', monospace;
