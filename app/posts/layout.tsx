@@ -9,6 +9,11 @@ type Props = {
   children: React.ReactNode
 }
 
+export const metadata = {
+  title: 'Blog - Karthik Shankar',
+  description: "Karthik's personal blog",
+}
+
 export default function Layout({ children }: Props) {
   return (
     <main>
