@@ -4,7 +4,7 @@ export default function Video({ src }: { src: string }) {
       <video
         controls
         disablePictureInPicture
-        controlsList="nodownload nofullscreen"
+        controlsList="nodownload"
       >
         <source src={src} type="video/mp4" />
         Your Browser does not support this video.

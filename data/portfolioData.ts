@@ -7,8 +7,8 @@ export const portfolioData = [
         'flex w-[75%] h-[75%] justify-center items-center shadow-lg',
       mainImage: {
         style: 'border-[3px] rounded-lg',
-        src: '/projects/website.gif',
-        alt: 'project website gif',
+        src: '/projects/website.mp4',
+        alt: 'project website video',
         width: 1000,
         height: 1000,
       },
@@ -43,8 +43,8 @@ export const portfolioData = [
         'flex w-[75%] h-[75%] justify-center items-center shadow-lg',
       mainImage: {
         style: 'border-[3px] rounded-lg',
-        src: '/projects/modern_shopper.gif',
-        alt: 'modern shopper project',
+        src: '/projects/modern_shopper.mp4',
+        alt: 'modern shopper project video',
         width: 1000,
         height: 1000,
       },

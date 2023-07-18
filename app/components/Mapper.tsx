@@ -1,10 +1,10 @@
 import Divider from './Divider';
-import FadeUp from './FadeUp';
 import HomeElement from './HomeElement';
 
 export default function Mapper({
   array,
   styles,
+  type
 }: {
   array: {
     id: number;
@@ -34,6 +34,7 @@ export default function Mapper({
     centerContainer: string;
     rightContainer: string;
   };
+  type: 'picture' | 'video';
 }) {
   return (
     <>
@@ -46,6 +47,7 @@ export default function Mapper({
             descriptionText={data.descriptionText}
             coordinateStyles={data.coordinateStyles}
             styles={styles}
+            type={type}
           />
           {/* FIXME: add divider if not last element */}
           {index !== array.length - 1 ? <Divider height={100} /> : null}

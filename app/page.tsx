@@ -26,7 +26,7 @@ const Home: React.FC = () => {
     // pass into component prop with custom styles
     <>
       {/** intro */}
-      <Mapper array={introData} styles={styles} />
+      <Mapper array={introData} styles={styles} type='picture'/>
 
       <div className={goldStyledText}>
         <h1 className="text-yellow-400" style={textShadow}>
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
       </div>
 
       {/** about me */}
-      <Mapper array={aboutMeData} styles={styles} />
+      <Mapper array={aboutMeData} styles={styles} type='picture'/>
 
       <div className={goldStyledText}>
         <h1 className="text-yellow-400" style={textShadow}>
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
       </div>
 
       {/** events */}
-      <Mapper array={eventsData} styles={styles} />
+      <Mapper array={eventsData} styles={styles} type='picture'/>
     </>
   );
 };

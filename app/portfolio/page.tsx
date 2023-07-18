@@ -22,7 +22,7 @@ const Portfolio: React.FC = () => {
       </div>
       {/* <div className="container m-10 border-2 border-white-600 w-auto p-10">
                 <div className="flex items-center gap-6"> */}
-      <Mapper array={portfolioData} styles={styles} />
+      <Mapper array={portfolioData} styles={styles} type='video'/>
     </>
   );
 };

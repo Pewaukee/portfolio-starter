@@ -6,6 +6,7 @@ import Icon from './Icon';
 import Description from './Description';
 import FadeUp from './FadeUp';
 import Picture from './Picture';
+import Video from '../portfolio/components/Video';
 
 type HomeElementProps = {
   containerStyle: string;
@@ -33,6 +34,7 @@ type HomeElementProps = {
     centerContainer: string;
     rightContainer: string;
   };
+  type: 'picture' | 'video';
 };
 
 const HomeElement: React.FC<HomeElementProps> = ({
@@ -42,14 +44,20 @@ const HomeElement: React.FC<HomeElementProps> = ({
   descriptionText,
   coordinateStyles,
   styles,
+  type,
 }) => {
   return (
     <ThreeComponent
-      /** picture/video for left component */
       left={
         <FadeUp className={containerStyle}>
           <Icon icons={icons} coordinateStyles={coordinateStyles} />
-          <Picture mainImage={mainImage} />
+
+          {/** picture/video for left component */}
+          {type === 'picture' ? (
+            <Picture mainImage={mainImage} />
+          ) : (
+            <Video src={mainImage.src} />
+          )}
         </FadeUp>
       }
       /** vertical line for center component */
