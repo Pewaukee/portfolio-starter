@@ -5,7 +5,17 @@ module.exports = {
     './components/**/*'
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'fade-in-content': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      }
+    },
   },
   plugins: [],
 }

@@ -1,6 +1,7 @@
 import { CSSProperties } from 'react';
 import HomeElement from './components/HomeElement';
 import '../styles/globals.css';
+import Divider from './components/Divider';
 
 // dynamically create the styles for the corner images (icons)
 function createStyle(top: boolean, left: boolean): string {
@@ -11,12 +12,22 @@ function createStyle(top: boolean, left: boolean): string {
   else return `absolute top-near left-near`;
 }
 
+const goldStyledText =
+  'flex justify-center items-center p-10 bg-gradient-to-br from-gray-400 to-gray-800 text-3xl';
+
+const styles = {
+  main: 'relative flex justify-between p-8 min-h-[500px] fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
+  leftContainer: 'w-[50%] h-[50%] ml-[10%] mr-[10%] mt-[25px]',
+  centerContainer: 'absolute w-[1px] h-[400px] bg-gray-400 left-[50%]',
+  rightContainer: 'absolute w-[35%] h-[50%] mr-[10%] left-[60%] mt-[25px]',
+};
+
 const introData = [
   {
     id: 1,
-    containerStyle: 'w-[400px] h-[400px] rounded-[50%]',
+    containerStyle: 'w-[50%] h-[50%]',
     mainImage: {
-      style: 'border-[3px] border-solid border-gray-400 rounded-[50%]',
+      style: 'border-[3px] border-solid border-gray-400 rounded-2xl',
       src: '/images/avatar.jpeg',
       alt: 'avatar',
       width: 350,
@@ -45,7 +56,7 @@ const introData = [
       I like to read, listen to music, and improve \n
       my coding skills, like you're seeing here in \n
       this website. In CS, I am particularly interested \n
-      in software engineering, cybersecurity, and machine \n
+      in website development, cybersecurity, and machine \n
       learning. Thank you for checking out my work!`,
     },
     coordinateStyles: [
@@ -60,7 +71,7 @@ const introData = [
 const aboutMeData = [
   {
     id: 1,
-    containerStyle: 'w-[425px] h-[525px] rounded-[25px]',
+    containerStyle: 'w-[50%] h-[50%] rounded-[25px]',
     mainImage: {
       style: 'border-[3px] border-solid border-gray-400 rounded-[25px]',
       src: '/images/snowboarding.jpeg',
@@ -98,7 +109,7 @@ const aboutMeData = [
   },
   {
     id: 2,
-    containerStyle: 'w-[450px] h-[450px] rounded-[20px]',
+    containerStyle: 'w-[50%] h-[50%] rounded-[20px]',
     mainImage: {
       style: 'border-[3px] border-solid border-gray-400 rounded-[20px]',
       src: '/images/chess.gif',
@@ -139,7 +150,7 @@ const aboutMeData = [
 const eventsData = [
   {
     id: 1,
-    containerStyle: 'w-[425px] h-[525px] rounded-[25px]',
+    containerStyle: 'w-[50%] h-[50%] rounded-[25px]',
     mainImage: {
       style: 'border-[3px] border-solid border-gray-400 rounded-[25px]',
       src: '/images/ccdc.png',
@@ -190,46 +201,45 @@ const Home: React.FC = () => {
       {/** intro */}
       {introData.map((data) => {
         return (
-          <HomeElement
-            key={data.id}
-            containerStyle={data.containerStyle}
-            mainImage={data.mainImage}
-            icons={data.icons}
-            descriptionText={data.descriptionText}
-            coordinateStyles={data.coordinateStyles}
-          />
+          <div key={data.id}>
+            <HomeElement
+              containerStyle={data.containerStyle}
+              mainImage={data.mainImage}
+              icons={data.icons}
+              descriptionText={data.descriptionText}
+              coordinateStyles={data.coordinateStyles}
+              styles={styles}
+            />
+          </div>
         );
       })}
 
-      <div
-        className="flex justify-center 
-      items-center p-10 bg-gradient-to-br 
-      from-gray-400 to-gray-800 text-3xl"
-      >
+      <div className={goldStyledText}>
         <h1 className="text-yellow-400" style={textShadow}>
           <i>About Me!</i>
         </h1>
       </div>
 
       {/** about me */}
-      {aboutMeData.map((data) => {
+      {aboutMeData.map((data, index) => {
         return (
-          <HomeElement
-            key={data.id}
-            containerStyle={data.containerStyle}
-            mainImage={data.mainImage}
-            icons={data.icons}
-            descriptionText={data.descriptionText}
-            coordinateStyles={data.coordinateStyles}
-          />
+          <div key={data.id}>
+            <HomeElement
+              key={data.id}
+              containerStyle={data.containerStyle}
+              mainImage={data.mainImage}
+              icons={data.icons}
+              descriptionText={data.descriptionText}
+              coordinateStyles={data.coordinateStyles}
+              styles={styles}
+            />
+            {/** add a divider between items */}
+            {index !== aboutMeData.length - 1 ? <Divider height={20} /> : null}
+          </div>
         );
       })}
 
-      <div
-        className="flex justify-center 
-      items-center p-10 bg-gradient-to-br 
-      from-gray-400 to-gray-800 text-3xl"
-      >
+      <div className={goldStyledText}>
         <h1 className="text-yellow-400" style={textShadow}>
           <i>Events</i>
         </h1>
@@ -245,6 +255,7 @@ const Home: React.FC = () => {
             icons={data.icons}
             descriptionText={data.descriptionText}
             coordinateStyles={data.coordinateStyles}
+            styles={styles}
           />
         );
       })}

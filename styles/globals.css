@@ -6,19 +6,21 @@
 @tailwind utilities;
 
 /* add a custom utility to the utilities layer
-for spacing icons in the container */
+for spacing icons in the container, 
+compatible with square or portrait images
+little adjustment needed for other components */
 @layer utilities {
   .top-near {
     top: -5%;
   }
   .top-far {
-    top: 85%;
+    top: 80%;
   }
   .left-near {
     left: -5%;
   }
   .left-far {
-    left: 90%;
+    left: 80%;
   }
 }
 
