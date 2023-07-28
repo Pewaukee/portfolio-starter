@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     const left = <TypingEffect text={"> Karthik Shankar"} speed={0.08}/>   
 
     {/** add in the center logo */}
-    const center = <Link href="/">KS</Link>
+    const center = <div>KS</div>
     
     {/** add in the links */}
     const right = <ul>
@@ -21,7 +21,9 @@ const Navbar: React.FC = () => {
 
     {/* pass into component prop with custom styles */}
     return (
-        <ThreeComponent left={left} center={center} right={right} styles={styles} />
+        <ThreeComponent left={left} center={<Link href="/">
+{center}
+        </Link>} right={right} styles={styles} />
     )
 }
 
