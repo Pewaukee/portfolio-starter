@@ -1,4 +1,5 @@
 // rendering the description text
+import { textShadow } from "../../data/TextShadow";
 import TypingEffect from "./TextAnimation";
 
 interface DescriptionProps {
@@ -8,7 +9,7 @@ interface DescriptionProps {
 
 function Description({descriptionText}: {descriptionText: DescriptionProps}) {
     return ( 
-        <>
+        <div style={textShadow}>
             {descriptionText.title.map((t) => {
                 return (
                     <div key={t}>
@@ -18,7 +19,7 @@ function Description({descriptionText}: {descriptionText: DescriptionProps}) {
                 )
             })}
             <TypingEffect text={descriptionText.text} speed={0.02}/>
-        </>
+        </div>
     );
 }
 
