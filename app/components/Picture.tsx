@@ -4,7 +4,7 @@ export default function Picture({
   mainImage,
 }: {
   mainImage: {
-    style: string;
+    className: string;
     src: string;
     alt: string;
     width: number;
@@ -13,7 +13,7 @@ export default function Picture({
 }) {
   return (
     <Image
-      className={mainImage.style} /*using style instead of className*/
+      className={mainImage.className}
       src={mainImage.src}
       alt={mainImage.alt}
       width={mainImage.width}
