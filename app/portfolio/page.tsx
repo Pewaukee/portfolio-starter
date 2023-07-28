@@ -1,15 +1,13 @@
 // this is the page rendered on the /portfolio route
 import { portfolioData } from '../../data/portfolioData';
-import Divider from '../components/Divider';
-import HomeElement from '../components/HomeElement';
 import Mapper from '../components/Mapper';
 
 
 const styles = {
-  main: 'relative flex flex-row justify-between p-8 min-h-[500px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
-  leftContainer: 'w-[50%] h-[50%] mt-[25px] flex justify-center items-center',
-  centerContainer: 'w-[1px] h-[400px] bg-gray-400 left-[50%] flex justify-center items-center',
-  rightContainer: 'w-[50%] h-[50%] mt-[25px] pl-[75px] flex flex-col',
+  main: 'relative flex flex-row justify-between p-8 min-h-[400px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
+  leftContainer: 'relative w-[50%] h-full flex justify-center items-center',
+  centerContainer: 'w-[1px] h-full bg-white left-[50%] flex justify-center items-center',
+  rightContainer: 'w-[50%] h-full pl-[5%] flex flex-col justify-center items-center',
 };
 
 const Portfolio: React.FC = () => {
