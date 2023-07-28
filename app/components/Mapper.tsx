@@ -51,7 +51,7 @@ export default function Mapper({
           </FadeUp>
 
           {/* FIXME: add divider if not last element */}
-          {index !== array.length - 1 ? <Divider height={100} /> : null}
+          {index !== array.length - 1 ? <Divider /> : null}
         </div>
       ))}
     </>
