@@ -9,9 +9,8 @@ import Picture from './Picture';
 import Video from '../portfolio/components/Video';
 
 type HomeElementProps = {
-  containerStyle: string;
   mainImage: {
-    style: string;
+    className: string;
     src: string;
     alt: string;
     width: number;
@@ -27,7 +26,6 @@ type HomeElementProps = {
     title: string[];
     text: string;
   };
-  coordinateStyles: string[]; // of length 4 also fix or (using tailwind)
   styles: {
     main: string;
     leftContainer: string;
@@ -38,39 +36,32 @@ type HomeElementProps = {
 };
 
 const HomeElement: React.FC<HomeElementProps> = ({
-  containerStyle,
   mainImage,
   icons,
   descriptionText,
-  coordinateStyles,
   styles,
   type,
 }) => {
   return (
     <ThreeComponent
       left={
-        <FadeUp className={containerStyle}>
-          <Icon icons={icons} coordinateStyles={coordinateStyles} />
-
-          {/** picture/video for left component */}
-          {type === 'picture' ? (
-            <Picture mainImage={mainImage} />
-          ) : (
-            <Video src={mainImage.src} />
-          )}
-        </FadeUp>
+        <div className="flex justify-center items-center">
+          <div className="relative w-[70%] h-[70%]">
+            {/** icons for left component */}
+            <Icon icons={icons} />
+            {/** picture/video for left component */}
+            {type === 'picture' ? (
+              <Picture mainImage={mainImage} />
+            ) : (
+              <Video videoProps={mainImage} />
+            )}
+          </div>
+        </div>
       }
       /** vertical line for center component */
-      center={
-        <FadeUp>
-          <VerticalLine height={100} />
-        </FadeUp>
-      }
-      right={
-        <FadeUp>
-          <Description descriptionText={descriptionText} />
-        </FadeUp>
-      }
+      center={<></>}
+      /** description text for the right component */
+      right={<Description descriptionText={descriptionText} />}
       styles={styles}
     />
   );
