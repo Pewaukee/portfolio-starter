@@ -1,11 +1,9 @@
-import createStyle from "../utils/createStyle";
-
 export const aboutMeData = [
   {
     id: 1,
     containerStyle: 'w-[50%] h-[50%] rounded-[25px]',
     mainImage: {
-      style: 'border-[3px] border-solid border-gray-400 rounded-[25px]',
+      className: 'border-4 border-solid border-gray-400 rounded-2xl',
       src: '/images/snowboarding.jpeg',
       alt: 'snowboarding',
       width: 350,
@@ -32,18 +30,12 @@ export const aboutMeData = [
             I've been to California, Nevada, Utah, Colorado, Wyoming, and Montana resorts \n
             for some powder. My personal favorite is Big Sky, Montana.`,
     },
-    coordinateStyles: [
-      createStyle(true, true),
-      createStyle(true, false),
-      createStyle(false, true),
-      createStyle(false, false),
-    ],
   },
   {
     id: 2,
     containerStyle: 'w-[50%] h-[50%] rounded-[20px]',
     mainImage: {
-      style: 'border-[3px] border-solid border-gray-400 rounded-[20px]',
+      className: 'border-4 border-solid border-gray-400 rounded-2xl',
       src: '/images/chess.gif',
       alt: 'chess',
       width: 400,
@@ -70,11 +62,5 @@ export const aboutMeData = [
             Here is a gif of a recent game I played. I had a huge attack here, \n
             usually my games don't go this well...`,
     },
-    coordinateStyles: [
-      createStyle(true, true),
-      createStyle(true, false),
-      createStyle(false, true),
-      createStyle(false, false),
-    ],
   },
 ];

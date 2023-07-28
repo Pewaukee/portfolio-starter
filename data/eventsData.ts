@@ -1,11 +1,9 @@
-import createStyle from "../utils/createStyle";
-
 export const eventsData = [
   {
     id: 1,
     containerStyle: 'w-[50%] h-[50%] rounded-[25px]',
     mainImage: {
-      style: 'border-[3px] border-solid border-gray-400 rounded-[25px]',
+      className: 'border-4 border-solid border-gray-400 rounded-2xl',
       src: '/images/ccdc.png',
       alt: 'ccdc',
       width: 381,
@@ -33,11 +31,5 @@ export const eventsData = [
               In specific, I worked on Linux hardening, writing various incident responses \n
               and securing the network. `,
     },
-    coordinateStyles: [
-      createStyle(true, true),
-      createStyle(true, false),
-      createStyle(false, true),
-      createStyle(false, false),
-    ],
   },
 ];

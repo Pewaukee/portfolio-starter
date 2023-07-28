@@ -1,12 +1,10 @@
-import createStyle from "../utils/createStyle";
-
 export const introData = [
   {
     id: 1,
     containerStyle: 'w-[50%] h-[50%]',
     mainImage: {
-      style:
-        'border-[3px] border-solid border-gray-400 rounded-2xl overflow-hidden',
+      className:
+        'border-4 border-solid border-gray-400 rounded-2xl',
       src: '/images/avatar.jpeg',
       alt: 'avatar',
       width: 500,
@@ -38,11 +36,5 @@ export const introData = [
         in website development, cybersecurity, and machine \n
         learning. Thank you for checking out my work!`,
     },
-    coordinateStyles: [
-      createStyle(true, true),
-      createStyle(true, false),
-      createStyle(false, true),
-      createStyle(false, false),
-    ],
   },
 ];
