@@ -18,10 +18,10 @@ const Icon: React.FC<IconProps> = ({ icons }) => {
   const coordinateList = [false, false, false, false];
 
   const coordinateStyles = [
-    'absolute top-[80%] left-[80%] z-10',
-    'absolute top-[80%] left-[-10%] z-10',
-    'absolute top-[-10%] left-[80%] z-10',
-    'absolute top-[-10%] left-[-10%] z-10',
+    'w-[20%] h-[20%] absolute top-[90%] left-[90%] z-10',
+    'w-[20%] h-[20%] absolute top-[90%] left-[-10%] z-10',
+    'w-[20%] h-[20%] absolute top-[-10%] left-[90%] z-10',
+    'w-[20%] h-[20%] absolute top-[-10%] left-[-10%] z-10',
   ]
 
   return (
