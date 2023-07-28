@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    optimizeFonts: false, // try to fix fonts on production
-}
+const nextConfig = {}
 
 module.exports = nextConfig
