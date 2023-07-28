@@ -1,16 +1,17 @@
 import Divider from './Divider';
+import FadeUp from './FadeUp';
 import HomeElement from './HomeElement';
 
 export default function Mapper({
   array,
   styles,
-  type
+  type,
 }: {
   array: {
     id: number;
     containerStyle: string;
     mainImage: {
-      style: string;
+      className: string;
       src: string;
       alt: string;
       width: number;
@@ -26,7 +27,6 @@ export default function Mapper({
       title: string[];
       text: string;
     };
-    coordinateStyles: string[]; // of length 4 also fix or (using tailwind)
   }[];
   styles: {
     main: string;
@@ -40,15 +40,16 @@ export default function Mapper({
     <>
       {array.map((data, index) => (
         <div key={data.id}>
-          <HomeElement
-            containerStyle={data.containerStyle}
-            mainImage={data.mainImage}
-            icons={data.icons}
-            descriptionText={data.descriptionText}
-            coordinateStyles={data.coordinateStyles}
-            styles={styles}
-            type={type}
-          />
+          <FadeUp className={styles.main}>
+            <HomeElement
+              mainImage={data.mainImage}
+              icons={data.icons}
+              descriptionText={data.descriptionText}
+              styles={styles}
+              type={type}
+            />
+          </FadeUp>
+
           {/* FIXME: add divider if not last element */}
           {index !== array.length - 1 ? <Divider height={100} /> : null}
         </div>
