@@ -36,7 +36,7 @@ export default function HamburgerMenu() {
             <a href="/portfolio">Portfolio</a>
           </li>
           <li className="uppercase">
-            <a href="/contact">Posts</a>
+            <a href="/posts">Posts</a>
           </li>
         </ul>
       </div>
