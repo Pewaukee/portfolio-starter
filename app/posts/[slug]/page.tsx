@@ -12,7 +12,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   return (
     <div className="container mx-auto">
       <main className="m-10">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           <div className="sticky top-0">
             <Image
               src={post.coverImage}
