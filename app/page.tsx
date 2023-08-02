@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     'flex justify-center items-center p-10 bg-gradient-to-br from-gray-400 to-gray-800 text-3xl';
 
   const styles = {
-    main: 'relative flex flex-row justify-between p-8 min-h-[500px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
+    main: 'relative flex flex-row justify-between p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 min-h-[500px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
     leftContainer: 'relative w-[50%] h-full pr-[2%]',
     centerContainer:
       'w-[1px] h-full bg-white left-[50%] flex justify-center items-center',

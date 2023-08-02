@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/navbar.module.css';
 import TypingEffect from './TextAnimation';
 import ThreeComponent from './ThreeComponent';
+import { textShadow } from '../../data/TextShadow';
 
 const Navbar: React.FC = () => {
   {
@@ -18,6 +19,7 @@ const Navbar: React.FC = () => {
   {
     /** add in the links */
   }
+  // TODO: dropdown menu for mobile? also convert to tailwind
   const right = (
     <ul>
       <Link href="/">Home</Link>

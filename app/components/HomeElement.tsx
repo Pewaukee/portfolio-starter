@@ -42,6 +42,7 @@ const HomeElement: React.FC<HomeElementProps> = ({
   styles,
   type,
 }) => {
+  // TODO: get rid of 3-component? Too restricting
   return (
     <ThreeComponent
       left={
