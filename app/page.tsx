@@ -1,8 +1,5 @@
 import '../styles/globals.css';
 import Mapper from './components/Mapper';
-// import { introData } from '../data/introData';
-// import { aboutMeData } from '../data/aboutMeData';
-// import { eventsData } from '../data/eventsData';
 import { textShadow } from '../data/TextShadow';
 
 const Home: React.FC = () => {
@@ -11,12 +8,12 @@ const Home: React.FC = () => {
     'flex justify-center items-center p-10 bg-gradient-to-br from-gray-400 to-gray-800 text-3xl';
 
   const styles = {
-    main: 'relative flex flex-row justify-between p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 min-h-[500px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
-    leftContainer: 'relative w-[50%] h-full pr-[2%]',
+    main: 'relative flex flex-col md:flex-row justify-between p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 min-h-[500px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
+    leftContainer: 'relative w-full md:w-[50%] h-full pr-[2%] mb-[40px] md:mb-0',
     centerContainer:
-      'w-[1px] h-full bg-white left-[50%] flex justify-center items-center',
+      'w-full md:w-[1px] h-[1px] md:h-full bg-white left-[50%] flex justify-center items-center',
     rightContainer:
-      'w-[50%] h-full pl-[5%] flex flex-col jsutify-center items-center',
+      'w-full md:w-[50%] h-full pl-[5%] flex flex-col jsutify-center items-center mt-[20px] md:mt-0',
   };
 
   const eventsData = [

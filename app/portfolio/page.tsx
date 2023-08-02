@@ -4,10 +4,10 @@ import Mapper from '../components/Mapper';
 const Portfolio: React.FC = () => {
 
   const styles = {
-    main: 'relative flex flex-row justify-between p-8 min-h-[400px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
-    leftContainer: 'relative w-[50%] h-full flex justify-center items-center',
-    centerContainer: 'w-[1px] h-full bg-white left-[50%] flex justify-center items-center',
-    rightContainer: 'w-[50%] h-full pl-[5%] flex flex-col justify-center items-center',
+    main: 'relative flex flex-col md:flex-row justify-between p-2 md:min-h-[400px] w-full fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800',
+    leftContainer: 'relative w-full md:w-[50%] h-full flex justify-center items-center mb-[40px] md:mb-0',
+    centerContainer: 'w-full md:w-[1px] h-[1px] md:h-full bg-white left-[50%] flex justify-center items-center',
+    rightContainer: 'w-full md:w-[50%] h-full pl-[5%] mt-[25px] md:mt-0 flex flex-col justify-center items-center',
   };
 
   const portfolioData = [
@@ -75,8 +75,8 @@ const Portfolio: React.FC = () => {
 
   return (
     <>
-      <div className="m-5">
-        <h1 className="text-2xl flex justify-center items-center p-8">
+      <div className="m-5 flex justify-center items-center m-4">
+        <h1 className="text-2xl">
           Welcome to my Portfolio!
         </h1>
       </div>
