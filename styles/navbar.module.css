@@ -1,38 +1,4 @@
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  
-  font-style: italic;
-
-  height: 100px;
-  z-index: 999;
-
-  background-color: rgb(90, 128, 190);
-  box-shadow: 0 2px 10px rgb(255, 255, 255);
-  background: linear-gradient(to right, #1080cab4, #062f8c90);
-  border-bottom: 3px solid black;
-}
-
-.leftContainer {
-  padding-left: 5%;
-  align-items: center;
-  display: flex;
-  font-weight: 800;
-}
-
 .centerContainer {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   /* set the color animation */
   animation-name: colorAnimation;
   animation-duration: 15s;
@@ -66,17 +32,7 @@
   }
 }
 
-.rightContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* margin-right: 5%; */
-  padding-right: 5%;
-}
-
-.rightContainer ul {
-  white-space: nowrap;
-}
+/*  */
 
 /* https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
 .rightContainer a {
