@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
       </div>
       <Link
         href="/"
-        className={`absolute left-[50%] -translate-x-[50%] w-[70px] h-[70px] border-[50%] flex items-center justify-center rounded-full ${styles.centerContainer}`}
+        className={`relative md:absolute md:left-[50%] md:-translate-x-[50%] w-[70px] h-[70px] border-[50%] flex items-center justify-center rounded-full ${styles.centerContainer}`}
       >
         KS
       </Link>
