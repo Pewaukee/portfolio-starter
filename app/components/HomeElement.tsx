@@ -47,7 +47,7 @@ const HomeElement: React.FC<HomeElementProps> = ({
     <ThreeComponent
       left={
         <div className="flex justify-center items-center">
-          <div className="relative w-[90%] h-[90%]">
+          <div className="relative w-[70%] h-[70%]">
             {/** icons for left component */}
             <Icon icons={icons} />
             {/** picture/video for left component */}

@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       id: 1,
       containerStyle: 'w-[50%] h-[50%] rounded-[25px]',
       mainImage: {
-        className: 'border-4 border-solid border-gray-400 rounded-2xl',
+        className: 'border-4 border-solid border-gray-400 rounded-2xl h-full w-full',
         src: '/images/ccdc.png',
         alt: 'ccdc',
         width: 381,
@@ -58,11 +58,11 @@ const Home: React.FC = () => {
       containerStyle: 'w-[50%] h-[50%]',
       mainImage: {
         className:
-          'border-4 border-solid border-gray-400 rounded-2xl',
+          'border-4 border-solid border-gray-400 rounded-2xl w-full h-full',
         src: '/images/avatar.jpeg',
         alt: 'avatar',
-        width: 500,
-        height: 500,
+        width: 400,
+        height: 400,
       },
       icons: [
         {
@@ -98,7 +98,7 @@ const Home: React.FC = () => {
       id: 1,
       containerStyle: 'w-[50%] h-[50%] rounded-[25px]',
       mainImage: {
-        className: 'border-4 border-solid border-gray-400 rounded-2xl',
+        className: 'border-4 border-solid border-gray-400 rounded-2xl w-full h-full',
         src: '/images/snowboarding.jpeg',
         alt: 'snowboarding',
         width: 350,
@@ -130,7 +130,7 @@ const Home: React.FC = () => {
       id: 2,
       containerStyle: 'w-[50%] h-[50%] rounded-[20px]',
       mainImage: {
-        className: 'border-4 border-solid border-gray-400 rounded-2xl',
+        className: 'border-4 border-solid border-gray-400 rounded-2xl w-full h-full',
         src: '/images/chess.gif',
         alt: 'chess',
         width: 400,
