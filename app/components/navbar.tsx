@@ -9,13 +9,15 @@ const Navbar: React.FC = () => {
     /* pass into component prop with custom styles */
   }
   return (
-    <div className="flex items-center justify-between relative italic h-[100px] z-40 bg-gradient-to-r from-[#1080cab4] to-[#062f8c90] shadow-lg shadow-white border-b-[3px] border-solid border-black">
+    <div className="flex items-center justify-between relative italic h-[100px] z-40 
+    bg-gradient-to-r from-[#1080cab4] to-[#062f8c90] shadow-lg shadow-white border-b-[3px] border-solid border-black">
       <div className="pl-[5%] items-center flex font-extrabold">
         <TypingEffect text={'> Karthik Shankar'} speed={0.08} />
       </div>
       <Link
         href="/"
-        className={`relative md:absolute md:left-[50%] md:-translate-x-[50%] w-[70px] h-[70px] border-[50%] flex items-center justify-center rounded-full ${styles.centerContainer}`}
+        className={`relative md:absolute md:left-[50%] md:-translate-x-[50%] 
+        w-[70px] h-[70px] border-[50%] flex items-center justify-center rounded-full ${styles.centerContainer}`}
       >
         KS
       </Link>
