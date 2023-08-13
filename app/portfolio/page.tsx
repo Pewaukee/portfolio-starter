@@ -2,7 +2,7 @@
 import Description from '../components/Description';
 import Divider from '../components/Divider';
 import FadeUp from '../components/FadeUp';
-import Icon from '../components/Icon';
+import Icons from '../components/Icon';
 import Video from './components/Video';
 import { portfolioData } from '../../data/portfolioData';
 
@@ -21,7 +21,7 @@ const Portfolio: React.FC = () => {
             <div className="relative w-full md:w-[50%] h-full flex justify-center items-center mb-[40px] md:mb-0">
               <div className="flex w-full flex-col md:flex-row justify-center items-center">
                 <div className="relative mt-4 md:mt-8 w-[90%] h-auto">
-                  <Icon srcs={data.icons} />
+                  <Icons srcs={data.icons} />
                   <Video src={data.src} />
                 </div>
               </div>

@@ -25,16 +25,7 @@ export const homeData = [
       width: 350,
       height: 350,
     },
-    icons: [
-      {
-        src: '/svg/hobbies/snowboard.svg',
-        alt: 'snowboard',
-      },
-      {
-        src: '/svg/hobbies/snow.svg',
-        alt: 'snow',
-      },
-    ],
+    icons: ['/svg/hobbies/snowboard.svg', '/svg/hobbies/snow.svg'],
     title: ['$ cd ~/hobbies', '$ cat snowboarding.txt'],
     text: `One of my favorite hobbies is snowboarding. I have been snowboarding for \n
               over 10 years now, and I have been to many mountains in the Western US. \n

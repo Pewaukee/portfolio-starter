@@ -5,6 +5,7 @@ import Description from './components/Description';
 import Divider from './components/Divider';
 import Image from 'next/image';
 import { homeData } from '../data/homeData';
+import Icons from './components/Icon';
 
 const Home: React.FC = () => {
   const goldStyledText =
@@ -50,13 +51,16 @@ const Home: React.FC = () => {
           >
             <div className="relative w-full h-auto md:w-[50%] mb-[40px] md:mb-0">
               <div className="flex w-full h-auto justify-center items-center">
-                <Image
-                  src={data.mainImage.src}
-                  alt={data.mainImage.alt}
-                  width={data.mainImage.width}
-                  height={data.mainImage.height}
-                  className="rounded-2xl border-4 border-solid border-gray-400"
-                />
+                <div className='relative w-[50%] md:w-[80%] h-auto mt-4 md:mt-8'>
+                  <Icons srcs={data.icons} />
+                  <Image
+                    src={data.mainImage.src}
+                    alt={data.mainImage.alt}
+                    width={data.mainImage.width}
+                    height={data.mainImage.height}
+                    className="rounded-2xl border-4 border-solid border-gray-400"
+                  />
+                </div>
               </div>
             </div>
             <div
