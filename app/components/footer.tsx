@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
       className="flex flex-col lg:flex-row relative justify-center lg:justify-between items-center h-[100px] w-full z-50 italic 
       bg-gradient-to-r from-[#1080cab4] to-[#062f8c90] 
       border-t-[3px] border-solid border-black"
-      style={{ boxShadow: '0 2px 10px rgb(255, 255, 255)' }}
+      style={{ boxShadow: '0 -10px 15px -3px rgb(255, 255, 255)' }}
     >
       <div className="hidden lg:flex flex-row items-center font-extrabold pl-[5%]">
         {left}
