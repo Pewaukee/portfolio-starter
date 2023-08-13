@@ -1,15 +1,6 @@
 import Image from 'next/image';
 
-interface Icon {
-  src: string;
-  alt: string;
-}
-
-interface IconProps {
-  icons: Icon[];
-}
-
-const Icon: React.FC<IconProps> = ({ icons }) => {
+export default function Icons({ srcs }: { srcs: string[] }) {
   // random list to place the corner images
   // [top left, top right, bottom left, bottom right]
   // represent occupied spaces
@@ -20,11 +11,11 @@ const Icon: React.FC<IconProps> = ({ icons }) => {
     'w-[20%] h-[20%] absolute top-[90%] left-[-10%] z-10',
     'w-[20%] h-[20%] absolute top-[-10%] left-[90%] z-10',
     'w-[20%] h-[20%] absolute top-[-10%] left-[-10%] z-10',
-  ]
+  ];
 
   return (
     <>
-      {icons.map((icon: Icon) => {
+      {srcs.map((src) => {
         // get the random coordinates first
         let index = -1;
         do {
@@ -39,17 +30,16 @@ const Icon: React.FC<IconProps> = ({ icons }) => {
 
         return (
           <Image
-            key={icon.alt} // key needed for map
+            key={index}
             className={coordinateStyle}
-            src={icon.src}
-            alt={icon.alt}
+            src={src}
+            alt={src}
             width={70}
             height={70}
+            aria-hidden="true"
           />
         );
       })}
     </>
   );
-};
-
-export default Icon;
+}
