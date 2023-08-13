@@ -3,8 +3,6 @@ import Image from 'next/image';
 interface Icon {
   src: string;
   alt: string;
-  width: number;
-  height: number;
 }
 
 interface IconProps {
@@ -45,8 +43,8 @@ const Icon: React.FC<IconProps> = ({ icons }) => {
             className={coordinateStyle}
             src={icon.src}
             alt={icon.alt}
-            width={icon.width}
-            height={icon.height}
+            width={70}
+            height={70}
           />
         );
       })}

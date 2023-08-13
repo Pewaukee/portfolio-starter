@@ -1,22 +1,12 @@
-export default function Video({
-  videoProps,
-}: {
-  videoProps: {
-    className: string;
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}) {
+export default function Video({ src }: { src: string }) {
   return (
     <video
       controls
       disablePictureInPicture
       controlsList="nodownload"
-      className={videoProps.className}
+      className="border-4 rounded-2xl"
     >
-      <source src={videoProps.src} type="video/mp4" />
+      <source src={src} type="video/mp4" />
       Your Browser does not support this video.
     </video>
   );

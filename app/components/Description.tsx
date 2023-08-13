@@ -2,15 +2,10 @@
 import { textShadow } from "../../data/TextShadow";
 import TypingEffect from "./TextAnimation";
 
-interface DescriptionProps {
-    title: string[];
-    text: string;
-}
-
-function Description({descriptionText}: {descriptionText: DescriptionProps}) {
+function Description({title, text}: {title: string[], text: string}) {
     return ( 
         <div style={textShadow} className="text-white">
-            {descriptionText.title.map((t) => {
+            {title.map((t) => {
                 return (
                     <div key={t}>
                         <h1>{t}</h1>
@@ -18,7 +13,7 @@ function Description({descriptionText}: {descriptionText: DescriptionProps}) {
                     </div>
                 )
             })}
-            <TypingEffect text={descriptionText.text} speed={0.02}/>
+            <TypingEffect text={text} speed={0.02}/>
         </div>
     );
 }
