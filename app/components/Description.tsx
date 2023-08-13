@@ -9,7 +9,7 @@ interface DescriptionProps {
 
 function Description({descriptionText}: {descriptionText: DescriptionProps}) {
     return ( 
-        <div style={textShadow}>
+        <div style={textShadow} className="text-white">
             {descriptionText.title.map((t) => {
                 return (
                     <div key={t}>
