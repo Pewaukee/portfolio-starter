@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
   );
 
   return (
-    <main
+    <div
       className="flex flex-col lg:flex-row relative justify-center lg:justify-between items-center h-[100px] w-full z-50 italic 
       bg-gradient-to-r from-[#1080cab4] to-[#062f8c90] 
       border-t-[3px] border-solid border-black"
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="block lg:absolute left-1/2 lg:-translate-x-1/2 mb-[15px] lg:mb-0">{center}</div>
       <div className="flex justify-between items-center pl-[5%] lg:pl-0 pr-[5%]">{right}</div>
-    </main>
+    </div>
   );
 };
 

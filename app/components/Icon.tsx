@@ -7,10 +7,10 @@ export default function Icons({ srcs }: { srcs: string[] }) {
   const coordinateList = [false, false, false, false];
 
   const coordinateStyles = [
-    'w-[20%] h-[20%] absolute top-[90%] left-[90%] z-10',
-    'w-[20%] h-[20%] absolute top-[90%] left-[-10%] z-10',
-    'w-[20%] h-[20%] absolute top-[-10%] left-[90%] z-10',
-    'w-[20%] h-[20%] absolute top-[-10%] left-[-10%] z-10',
+    'w-[20%] h-[20%] absolute top-[90%] left-[90%] z-20',
+    'w-[20%] h-[20%] absolute top-[90%] left-[-10%] z-20',
+    'w-[20%] h-[20%] absolute top-[-10%] left-[90%] z-20',
+    'w-[20%] h-[20%] absolute top-[-10%] left-[-10%] z-20',
   ];
 
   return (
