@@ -17,11 +17,10 @@ import ML from './components/ML';
 export default function Portfolio() {
   const [type, setType] = useState('all');
 
-  const web = document.querySelectorAll('[data-type=web]');
-  const ml = document.querySelectorAll('[data-type=ml]');
-  const other = document.querySelectorAll('[data-type=other]');
-
   useEffect(() => {
+    const web = document.querySelectorAll('[data-type=web]');
+    const ml = document.querySelectorAll('[data-type=ml]');
+    const other = document.querySelectorAll('[data-type=other]');
     if (type === 'all') {
       web.forEach((w) => {
         w.classList.remove('hidden');
@@ -96,7 +95,7 @@ export default function Portfolio() {
         text={websiteDescription}
         divider={false}
       />
-      
+
       <ML
         //TODO: won't render on first load from switching from another option
         // doesn't have to do with data-type
