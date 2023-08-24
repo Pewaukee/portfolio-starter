@@ -51,7 +51,7 @@ const Home: React.FC = () => {
           >
             <div className="flex justify-center items-center relative w-full md:w-[50%]">
               <div
-                className="w-[50%] h-full
+                className="w-[80%] md:w-[50%] h-full
                mb-4 md:mb-0 mt-4 md:mt-8"
               >
                 <div className="relative">
