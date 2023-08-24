@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
   );
   const youtube = (
     <Logo
-      url="https://www.youtube.com/channel/UCQ6ZI2qKlZqO5yf2wvzX2jQ"
+      url="https://www.youtube.com/@TheDeepPlea"
       src="/svg/socials/youtube.svg"
       alt="Youtube Logo"
       width={width}
