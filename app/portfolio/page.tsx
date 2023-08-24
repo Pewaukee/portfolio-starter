@@ -1,50 +1,96 @@
-// this is the page rendered on the /portfolio route
-import Description from '../components/Description';
-import Divider from '../components/Divider';
-import FadeUp from '../components/FadeUp';
-import Icons from '../components/Icon';
-import Video from './components/Video';
-import portfolioData from '../../data/portfolioData';
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import Toggle from './components/ToggleGroup';
+import Web from './components/Web';
+import {
+  spotifyDescription,
+  stoicDescription,
+  templeDescription,
+  websiteDescription,
+} from '../../data/descriptions';
 
 const Portfolio: React.FC = () => {
+  const [type, setType] = useState('all');
+  
+  useEffect(() => {
+    const web = document.querySelectorAll('[data-type=web]');
+    const ml = document.querySelectorAll('[data-type=ml]');
+    const other = document.querySelectorAll('[data-type=other]');
+    if (type === 'all') {
+      web.forEach((w) => {
+        w.classList.remove('hidden');
+      });
+      ml.forEach((m) => {
+        m.classList.remove('hidden');
+      });
+      other.forEach((o) => {
+        o.classList.remove('hidden');
+      });
+    } else if (type === 'web') {
+      web.forEach((w) => {
+        w.classList.remove('hidden');
+      });
+      ml.forEach((m) => {
+        m.classList.add('hidden');
+      });
+      other.forEach((o) => {
+        o.classList.add('hidden');
+      });
+    } else if (type === 'ml') {
+      web.forEach((w) => {
+        w.classList.add('hidden');
+      });
+      ml.forEach((m) => {
+        m.classList.remove('hidden');
+      });
+      other.forEach((o) => {
+        o.classList.add('hidden');
+      });
+    } else if (type === 'other') {
+      web.forEach((w) => {
+        w.classList.add('hidden');
+      });
+      ml.forEach((m) => {
+        m.classList.add('hidden');
+      });
+      other.forEach((o) => {
+        o.classList.remove('hidden');
+      });
+    }
+  }, [type]);
+
   return (
     <>
-      <div className="flex justify-center items-center bg-gray-600 py-8">
-        <h1 className="text-2xl">Welcome to my Portfolio!</h1>
+      <div className="flex flex-col justify-center items-center bg-gray-600 py-8">
+        <h1 className="text-2xl mb-[10px]">Welcome to my Portfolio!</h1>
+        <Toggle setType={setType} />
       </div>
-      {portfolioData.map((data, index) => (
-        <div key={index}>
-          <FadeUp
-            className="relative flex flex-col md:flex-row justify-between p-2 w-full 
-          fade-in-content duration-75 ease-in-out bg-gradient-radial from-gray-700 to-gray-800"
-          >
-            <div
-              className="relative w-full md:w-[50%] h-full 
-            flex justify-center items-center mb-[40px] md:mb-0"
-            >
-              <div
-                className="flex w-full flex-col md:flex-row 
-              justify-center items-center"
-              >
-                <div className="relative mt-4 md:mt-8 w-[50%] md:w-[90%] h-auto md:my-8">
-                  <Icons srcs={data.icons} />
-                  <Video src={data.src} />
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="flex justify-center items-center 
-            w-full md:w-[1px] h-[1px] md:h-auto left-[50%]
-            bg-white mx-2"
-            ></div>
-            <div className="flex flex-col justify-center items-center w-full md:w-[50%] h-full pl-[5%] mt-[25px] md:mt-0">
-              <Description title={data.title} text={data.text} />
-            </div>
-          </FadeUp>
-          {index !== portfolioData.length - 1 ? <Divider /> : null}
-        </div>
-      ))}
+      <Web
+        icons={['/svg/portfolio/music_note.svg', '/svg/portfolio/guitar.svg']}
+        src="/projects/spotify.mp4"
+        title={'Spotify Clone'}
+        text={spotifyDescription}
+      />
+      <Web
+        icons={['/svg/portfolio/temple.svg', '/svg/portfolio/lotus.svg']}
+        src="/projects/temple.mp4"
+        title={'Las Vegas ISKCON Temple Website'}
+        text={templeDescription}
+      />
+      <Web
+        src={'/projects/ssa.mp4'}
+        icons={['/svg/portfolio/scroll.svg']}
+        title={'Stoic Student Association Website'}
+        text={stoicDescription}
+      />
+      <Web
+        icons={['/svg/portfolio/webdev_1.svg', '/svg/portfolio/webdev_2.svg']}
+        src="/projects/website.mp4"
+        title={'Personal Website Project'}
+        text={websiteDescription}
+        divider={false}
+      />
     </>
   );
 };
