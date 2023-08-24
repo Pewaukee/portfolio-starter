@@ -4,7 +4,7 @@ import FadeUp from './components/FadeUp';
 import Description from './components/Description';
 import Divider from './components/Divider';
 import Image from 'next/image';
-import { homeData } from '../data/homeData';
+import homeData from '../data/homeData';
 import Icons from './components/Icon';
 
 const Home: React.FC = () => {

@@ -1,4 +1,4 @@
-export const homeData = [
+const homeData = [
   {
     mainImage: {
       src: '/images/avatar.jpeg',
@@ -66,3 +66,5 @@ export const homeData = [
             and securing the network. `,
   },
 ];
+
+export default homeData;

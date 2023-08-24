@@ -4,7 +4,7 @@ import Divider from '../components/Divider';
 import FadeUp from '../components/FadeUp';
 import Icons from '../components/Icon';
 import Video from './components/Video';
-import { portfolioData } from '../../data/portfolioData';
+import portfolioData from '../../data/portfolioData';
 
 const Portfolio: React.FC = () => {
   return (

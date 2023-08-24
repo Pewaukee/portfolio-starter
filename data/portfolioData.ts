@@ -1,4 +1,4 @@
-export const portfolioData = [
+const portfolioData = [
   {
     src: '/projects/website.mp4',
     icons: ['/svg/portfolio/webdev_1.svg', '/svg/portfolio/webdev_2.svg'],
@@ -53,3 +53,5 @@ export const portfolioData = [
         using custom font styles and creating a personalized asthetic for a brand.`,
   },
 ];
+
+export default portfolioData;
