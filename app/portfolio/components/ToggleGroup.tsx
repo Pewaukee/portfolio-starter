@@ -7,7 +7,7 @@ import Image from 'next/image';
 const toggleGroupItemClasses = `hover:bg-[#6ca0e0] color-black data-[state=on]:bg-blue-500 data-[state=on]:text-black 
   flex h-[50px] w-[50px] items-center justify-center bg-black text-base leading-4 
   first:rounded-l last:rounded-r focus:z-10 focus:shadow-[0_0_0_2px] focus:shadow-black 
-  focus:outline-none`;
+  focus:outline-none focus:border-2 focus:border-white`;
 
 export default function Toggle({
   setType,
