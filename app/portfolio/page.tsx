@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Toggle from './components/ToggleGroup';
 import Web from './components/Web';
 import {
@@ -16,6 +16,19 @@ import ML from './components/ML';
 
 export default function Portfolio() {
   const [type, setType] = useState('all');
+
+  const getType = useCallback(() => {
+    switch (type) {
+      case 'web':
+        return 'Web Development Projects';
+      case 'ml':
+        return 'Machine Learning Projects';
+      case 'other':
+        return 'Other Projects';
+      default:
+        return 'All Projects';
+    }
+  }, [type]);
 
   useEffect(() => {
     const web = document.querySelectorAll('[data-type=web]');
@@ -69,6 +82,9 @@ export default function Portfolio() {
       <div className="flex flex-col justify-center items-center bg-gray-600 py-8">
         <h1 className="text-2xl mb-[10px]">Welcome to my Portfolio!</h1>
         <Toggle setType={setType} />
+        <h3 className="text-xl mt-[10px]">
+          Currently viewing: <span className="underline">{getType()}</span>
+        </h3>
       </div>
       <Web
         element={<Video src="/projects/spotify.mp4" />}
