@@ -44,7 +44,7 @@ export const tamilDescription = `I crafted a Machine Learning model to classify
   Tamil characters. I used a neural network of 3 convolutional blocks and a classifier head
   to identify 156 different possible characters. `;
 
-export const lifeExpectancyDescription = `Consisting of a lot of preliminary data
+export const lifeExpectancyDescription = `Consisting of a large batch of preliminary data
   analysis and preprocessing, I journied through an exploratory process of prediciting
   life expectancy with a neural network and a linear regression model. Some of the input 
   variables included trivial data such as alcohol consumption, BMI, and GDP, but also

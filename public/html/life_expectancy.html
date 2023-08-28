@@ -1,0 +1,3476 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>97e3eff3725b46eeb94058a2f37497cf</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="81b03562" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.1993e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:52.848930&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:52.826937&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="life-expectancy">Life Expectancy</h1>
+<p>We are going to be working on a linear regression model using the
+following dataset found on Kaggle: <a
+href="https://www.kaggle.com/datasets/amirhosseinmirzaie/countries-life-expectancy">Countries
+Life Expectancy</a> to get the toes wet with linear regression. Let's do
+it.</p>
+</div>
+<div id="f96dfa58" class="cell code" data-execution_count="1"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:52.894382Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:52.893981Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:52.903835Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:52.903135Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.5093e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:52.905758&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:52.870665&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base imports</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span></code></pre></div>
+</div>
+<div id="700034f5" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.1895e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:52.949964&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:52.928069&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="load-and-clean-data">Load and Clean Data</h2>
+</div>
+<div id="0236a4d1" class="cell code" data-execution_count="2"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:52.995339Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:52.994727Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.032016Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.030886Z&quot;}"
+data-papermill="{&quot;duration&quot;:6.3077e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.034785&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:52.971708&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;/kaggle/input/countries-life-expectancy/life_expectancy.csv&#39;</span>)</span></code></pre></div>
+</div>
+<div id="c915b905" class="cell code" data-execution_count="3"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.081371Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.081003Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.129286Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.128149Z&quot;}"
+data-papermill="{&quot;duration&quot;:7.4518e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.131782&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.057264&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Population</th>
+      <th>Hepatitis B</th>
+      <th>Measles</th>
+      <th>Polio</th>
+      <th>Diphtheria</th>
+      <th>HIV/AIDS</th>
+      <th>infant deaths</th>
+      <th>under-five deaths</th>
+      <th>Total expenditure</th>
+      <th>GDP</th>
+      <th>BMI</th>
+      <th>thinness  1-19 years</th>
+      <th>Alcohol</th>
+      <th>Schooling</th>
+      <th>Life expectancy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>2015</td>
+      <td>Developing</td>
+      <td>33736494.0</td>
+      <td>65.0</td>
+      <td>1154</td>
+      <td>6.0</td>
+      <td>65.0</td>
+      <td>0.1</td>
+      <td>62</td>
+      <td>83</td>
+      <td>8.16</td>
+      <td>584.259210</td>
+      <td>19.1</td>
+      <td>17.2</td>
+      <td>0.01</td>
+      <td>10.1</td>
+      <td>65.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>2014</td>
+      <td>Developing</td>
+      <td>327582.0</td>
+      <td>62.0</td>
+      <td>492</td>
+      <td>58.0</td>
+      <td>62.0</td>
+      <td>0.1</td>
+      <td>64</td>
+      <td>86</td>
+      <td>8.18</td>
+      <td>612.696514</td>
+      <td>18.6</td>
+      <td>17.5</td>
+      <td>0.01</td>
+      <td>10.0</td>
+      <td>59.9</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>2013</td>
+      <td>Developing</td>
+      <td>31731688.0</td>
+      <td>64.0</td>
+      <td>430</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>0.1</td>
+      <td>66</td>
+      <td>89</td>
+      <td>8.13</td>
+      <td>631.744976</td>
+      <td>18.1</td>
+      <td>17.7</td>
+      <td>0.01</td>
+      <td>9.9</td>
+      <td>59.9</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>2012</td>
+      <td>Developing</td>
+      <td>3696958.0</td>
+      <td>67.0</td>
+      <td>2787</td>
+      <td>67.0</td>
+      <td>67.0</td>
+      <td>0.1</td>
+      <td>69</td>
+      <td>93</td>
+      <td>8.52</td>
+      <td>669.959000</td>
+      <td>17.6</td>
+      <td>17.9</td>
+      <td>0.01</td>
+      <td>9.8</td>
+      <td>59.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>2011</td>
+      <td>Developing</td>
+      <td>2978599.0</td>
+      <td>68.0</td>
+      <td>3013</td>
+      <td>68.0</td>
+      <td>68.0</td>
+      <td>0.1</td>
+      <td>71</td>
+      <td>97</td>
+      <td>7.87</td>
+      <td>63.537231</td>
+      <td>17.2</td>
+      <td>18.2</td>
+      <td>0.01</td>
+      <td>9.5</td>
+      <td>59.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Afghanistan</td>
+      <td>2010</td>
+      <td>Developing</td>
+      <td>2883167.0</td>
+      <td>66.0</td>
+      <td>1989</td>
+      <td>66.0</td>
+      <td>66.0</td>
+      <td>0.1</td>
+      <td>74</td>
+      <td>102</td>
+      <td>9.20</td>
+      <td>553.328940</td>
+      <td>16.7</td>
+      <td>18.4</td>
+      <td>0.01</td>
+      <td>9.2</td>
+      <td>58.8</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Afghanistan</td>
+      <td>2009</td>
+      <td>Developing</td>
+      <td>284331.0</td>
+      <td>63.0</td>
+      <td>2861</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>0.1</td>
+      <td>77</td>
+      <td>106</td>
+      <td>9.42</td>
+      <td>445.893298</td>
+      <td>16.2</td>
+      <td>18.6</td>
+      <td>0.01</td>
+      <td>8.9</td>
+      <td>58.6</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Afghanistan</td>
+      <td>2008</td>
+      <td>Developing</td>
+      <td>2729431.0</td>
+      <td>64.0</td>
+      <td>1599</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>0.1</td>
+      <td>80</td>
+      <td>110</td>
+      <td>8.33</td>
+      <td>373.361116</td>
+      <td>15.7</td>
+      <td>18.8</td>
+      <td>0.03</td>
+      <td>8.7</td>
+      <td>58.1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Afghanistan</td>
+      <td>2007</td>
+      <td>Developing</td>
+      <td>26616792.0</td>
+      <td>63.0</td>
+      <td>1141</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>0.1</td>
+      <td>82</td>
+      <td>113</td>
+      <td>6.73</td>
+      <td>369.835796</td>
+      <td>15.2</td>
+      <td>19.0</td>
+      <td>0.02</td>
+      <td>8.4</td>
+      <td>57.5</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Afghanistan</td>
+      <td>2006</td>
+      <td>Developing</td>
+      <td>2589345.0</td>
+      <td>64.0</td>
+      <td>1990</td>
+      <td>58.0</td>
+      <td>58.0</td>
+      <td>0.1</td>
+      <td>84</td>
+      <td>116</td>
+      <td>7.43</td>
+      <td>272.563770</td>
+      <td>14.7</td>
+      <td>19.2</td>
+      <td>0.03</td>
+      <td>8.1</td>
+      <td>57.3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="3c8c02e5" class="cell code" data-execution_count="4"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.177617Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.177209Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.182392Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.181705Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.0327e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.184300&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.153973&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<pre><code>(2848, 18)</code></pre>
+</div>
+</div>
+<div id="f43041ce" class="cell code" data-execution_count="5"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.229720Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.228781Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.240896Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.240223Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.6792e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.242769&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.205977&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># find null values</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>null_counts <span class="op">=</span> df.isnull().<span class="bu">sum</span>()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>null_counts</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>Country                   0
+Year                      0
+Status                    0
+Population              644
+Hepatitis B             542
+Measles                   0
+Polio                    19
+Diphtheria               19
+HIV/AIDS                  0
+infant deaths             0
+under-five deaths         0
+Total expenditure       221
+GDP                     442
+BMI                      32
+thinness  1-19 years     32
+Alcohol                 188
+Schooling               160
+Life expectancy           0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="154702d1" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.1804e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.286221&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.264417&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="checking-where-data-is-null-or-nan">Checking where Data is
+<code>null</code> or <code>nan</code></h3>
+</div>
+<div id="4d8485da" class="cell code" data-execution_count="6"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.332582Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.331478Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.341327Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.340670Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.5019e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.343245&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.308226&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<pre><code>Country                   0
+Year                      0
+Status                    0
+Population              644
+Hepatitis B             542
+Measles                   0
+Polio                    19
+Diphtheria               19
+HIV/AIDS                  0
+infant deaths             0
+under-five deaths         0
+Total expenditure       221
+GDP                     442
+BMI                      32
+thinness  1-19 years     32
+Alcohol                 188
+Schooling               160
+Life expectancy           0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="b93c5f70" class="cell code" data-execution_count="7"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.390382Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.389706Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.444569Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.443611Z&quot;}"
+data-papermill="{&quot;duration&quot;:8.1575e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.447387&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.365812&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print the rows with null values</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df[df.isnull().<span class="bu">any</span>(axis<span class="op">=</span><span class="dv">1</span>)].head(<span class="dv">25</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Population</th>
+      <th>Hepatitis B</th>
+      <th>Measles</th>
+      <th>Polio</th>
+      <th>Diphtheria</th>
+      <th>HIV/AIDS</th>
+      <th>infant deaths</th>
+      <th>under-five deaths</th>
+      <th>Total expenditure</th>
+      <th>GDP</th>
+      <th>BMI</th>
+      <th>thinness  1-19 years</th>
+      <th>Alcohol</th>
+      <th>Schooling</th>
+      <th>Life expectancy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>32</th>
+      <td>Algeria</td>
+      <td>2015</td>
+      <td>Developing</td>
+      <td>39871528.0</td>
+      <td>95.0</td>
+      <td>63</td>
+      <td>95.0</td>
+      <td>95.0</td>
+      <td>0.1</td>
+      <td>21</td>
+      <td>24</td>
+      <td>NaN</td>
+      <td>4132.762920</td>
+      <td>59.5</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>14.4</td>
+      <td>75.6</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Algeria</td>
+      <td>2003</td>
+      <td>Developing</td>
+      <td>3243514.0</td>
+      <td>NaN</td>
+      <td>15374</td>
+      <td>87.0</td>
+      <td>87.0</td>
+      <td>0.1</td>
+      <td>20</td>
+      <td>23</td>
+      <td>3.60</td>
+      <td>294.335560</td>
+      <td>47.0</td>
+      <td>6.3</td>
+      <td>0.34</td>
+      <td>11.5</td>
+      <td>71.7</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Algeria</td>
+      <td>2002</td>
+      <td>Developing</td>
+      <td>3199546.0</td>
+      <td>NaN</td>
+      <td>5862</td>
+      <td>86.0</td>
+      <td>86.0</td>
+      <td>0.1</td>
+      <td>20</td>
+      <td>23</td>
+      <td>3.73</td>
+      <td>1774.336730</td>
+      <td>46.1</td>
+      <td>6.3</td>
+      <td>0.36</td>
+      <td>11.1</td>
+      <td>71.6</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Algeria</td>
+      <td>2001</td>
+      <td>Developing</td>
+      <td>31592153.0</td>
+      <td>NaN</td>
+      <td>2686</td>
+      <td>89.0</td>
+      <td>89.0</td>
+      <td>0.1</td>
+      <td>20</td>
+      <td>24</td>
+      <td>3.84</td>
+      <td>1732.857979</td>
+      <td>45.3</td>
+      <td>6.4</td>
+      <td>0.23</td>
+      <td>10.9</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Algeria</td>
+      <td>2000</td>
+      <td>Developing</td>
+      <td>3118366.0</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>86.0</td>
+      <td>86.0</td>
+      <td>0.1</td>
+      <td>21</td>
+      <td>25</td>
+      <td>3.49</td>
+      <td>1757.177970</td>
+      <td>44.4</td>
+      <td>6.5</td>
+      <td>0.25</td>
+      <td>10.7</td>
+      <td>71.3</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Angola</td>
+      <td>2015</td>
+      <td>Developing</td>
+      <td>2785935.0</td>
+      <td>64.0</td>
+      <td>118</td>
+      <td>7.0</td>
+      <td>64.0</td>
+      <td>1.9</td>
+      <td>66</td>
+      <td>98</td>
+      <td>NaN</td>
+      <td>3695.793748</td>
+      <td>23.3</td>
+      <td>8.3</td>
+      <td>NaN</td>
+      <td>11.4</td>
+      <td>52.4</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Angola</td>
+      <td>2006</td>
+      <td>Developing</td>
+      <td>2262399.0</td>
+      <td>NaN</td>
+      <td>765</td>
+      <td>36.0</td>
+      <td>34.0</td>
+      <td>2.5</td>
+      <td>90</td>
+      <td>143</td>
+      <td>4.54</td>
+      <td>262.415149</td>
+      <td>18.2</td>
+      <td>9.8</td>
+      <td>5.84</td>
+      <td>7.2</td>
+      <td>47.7</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Angola</td>
+      <td>2005</td>
+      <td>Developing</td>
+      <td>19552542.0</td>
+      <td>NaN</td>
+      <td>258</td>
+      <td>39.0</td>
+      <td>38.0</td>
+      <td>2.6</td>
+      <td>92</td>
+      <td>148</td>
+      <td>4.10</td>
+      <td>1443.991929</td>
+      <td>17.7</td>
+      <td>1.0</td>
+      <td>5.04</td>
+      <td>6.8</td>
+      <td>47.4</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Angola</td>
+      <td>2004</td>
+      <td>Developing</td>
+      <td>18865716.0</td>
+      <td>NaN</td>
+      <td>29</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>2.5</td>
+      <td>94</td>
+      <td>152</td>
+      <td>4.71</td>
+      <td>141.868440</td>
+      <td>17.2</td>
+      <td>1.2</td>
+      <td>3.53</td>
+      <td>6.4</td>
+      <td>47.1</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Angola</td>
+      <td>2003</td>
+      <td>Developing</td>
+      <td>1823369.0</td>
+      <td>NaN</td>
+      <td>1196</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>2.4</td>
+      <td>95</td>
+      <td>155</td>
+      <td>4.41</td>
+      <td>779.468356</td>
+      <td>16.8</td>
+      <td>1.4</td>
+      <td>3.49</td>
+      <td>5.9</td>
+      <td>46.8</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Angola</td>
+      <td>2002</td>
+      <td>Developing</td>
+      <td>17572649.0</td>
+      <td>NaN</td>
+      <td>11945</td>
+      <td>37.0</td>
+      <td>41.0</td>
+      <td>2.3</td>
+      <td>96</td>
+      <td>157</td>
+      <td>3.63</td>
+      <td>711.181716</td>
+      <td>16.3</td>
+      <td>1.5</td>
+      <td>2.82</td>
+      <td>5.5</td>
+      <td>46.5</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Angola</td>
+      <td>2001</td>
+      <td>Developing</td>
+      <td>16983266.0</td>
+      <td>NaN</td>
+      <td>9046</td>
+      <td>41.0</td>
+      <td>38.0</td>
+      <td>2.1</td>
+      <td>97</td>
+      <td>159</td>
+      <td>5.38</td>
+      <td>526.168743</td>
+      <td>15.8</td>
+      <td>1.7</td>
+      <td>2.58</td>
+      <td>5.1</td>
+      <td>45.7</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Angola</td>
+      <td>2000</td>
+      <td>Developing</td>
+      <td>1644924.0</td>
+      <td>NaN</td>
+      <td>2219</td>
+      <td>3.0</td>
+      <td>28.0</td>
+      <td>2.0</td>
+      <td>97</td>
+      <td>160</td>
+      <td>2.79</td>
+      <td>555.296942</td>
+      <td>15.4</td>
+      <td>1.9</td>
+      <td>1.85</td>
+      <td>4.6</td>
+      <td>45.3</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Antigua and Barbuda</td>
+      <td>2015</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>86.0</td>
+      <td>99.0</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>13566.954100</td>
+      <td>47.7</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>13.9</td>
+      <td>76.4</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Antigua and Barbuda</td>
+      <td>2014</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.54</td>
+      <td>12888.296670</td>
+      <td>47.0</td>
+      <td>3.3</td>
+      <td>8.56</td>
+      <td>13.9</td>
+      <td>76.2</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Antigua and Barbuda</td>
+      <td>2013</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.33</td>
+      <td>12224.864160</td>
+      <td>46.4</td>
+      <td>3.3</td>
+      <td>8.58</td>
+      <td>13.9</td>
+      <td>76.1</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Antigua and Barbuda</td>
+      <td>2012</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>97.0</td>
+      <td>98.0</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.39</td>
+      <td>12565.441970</td>
+      <td>45.7</td>
+      <td>3.3</td>
+      <td>8.18</td>
+      <td>13.8</td>
+      <td>75.9</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Antigua and Barbuda</td>
+      <td>2011</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.65</td>
+      <td>11929.349910</td>
+      <td>45.1</td>
+      <td>3.3</td>
+      <td>7.84</td>
+      <td>14.1</td>
+      <td>75.7</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Antigua and Barbuda</td>
+      <td>2010</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>99.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.63</td>
+      <td>12126.876140</td>
+      <td>44.4</td>
+      <td>3.3</td>
+      <td>7.84</td>
+      <td>14.1</td>
+      <td>75.6</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Antigua and Barbuda</td>
+      <td>2009</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.86</td>
+      <td>1312.466920</td>
+      <td>43.8</td>
+      <td>3.4</td>
+      <td>7.82</td>
+      <td>14.2</td>
+      <td>75.4</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Antigua and Barbuda</td>
+      <td>2008</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.69</td>
+      <td>1473.319230</td>
+      <td>43.2</td>
+      <td>3.4</td>
+      <td>8.27</td>
+      <td>14.4</td>
+      <td>75.2</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Antigua and Barbuda</td>
+      <td>2007</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>97.0</td>
+      <td>0</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.27</td>
+      <td>14252.294520</td>
+      <td>42.6</td>
+      <td>3.4</td>
+      <td>8.64</td>
+      <td>14.5</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Antigua and Barbuda</td>
+      <td>2006</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.34</td>
+      <td>12724.393770</td>
+      <td>42.0</td>
+      <td>3.4</td>
+      <td>8.93</td>
+      <td>14.7</td>
+      <td>74.8</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Antigua and Barbuda</td>
+      <td>2005</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.41</td>
+      <td>11371.938950</td>
+      <td>41.4</td>
+      <td>3.5</td>
+      <td>8.15</td>
+      <td>0.0</td>
+      <td>74.6</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Antigua and Barbuda</td>
+      <td>2004</td>
+      <td>Developing</td>
+      <td>NaN</td>
+      <td>97.0</td>
+      <td>0</td>
+      <td>97.0</td>
+      <td>97.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.21</td>
+      <td>1352.837400</td>
+      <td>4.8</td>
+      <td>3.5</td>
+      <td>7.28</td>
+      <td>0.0</td>
+      <td>74.4</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="2d115937" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.3255e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.494604&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.471349&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>From the short sample above, population is missing, alcohol is
+missing, hep B is missing, and many more are from the below command:</p>
+</div>
+<div id="b1ddf899" class="cell code" data-execution_count="8"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.542772Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.542387Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.553198Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.552273Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.7503e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.555335&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.517832&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+<pre><code>Country                   0
+Year                      0
+Status                    0
+Population              644
+Hepatitis B             542
+Measles                   0
+Polio                    19
+Diphtheria               19
+HIV/AIDS                  0
+infant deaths             0
+under-five deaths         0
+Total expenditure       221
+GDP                     442
+BMI                      32
+thinness  1-19 years     32
+Alcohol                 188
+Schooling               160
+Life expectancy           0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="1fbdbe1f" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.3622e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.602899&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.579277&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="find-out-more-information-about-the-data">Find out more
+information about the Data</h1>
+</div>
+<div id="e7427771" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.351e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.649650&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.626140&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>We are going to try to find out more about the columns and what might
+be useful for training a linear regression model.</p>
+</div>
+<div id="f60a1554" class="cell code" data-execution_count="9"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.696474Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.695753Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.702845Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.701866Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.3317e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.704977&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.671660&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>columns <span class="op">=</span> df.columns.tolist()</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+<pre><code>[&#39;Country&#39;,
+ &#39;Year&#39;,
+ &#39;Status&#39;,
+ &#39;Population&#39;,
+ &#39;Hepatitis B&#39;,
+ &#39;Measles&#39;,
+ &#39;Polio&#39;,
+ &#39;Diphtheria&#39;,
+ &#39;HIV/AIDS&#39;,
+ &#39;infant deaths&#39;,
+ &#39;under-five deaths&#39;,
+ &#39;Total expenditure&#39;,
+ &#39;GDP&#39;,
+ &#39;BMI&#39;,
+ &#39;thinness  1-19 years&#39;,
+ &#39;Alcohol&#39;,
+ &#39;Schooling&#39;,
+ &#39;Life expectancy&#39;]</code></pre>
+</div>
+</div>
+<div id="837a03a9" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.2745e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.750061&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.727316&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>For each of the columns, if the data in the column is of type number
+we are going to print out the general information for it: (mean, std,
+etc) and for non-numbered data columns we are going to print out all the
+possible items found within the dataset. One example for the latter
+might be for the <code>Status</code> column to have
+<code>[Developing, Developed]</code></p>
+</div>
+<div id="1381012c" class="cell code" data-execution_count="10"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.797204Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.796637Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.850524Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.848309Z&quot;}"
+data-papermill="{&quot;duration&quot;:8.0449e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.853171&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.772722&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> columns:</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Column &#39;</span><span class="sc">{</span>col<span class="sc">}</span><span class="ss">&#39;:&quot;</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pd.api.types.is_numeric_dtype(df[col]): <span class="co"># if column has numeric values</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(df[col].describe())</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: <span class="co"># column has string values</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(df[col].unique())</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    </span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Column &#39;Country&#39;:
+[&#39;Afghanistan&#39; &#39;Albania&#39; &#39;Algeria&#39; &#39;Angola&#39; &#39;Antigua and Barbuda&#39;
+ &#39;Argentina&#39; &#39;Armenia&#39; &#39;Australia&#39; &#39;Austria&#39; &#39;Azerbaijan&#39; &#39;Bahamas&#39;
+ &#39;Bahrain&#39; &#39;Bangladesh&#39; &#39;Barbados&#39; &#39;Belarus&#39; &#39;Belgium&#39; &#39;Belize&#39; &#39;Benin&#39;
+ &#39;Bhutan&#39; &#39;Bolivia (Plurinational State of)&#39; &#39;Bosnia and Herzegovina&#39;
+ &#39;Botswana&#39; &#39;Brazil&#39; &#39;Brunei Darussalam&#39; &#39;Bulgaria&#39; &#39;Burkina Faso&#39;
+ &quot;Côte d&#39;Ivoire&quot; &#39;Cabo Verde&#39; &#39;Cambodia&#39; &#39;Cameroon&#39; &#39;Canada&#39;
+ &#39;Central African Republic&#39; &#39;Chad&#39; &#39;Chile&#39; &#39;Colombia&#39; &#39;Comoros&#39; &#39;Congo&#39;
+ &#39;Costa Rica&#39; &#39;Croatia&#39; &#39;Cuba&#39; &#39;Cyprus&#39; &#39;Czechia&#39;
+ &quot;Democratic People&#39;s Republic of Korea&quot;
+ &#39;Democratic Republic of the Congo&#39; &#39;Denmark&#39; &#39;Djibouti&#39;
+ &#39;Dominican Republic&#39; &#39;Ecuador&#39; &#39;Egypt&#39; &#39;El Salvador&#39; &#39;Equatorial Guinea&#39;
+ &#39;Eritrea&#39; &#39;Estonia&#39; &#39;Fiji&#39; &#39;Finland&#39; &#39;France&#39; &#39;Gabon&#39; &#39;Gambia&#39; &#39;Georgia&#39;
+ &#39;Germany&#39; &#39;Ghana&#39; &#39;Greece&#39; &#39;Grenada&#39; &#39;Guatemala&#39; &#39;Guinea&#39; &#39;Guinea-Bissau&#39;
+ &#39;Guyana&#39; &#39;Haiti&#39; &#39;Honduras&#39; &#39;Hungary&#39; &#39;Iceland&#39; &#39;India&#39; &#39;Indonesia&#39;
+ &#39;Iran (Islamic Republic of)&#39; &#39;Iraq&#39; &#39;Ireland&#39; &#39;Israel&#39; &#39;Italy&#39; &#39;Jamaica&#39;
+ &#39;Japan&#39; &#39;Jordan&#39; &#39;Kazakhstan&#39; &#39;Kenya&#39; &#39;Kiribati&#39; &#39;Kuwait&#39; &#39;Kyrgyzstan&#39;
+ &quot;Lao People&#39;s Democratic Republic&quot; &#39;Lebanon&#39; &#39;Lesotho&#39; &#39;Liberia&#39; &#39;Libya&#39;
+ &#39;Lithuania&#39; &#39;Luxembourg&#39; &#39;Madagascar&#39; &#39;Malawi&#39; &#39;Malaysia&#39; &#39;Maldives&#39;
+ &#39;Mali&#39; &#39;Malta&#39; &#39;Mauritania&#39; &#39;Mauritius&#39; &#39;Mexico&#39;
+ &#39;Micronesia (Federated States of)&#39; &#39;Mongolia&#39; &#39;Montenegro&#39; &#39;Morocco&#39;
+ &#39;Mozambique&#39; &#39;Myanmar&#39; &#39;Namibia&#39; &#39;Nepal&#39; &#39;Netherlands&#39; &#39;New Zealand&#39;
+ &#39;Nicaragua&#39; &#39;Niger&#39; &#39;Nigeria&#39; &#39;Norway&#39; &#39;Oman&#39; &#39;Pakistan&#39; &#39;Panama&#39;
+ &#39;Paraguay&#39; &#39;Peru&#39; &#39;Philippines&#39; &#39;Poland&#39; &#39;Portugal&#39; &#39;Qatar&#39;
+ &#39;Republic of Korea&#39; &#39;Republic of Moldova&#39; &#39;Romania&#39; &#39;Russian Federation&#39;
+ &#39;Rwanda&#39; &#39;Saint Lucia&#39; &#39;Saint Vincent and the Grenadines&#39; &#39;Samoa&#39;
+ &#39;Sao Tome and Principe&#39; &#39;Saudi Arabia&#39; &#39;Senegal&#39; &#39;Serbia&#39; &#39;Seychelles&#39;
+ &#39;Sierra Leone&#39; &#39;Singapore&#39; &#39;Slovakia&#39; &#39;Slovenia&#39; &#39;Solomon Islands&#39;
+ &#39;Somalia&#39; &#39;South Africa&#39; &#39;South Sudan&#39; &#39;Spain&#39; &#39;Sri Lanka&#39; &#39;Sudan&#39;
+ &#39;Suriname&#39; &#39;Swaziland&#39; &#39;Sweden&#39; &#39;Switzerland&#39; &#39;Syrian Arab Republic&#39;
+ &#39;Tajikistan&#39; &#39;Thailand&#39; &#39;The former Yugoslav republic of Macedonia&#39;
+ &#39;Timor-Leste&#39; &#39;Togo&#39; &#39;Tonga&#39; &#39;Trinidad and Tobago&#39; &#39;Tunisia&#39; &#39;Turkey&#39;
+ &#39;Turkmenistan&#39; &#39;Uganda&#39; &#39;Ukraine&#39; &#39;United Arab Emirates&#39;
+ &#39;United Kingdom of Great Britain and Northern Ireland&#39;
+ &#39;United Republic of Tanzania&#39; &#39;United States of America&#39; &#39;Uruguay&#39;
+ &#39;Uzbekistan&#39; &#39;Vanuatu&#39; &#39;Venezuela (Bolivarian Republic of)&#39; &#39;Viet Nam&#39;
+ &#39;Yemen&#39; &#39;Zambia&#39; &#39;Zimbabwe&#39;]
+
+Column &#39;Year&#39;:
+count    2848.000000
+mean     2007.500000
+std         4.610582
+min      2000.000000
+25%      2003.750000
+50%      2007.500000
+75%      2011.250000
+max      2015.000000
+Name: Year, dtype: float64
+
+Column &#39;Status&#39;:
+[&#39;Developing&#39; &#39;Developed&#39;]
+
+Column &#39;Population&#39;:
+count    2.204000e+03
+mean     1.283457e+07
+std      6.196094e+07
+min      3.400000e+01
+25%      1.967585e+05
+50%      1.391756e+06
+75%      7.438947e+06
+max      1.293859e+09
+Name: Population, dtype: float64
+
+Column &#39;Hepatitis B&#39;:
+count    2306.000000
+mean       81.076756
+std        25.019068
+min         1.000000
+25%        77.000000
+50%        92.000000
+75%        97.000000
+max        99.000000
+Name: Hepatitis B, dtype: float64
+
+Column &#39;Measles&#39;:
+count      2848.000000
+mean       2083.082163
+std       10249.107207
+min           0.000000
+25%           0.000000
+50%          16.000000
+75%         336.750000
+max      212183.000000
+Name: Measles, dtype: float64
+
+Column &#39;Polio&#39;:
+count    2829.000000
+mean       82.682220
+std        23.434954
+min         3.000000
+25%        78.000000
+50%        93.000000
+75%        97.000000
+max        99.000000
+Name: Polio, dtype: float64
+
+Column &#39;Diphtheria&#39;:
+count    2829.000000
+mean       82.451396
+std        23.693936
+min         2.000000
+25%        78.000000
+50%        93.000000
+75%        97.000000
+max        99.000000
+Name: Diphtheria, dtype: float64
+
+Column &#39;HIV/AIDS&#39;:
+count    2848.000000
+mean        1.756461
+std         5.148935
+min         0.100000
+25%         0.100000
+50%         0.100000
+75%         0.700000
+max        50.600000
+Name: HIV/AIDS, dtype: float64
+
+Column &#39;infant deaths&#39;:
+count    2848.000000
+mean       28.359902
+std       117.188032
+min         0.000000
+25%         0.000000
+50%         3.000000
+75%        20.000000
+max      1800.000000
+Name: infant deaths, dtype: float64
+
+Column &#39;under-five deaths&#39;:
+count    2848.000000
+mean       39.500000
+std       159.800866
+min         0.000000
+25%         0.000000
+50%         4.000000
+75%        25.000000
+max      2500.000000
+Name: under-five deaths, dtype: float64
+
+Column &#39;Total expenditure&#39;:
+count    2627.000000
+mean        5.935577
+std         2.504439
+min         0.370000
+25%         4.240000
+50%         5.760000
+75%         7.530000
+max        17.600000
+Name: Total expenditure, dtype: float64
+
+Column &#39;GDP&#39;:
+count      2406.000000
+mean       7664.398813
+std       14466.241793
+min           1.681350
+25%         477.541713
+50%        1841.086830
+75%        6265.658907
+max      119172.741800
+Name: GDP, dtype: float64
+
+Column &#39;BMI&#39;:
+count    2816.000000
+mean       38.503374
+std        19.955485
+min         1.000000
+25%        19.500000
+50%        43.900000
+75%        56.200000
+max        77.600000
+Name: BMI, dtype: float64
+
+Column &#39;thinness  1-19 years&#39;:
+count    2816.000000
+mean        4.847230
+std         4.443695
+min         0.100000
+25%         1.600000
+50%         3.300000
+75%         7.125000
+max        27.700000
+Name: thinness  1-19 years, dtype: float64
+
+Column &#39;Alcohol&#39;:
+count    2660.000000
+mean        4.638932
+std         4.064721
+min         0.010000
+25%         0.930000
+50%         3.785000
+75%         7.810000
+max        17.870000
+Name: Alcohol, dtype: float64
+
+Column &#39;Schooling&#39;:
+count    2688.000000
+mean       12.060156
+std         3.320160
+min         0.000000
+25%        10.200000
+50%        12.400000
+75%        14.300000
+max        20.700000
+Name: Schooling, dtype: float64
+
+Column &#39;Life expectancy&#39;:
+count    2848.000000
+mean       69.347402
+std         9.528332
+min        36.300000
+25%        63.500000
+50%        72.200000
+75%        75.800000
+max        89.000000
+Name: Life expectancy, dtype: float64
+
+</code></pre>
+</div>
+</div>
+<div id="d3911b43" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.3248e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.900338&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.877090&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="status-column-conversion">Status column Conversion</h3>
+</div>
+<div id="3fed346d" class="cell code" data-execution_count="11"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:53.949118Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:53.948482Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:53.955730Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:53.955057Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.3891e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:53.957524&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.923633&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert the Status column&#39;s value in the following way:</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Developing: 0, Developed: 1</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Status&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Status&#39;</span>].replace({<span class="st">&#39;Developing&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Developed&#39;</span>: <span class="dv">1</span>})</span></code></pre></div>
+</div>
+<div id="cc5442f6" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.3053e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:54.004016&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:53.980963&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="possible-correlations">Possible Correlations</h3>
+<p>From the below code, there doesn't seem to be a strong correlation
+with any of the data directly to life expectancy, perhaps because of
+outliers and also because this data is not cleaned yet, but maybe a sign
+to use a Neural Network of some sort.</p>
+</div>
+<div id="011be881" class="cell code" data-execution_count="12"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:54.056064Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:54.055450Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:54.067737Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:54.066720Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.1261e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:54.070034&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:54.028773&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df.corr(numeric_only<span class="op">=</span><span class="va">True</span>)[<span class="st">&#39;Life expectancy&#39;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<pre><code>Year                    0.169144
+Status                  0.483330
+Population             -0.019353
+Hepatitis B             0.256613
+Measles                -0.198178
+Polio                   0.464366
+Diphtheria              0.476795
+HIV/AIDS               -0.559105
+infant deaths          -0.201055
+under-five deaths      -0.224903
+Total expenditure       0.222788
+GDP                     0.460414
+BMI                     0.567650
+thinness  1-19 years   -0.477009
+Alcohol                 0.401553
+Schooling               0.747482
+Life expectancy         1.000000
+Name: Life expectancy, dtype: float64</code></pre>
+</div>
+</div>
+<div id="306872b8" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.4291e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:54.118583&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:54.094292&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="modified-z-score">Modified Z-Score</h2>
+<p><a href="https://www.statology.org/modified-z-score/"
+class="uri">https://www.statology.org/modified-z-score/</a></p>
+</div>
+<div id="82a1b9cd" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.3916e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:54.166651&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:54.142735&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Looking at Poland and other countries' data, there is a lot of
+information that is off. For example, Measels is recorded to have
+multiple zero values which does not seem very representative of the real
+circumstances. Moreover, population and GDP also seem to have extreme
+outliers. For just Poland for now, let's try to minimize these errors by
+using the Modified Z-Score, which calculates a Z-Score based on the
+median of the data.</p>
+</div>
+<div id="d286a005" class="cell code" data-execution_count="13"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:54.215475Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:54.215080Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:54.255176Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:54.254135Z&quot;}"
+data-papermill="{&quot;duration&quot;:6.6948e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:54.257189&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:54.190241&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>poland <span class="op">=</span> df[df[<span class="st">&#39;Country&#39;</span>] <span class="op">==</span> <span class="st">&#39;Poland&#39;</span>]</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>poland</span></code></pre></div>
+<div class="output execute_result" data-execution_count="13">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Population</th>
+      <th>Hepatitis B</th>
+      <th>Measles</th>
+      <th>Polio</th>
+      <th>Diphtheria</th>
+      <th>HIV/AIDS</th>
+      <th>infant deaths</th>
+      <th>under-five deaths</th>
+      <th>Total expenditure</th>
+      <th>GDP</th>
+      <th>BMI</th>
+      <th>thinness  1-19 years</th>
+      <th>Alcohol</th>
+      <th>Schooling</th>
+      <th>Life expectancy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1952</th>
+      <td>Poland</td>
+      <td>2015</td>
+      <td>1</td>
+      <td>37986412.0</td>
+      <td>96.0</td>
+      <td>0</td>
+      <td>92.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>12565.987600</td>
+      <td>61.7</td>
+      <td>1.9</td>
+      <td>NaN</td>
+      <td>16.4</td>
+      <td>77.5</td>
+    </tr>
+    <tr>
+      <th>1953</th>
+      <td>Poland</td>
+      <td>2014</td>
+      <td>1</td>
+      <td>3811735.0</td>
+      <td>96.0</td>
+      <td>0</td>
+      <td>94.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.35</td>
+      <td>14341.675000</td>
+      <td>61.1</td>
+      <td>1.9</td>
+      <td>10.71</td>
+      <td>16.4</td>
+      <td>77.3</td>
+    </tr>
+    <tr>
+      <th>1954</th>
+      <td>Poland</td>
+      <td>2013</td>
+      <td>1</td>
+      <td>384196.0</td>
+      <td>96.0</td>
+      <td>84</td>
+      <td>95.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.40</td>
+      <td>1378.549110</td>
+      <td>6.4</td>
+      <td>2.0</td>
+      <td>11.63</td>
+      <td>15.4</td>
+      <td>77.1</td>
+    </tr>
+    <tr>
+      <th>1955</th>
+      <td>Poland</td>
+      <td>2012</td>
+      <td>1</td>
+      <td>3863164.0</td>
+      <td>97.0</td>
+      <td>71</td>
+      <td>95.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.62</td>
+      <td>13145.148400</td>
+      <td>59.7</td>
+      <td>2.0</td>
+      <td>10.81</td>
+      <td>15.3</td>
+      <td>76.8</td>
+    </tr>
+    <tr>
+      <th>1956</th>
+      <td>Poland</td>
+      <td>2011</td>
+      <td>1</td>
+      <td>3863255.0</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.70</td>
+      <td>13893.187680</td>
+      <td>59.1</td>
+      <td>2.0</td>
+      <td>10.93</td>
+      <td>15.4</td>
+      <td>76.7</td>
+    </tr>
+    <tr>
+      <th>1957</th>
+      <td>Poland</td>
+      <td>2010</td>
+      <td>1</td>
+      <td>3842794.0</td>
+      <td>98.0</td>
+      <td>13</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.88</td>
+      <td>12599.524860</td>
+      <td>58.4</td>
+      <td>2.1</td>
+      <td>10.59</td>
+      <td>15.1</td>
+      <td>76.3</td>
+    </tr>
+    <tr>
+      <th>1958</th>
+      <td>Poland</td>
+      <td>2009</td>
+      <td>1</td>
+      <td>3815163.0</td>
+      <td>98.0</td>
+      <td>115</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>7.12</td>
+      <td>11527.593230</td>
+      <td>57.8</td>
+      <td>2.1</td>
+      <td>10.70</td>
+      <td>15.1</td>
+      <td>75.7</td>
+    </tr>
+    <tr>
+      <th>1959</th>
+      <td>Poland</td>
+      <td>2008</td>
+      <td>1</td>
+      <td>38125759.0</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>6.88</td>
+      <td>141.446880</td>
+      <td>57.2</td>
+      <td>2.2</td>
+      <td>11.40</td>
+      <td>15.0</td>
+      <td>75.5</td>
+    </tr>
+    <tr>
+      <th>1960</th>
+      <td>Poland</td>
+      <td>2007</td>
+      <td>1</td>
+      <td>381256.0</td>
+      <td>98.0</td>
+      <td>40</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>6.28</td>
+      <td>1126.318520</td>
+      <td>56.6</td>
+      <td>2.2</td>
+      <td>10.90</td>
+      <td>15.0</td>
+      <td>75.3</td>
+    </tr>
+    <tr>
+      <th>1961</th>
+      <td>Poland</td>
+      <td>2006</td>
+      <td>1</td>
+      <td>38141267.0</td>
+      <td>98.0</td>
+      <td>120</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>6.17</td>
+      <td>94.772600</td>
+      <td>56.0</td>
+      <td>2.3</td>
+      <td>10.40</td>
+      <td>15.0</td>
+      <td>75.2</td>
+    </tr>
+    <tr>
+      <th>1962</th>
+      <td>Poland</td>
+      <td>2005</td>
+      <td>1</td>
+      <td>38165445.0</td>
+      <td>98.0</td>
+      <td>13</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>6.20</td>
+      <td>821.251569</td>
+      <td>55.5</td>
+      <td>2.3</td>
+      <td>9.50</td>
+      <td>14.8</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <th>1963</th>
+      <td>Poland</td>
+      <td>2004</td>
+      <td>1</td>
+      <td>38182222.0</td>
+      <td>98.0</td>
+      <td>11</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>6.19</td>
+      <td>6681.178818</td>
+      <td>55.0</td>
+      <td>2.4</td>
+      <td>9.19</td>
+      <td>15.5</td>
+      <td>74.9</td>
+    </tr>
+    <tr>
+      <th>1964</th>
+      <td>Poland</td>
+      <td>2003</td>
+      <td>1</td>
+      <td>382457.0</td>
+      <td>97.0</td>
+      <td>48</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6.22</td>
+      <td>5693.524160</td>
+      <td>54.5</td>
+      <td>2.4</td>
+      <td>9.06</td>
+      <td>15.3</td>
+      <td>74.7</td>
+    </tr>
+    <tr>
+      <th>1965</th>
+      <td>Poland</td>
+      <td>2002</td>
+      <td>1</td>
+      <td>3823364.0</td>
+      <td>98.0</td>
+      <td>34</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6.32</td>
+      <td>5196.932921</td>
+      <td>54.0</td>
+      <td>2.5</td>
+      <td>8.02</td>
+      <td>15.0</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>1966</th>
+      <td>Poland</td>
+      <td>2001</td>
+      <td>1</td>
+      <td>3824876.0</td>
+      <td>95.0</td>
+      <td>133</td>
+      <td>98.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>5.86</td>
+      <td>4981.198619</td>
+      <td>53.6</td>
+      <td>2.5</td>
+      <td>7.74</td>
+      <td>14.7</td>
+      <td>74.2</td>
+    </tr>
+    <tr>
+      <th>1967</th>
+      <td>Poland</td>
+      <td>2000</td>
+      <td>1</td>
+      <td>38258629.0</td>
+      <td>99.0</td>
+      <td>77</td>
+      <td>98.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5.50</td>
+      <td>4492.727640</td>
+      <td>53.1</td>
+      <td>2.5</td>
+      <td>8.40</td>
+      <td>14.6</td>
+      <td>73.7</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="23b2611e" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.4648e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:54.306738&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:54.282090&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Modified Z-Score for Poland's population</p>
+</div>
+<div id="d488bd0e" class="cell code" data-execution_count="14"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:54.358024Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:54.357662Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:55.424444Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:55.423375Z&quot;}"
+data-papermill="{&quot;duration&quot;:1.09519,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.426913&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:54.331723&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> median_abs_deviation <span class="co"># MAD Calculation</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate median</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>median <span class="op">=</span> np.median(poland[<span class="st">&#39;Population&#39;</span>])</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate mean absolute deviation</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>mad <span class="op">=</span> median_abs_deviation(poland[<span class="st">&#39;Population&#39;</span>])</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"># set threshold for outlier detection</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>threshold <span class="op">=</span> <span class="fl">0.6</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="co"># this threshold for population is very low compared to recommended value of 3.5</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate modified z-score</span></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>modified_z_score <span class="op">=</span> (<span class="fl">0.6745</span> <span class="op">*</span> (poland[<span class="st">&#39;Population&#39;</span>] <span class="op">-</span> median)) <span class="op">/</span> mad</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a><span class="co"># filter the dataframe to remove outliers</span></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> poland[np.<span class="bu">abs</span>(modified_z_score) <span class="op">&lt;=</span> threshold]</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>filtered</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Population</th>
+      <th>Hepatitis B</th>
+      <th>Measles</th>
+      <th>Polio</th>
+      <th>Diphtheria</th>
+      <th>HIV/AIDS</th>
+      <th>infant deaths</th>
+      <th>under-five deaths</th>
+      <th>Total expenditure</th>
+      <th>GDP</th>
+      <th>BMI</th>
+      <th>thinness  1-19 years</th>
+      <th>Alcohol</th>
+      <th>Schooling</th>
+      <th>Life expectancy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1953</th>
+      <td>Poland</td>
+      <td>2014</td>
+      <td>1</td>
+      <td>3811735.0</td>
+      <td>96.0</td>
+      <td>0</td>
+      <td>94.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.35</td>
+      <td>14341.675000</td>
+      <td>61.1</td>
+      <td>1.9</td>
+      <td>10.71</td>
+      <td>16.4</td>
+      <td>77.3</td>
+    </tr>
+    <tr>
+      <th>1955</th>
+      <td>Poland</td>
+      <td>2012</td>
+      <td>1</td>
+      <td>3863164.0</td>
+      <td>97.0</td>
+      <td>71</td>
+      <td>95.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.62</td>
+      <td>13145.148400</td>
+      <td>59.7</td>
+      <td>2.0</td>
+      <td>10.81</td>
+      <td>15.3</td>
+      <td>76.8</td>
+    </tr>
+    <tr>
+      <th>1956</th>
+      <td>Poland</td>
+      <td>2011</td>
+      <td>1</td>
+      <td>3863255.0</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.70</td>
+      <td>13893.187680</td>
+      <td>59.1</td>
+      <td>2.0</td>
+      <td>10.93</td>
+      <td>15.4</td>
+      <td>76.7</td>
+    </tr>
+    <tr>
+      <th>1957</th>
+      <td>Poland</td>
+      <td>2010</td>
+      <td>1</td>
+      <td>3842794.0</td>
+      <td>98.0</td>
+      <td>13</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6.88</td>
+      <td>12599.524860</td>
+      <td>58.4</td>
+      <td>2.1</td>
+      <td>10.59</td>
+      <td>15.1</td>
+      <td>76.3</td>
+    </tr>
+    <tr>
+      <th>1958</th>
+      <td>Poland</td>
+      <td>2009</td>
+      <td>1</td>
+      <td>3815163.0</td>
+      <td>98.0</td>
+      <td>115</td>
+      <td>96.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>7.12</td>
+      <td>11527.593230</td>
+      <td>57.8</td>
+      <td>2.1</td>
+      <td>10.70</td>
+      <td>15.1</td>
+      <td>75.7</td>
+    </tr>
+    <tr>
+      <th>1965</th>
+      <td>Poland</td>
+      <td>2002</td>
+      <td>1</td>
+      <td>3823364.0</td>
+      <td>98.0</td>
+      <td>34</td>
+      <td>98.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6.32</td>
+      <td>5196.932921</td>
+      <td>54.0</td>
+      <td>2.5</td>
+      <td>8.02</td>
+      <td>15.0</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>1966</th>
+      <td>Poland</td>
+      <td>2001</td>
+      <td>1</td>
+      <td>3824876.0</td>
+      <td>95.0</td>
+      <td>133</td>
+      <td>98.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>5.86</td>
+      <td>4981.198619</td>
+      <td>53.6</td>
+      <td>2.5</td>
+      <td>7.74</td>
+      <td>14.7</td>
+      <td>74.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="c24eb285" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.5821e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.478939&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.453118&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>In this example we actually end up filtering out the correct
+populations of 38 million and simply</p>
+</div>
+<div id="2bfd33ea" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.5599e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.530453&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.504854&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="the-input-variables">The Input Variables</h1>
+<p>For this specific model, we are going to use the following variables
+to predict the life expectancy:</p>
+<ul>
+<li>Status (either developing or developed)</li>
+<li>Polio (Percentage of 1-year-olds immunized against polio)</li>
+<li>Diphtheria (Percentage of people finally one year old who were
+immunized against diphtheria)</li>
+<li>HIV/AIDS (The number of deaths caused by AIDS of the last
+4-year-olds who were born alive per 1000 people)</li>
+<li>infant deaths (The number of infant deaths per 1000 people)</li>
+<li>under-five deaths</li>
+<li>total expenditure (The ratio of government medical-health expenses
+to total government expenses in percentage)</li>
+<li>BMI (Body Mass Index)</li>
+<li>thinness 1-19 years (Prevalence of thinness among people 19 years
+old in percentage)</li>
+<li>Alcohol (Liters of alcohol consumption among people over 15 years
+old)</li>
+<li>Schooling (number of years people study)</li>
+</ul>
+</div>
+<div id="b5d473e2" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.6191e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.582819&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.556628&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="selecting-the-input-features">Selecting the Input Features</h1>
+<p>As opposed to doing modified Z-score, we are simply going to pick
+columns that have a general trend and are not too chaotic to predict
+life expectancy. This way, sure we are still including outliers but they
+should be balanced with the rest of the data set. We remove the
+statistic Measles, because somtimes we would have invalid values of
+&gt;1000 for the statistic: "The number of reported measles cases per
+1000 people" from looking at some developing countries.</p>
+</div>
+<div id="dac53908" class="cell code" data-execution_count="15"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:55.638681Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:55.637141Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:55.642740Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:55.642006Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.6117e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.644817&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.608700&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> [<span class="st">&#39;Status&#39;</span>, <span class="st">&#39;Polio&#39;</span>, <span class="st">&#39;Diphtheria&#39;</span>, <span class="op">\</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;HIV/AIDS&#39;</span>, <span class="st">&#39;infant deaths&#39;</span>, <span class="op">\</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;under-five deaths&#39;</span>, <span class="st">&#39;Total expenditure&#39;</span>,<span class="op">\</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;BMI&#39;</span>, <span class="st">&#39;thinness  1-19 years&#39;</span>, <span class="op">\</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Alcohol&#39;</span>, <span class="st">&#39;Schooling&#39;</span>]</span></code></pre></div>
+</div>
+<div id="e749bc3a" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.6267e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.697550&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.671283&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="building-a-model-linear-regression">Building a Model: Linear
+Regression</h1>
+<p>We are going to split up the data, then use it to train our model.
+Ideally, we would want to use a training set, a validation set, and then
+a testing set. For this example I am going to use only the training set
+and testing set just to get some grips. We are going to see whether or
+not it may cause overfitting to the model.</p>
+</div>
+<div id="faaa714e" class="cell code" data-execution_count="16"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:55.751614Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:55.750923Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:55.764710Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:55.763547Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.2925e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.766852&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.723927&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use dropna to only drop na&#39;s from the features we are trying to test</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>df_train <span class="op">=</span> df[df[<span class="st">&#39;Year&#39;</span>] <span class="op">&lt;=</span> <span class="dv">2012</span>].dropna(subset<span class="op">=</span>features)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>df_test <span class="op">=</span> df[df[<span class="st">&#39;Year&#39;</span>] <span class="op">&gt;</span> <span class="dv">2012</span>].dropna(subset<span class="op">=</span>features)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_train.shape)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_test.shape)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>(2147, 18)
+(334, 18)
+</code></pre>
+</div>
+</div>
+<div id="0026b4bb" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.5435e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.818429&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.792994&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>The year 2012 produces roughly an 80 20 split of the data [87 : 13],
+now let's try to train it using sklearn.</p>
+</div>
+<div id="58c07a0c" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.4759e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:55.869254&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.844495&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="sklearn">Sklearn</h2>
+</div>
+<div id="2dbd4269" class="cell code" data-execution_count="17"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:55.921838Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:55.921485Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:56.239414Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:56.238448Z&quot;}"
+data-papermill="{&quot;duration&quot;:0.34746,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.242119&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:55.894659&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>linear <span class="op">=</span> LinearRegression()</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> <span class="st">&quot;Life expectancy&quot;</span></span></code></pre></div>
+</div>
+<div id="a3ffe705" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.5831e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.294220&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.268389&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="fit-model">Fit Model</h3>
+<p>LinearRegression().fit(x, y) takes input variables and tries to fit
+those values to the corresponding output value. This method returns a
+fitted estimator of the data.</p>
+</div>
+<div id="55af40c0" class="cell code" data-execution_count="18"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:56.348141Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:56.347769Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:56.391361Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:56.390348Z&quot;}"
+data-papermill="{&quot;duration&quot;:7.4625e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.394887&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.320262&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>linear.fit(df_train[features], df_train[target])</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
+</div>
+</div>
+<div id="26f6201b" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.7983e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.501104&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.453121&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="predict">Predict</h2>
+<p>Now make predictions with the testing data.</p>
+</div>
+<div id="0de46e47" class="cell code" data-execution_count="19"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:56.555315Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:56.554920Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:56.562873Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:56.561977Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.7721e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.565166&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.527445&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> linear.predict(df_test[features])</span></code></pre></div>
+</div>
+<div id="5ad75119" class="cell code" data-execution_count="20"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:56.621215Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:56.620839Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:56.631295Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:56.630285Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.1537e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.634052&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.592515&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>predictions</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>array([63.28493162, 64.27769707, 64.24859625, 75.27033822, 75.09546198,
+       75.09455566, 75.67042168, 75.5674344 , 64.72692714, 64.79060448,
+       73.62910063, 73.65050985, 79.21344943, 79.23629543, 72.82693221,
+       72.88084677, 86.10000331, 85.86183729, 79.56071386, 79.132046  ,
+       72.32717225, 69.03080151, 72.75008102, 72.78604679, 75.84212379,
+       75.8650568 , 67.45418302, 67.26566414, 75.61516906, 75.3735592 ,
+       76.54800706, 76.38556271, 80.84777011, 80.89375474, 69.69366366,
+       72.42435932, 66.31216642, 65.61576181, 70.08576218, 69.9833968 ,
+       74.48122982, 74.20373587, 74.16342442, 74.25302967, 70.37938279,
+       69.99105372, 76.58132703, 75.3147985 , 73.36448854, 75.28235669,
+       78.1310823 , 77.99838215, 62.64991602, 61.56493012, 70.872569  ,
+       72.43673557, 68.42888699, 66.82594233, 64.97802217, 64.80220869,
+       77.53687864, 77.48479044, 57.63558552, 55.83182247, 57.17589289,
+       57.08545012, 77.78829449, 74.67105451, 69.22266128, 73.57817612,
+       67.88597507, 67.55055629, 62.03831576, 66.4800068 , 74.44498136,
+       74.35477112, 78.84277519, 78.57979455, 71.6660567 , 75.81781643,
+       78.49059565, 77.43913431, 84.41378739, 83.37668892, 61.11522541,
+       60.92975373, 71.17473782, 72.67477566, 73.84684464, 73.21170279,
+       71.51480137, 74.44850268, 73.57589434, 73.44234334, 58.62753644,
+       56.38040847, 60.09866227, 60.11637266, 78.36257985, 78.39457351,
+       77.06726094, 76.76396422, 78.67210514, 78.6454721 , 77.43905014,
+       77.5072683 , 66.28674908, 67.47671129, 65.02979872, 65.0881979 ,
+       73.4490736 , 73.56486948, 81.2270811 , 81.07798155, 69.34626657,
+       65.8439691 , 79.39576605, 79.21577675, 75.74669664, 76.13209337,
+       68.47462227, 69.4284191 , 62.02441871, 62.47129517, 63.82243698,
+       62.91266769, 68.5682732 , 68.55293412, 64.97910191, 65.41127171,
+       68.18636685, 71.04329185, 81.07887315, 79.52767157, 75.9714915 ,
+       80.83334805, 74.49902042, 70.8401859 , 70.57013197, 72.76382284,
+       76.3707057 , 76.41857878, 68.31154669, 67.15413451, 83.68576647,
+       83.64783531, 77.92962151, 77.82397086, 80.87711054, 81.1979738 ,
+       72.57648043, 72.30601381, 78.4167785 , 77.7683826 , 74.36522602,
+       74.32762524, 75.74034336, 75.77161573, 66.47520823, 65.07594091,
+       72.66080086, 73.62678216, 70.71293595, 71.2146239 , 72.59992122,
+       72.22583114, 66.5251915 , 66.08054518, 73.32323065, 73.28699871,
+       60.97824448, 60.79887415, 62.89264576, 65.48090617, 74.41298198,
+       74.49792487, 80.22905801, 80.07087462, 74.34057063, 74.32616412,
+       65.21120056, 66.02124183, 64.07825827, 63.68915426, 72.54506289,
+       72.22861364, 70.61863412, 70.24914773, 61.47598447, 59.37804188,
+       78.6531124 , 78.48408632, 62.97346204, 59.47729302, 74.37728622,
+       74.3818426 , 73.76290316, 73.24985114, 71.2718747 , 71.50463038,
+       76.07162079, 73.19183159, 76.50410476, 73.47453547, 72.70717374,
+       72.6456079 , 62.69643707, 61.78537158, 65.53123655, 64.59679335,
+       68.31673613, 68.10024555, 69.68782951, 69.44226371, 84.09026014,
+       83.02687603, 84.58032396, 84.62719607, 71.39413139, 71.2497909 ,
+       57.07433471, 57.212554  , 55.03024141, 53.58639062, 79.3429749 ,
+       79.10816197, 74.39877515, 74.35617183, 65.9489262 , 65.75825716,
+       67.93438432, 69.54888002, 71.62850789, 69.57556582, 73.59670618,
+       72.86434158, 68.82939864, 69.75723616, 80.73075505, 76.16550381,
+       78.15151872, 77.43537566, 74.62927564, 74.86715198, 79.1350676 ,
+       78.07372115, 75.79868318, 75.30891527, 67.28081736, 67.08158799,
+       72.45679027, 72.38566758, 73.24053627, 73.28153695, 72.64336739,
+       72.8636013 , 67.61071872, 69.07396875, 77.88367647, 77.16781725,
+       65.38176969, 65.0393611 , 74.90250319, 74.78071558, 72.82889369,
+       73.11810039, 65.39023278, 65.41898819, 78.44226457, 78.50508405,
+       78.80680048, 78.77654688, 82.03745066, 81.01581952, 68.58547716,
+       68.74020574, 66.75074668, 68.24725704, 83.48502883, 82.42010017,
+       72.31260616, 71.97761959, 71.94697922, 71.97956388, 65.34583458,
+       63.67509382, 79.94831882, 79.92443263, 79.74146321, 79.57345789,
+       65.41387719, 69.33288008, 70.48249548, 70.34294422, 72.49512271,
+       72.5296839 , 73.63167428, 73.74922574, 69.83907307, 69.49706754,
+       68.83035928, 68.44598107, 73.33018822, 75.89818716, 71.56709598,
+       71.52544512, 72.7699083 , 75.89432363, 76.15421848, 76.12622032,
+       70.33586196, 70.17163129, 63.8257878 , 63.11621233, 69.18342035,
+       71.59013369, 74.39637723, 71.06658623, 76.83424233, 76.75897656,
+       72.20907206, 72.0332648 , 68.77446201, 68.77730286, 74.2745724 ,
+       74.45026269, 69.66084003, 68.07193834, 63.28810188, 65.3195207 ,
+       67.08485043, 66.21657961, 63.35835326, 61.79454959])</code></pre>
+</div>
+</div>
+<div id="f53f5b85" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.637e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.688149&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.661779&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>This gives us an array of values that we can use to understand our
+predictions. However, they are not fit to a particular country and we
+cannot really understand the error yet either. Let's try and do
+that.</p>
+</div>
+<div id="c5515443" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.5544e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.739780&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.714236&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="understand-predictions">Understand Predictions</h3>
+<p>To start to understand our predictions, we can make a new column in
+the testing dataframe and add in our prediction values.</p>
+</div>
+<div id="29dc8046" class="cell code" data-execution_count="21"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:56.794706Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:56.794279Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:56.832018Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:56.830948Z&quot;}"
+data-papermill="{&quot;duration&quot;:6.8685e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.834256&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.765571&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>df_test[<span class="st">&#39;Predictions&#39;</span>] <span class="op">=</span> predictions</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>df_test</span></code></pre></div>
+<div class="output execute_result" data-execution_count="21">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Population</th>
+      <th>Hepatitis B</th>
+      <th>Measles</th>
+      <th>Polio</th>
+      <th>Diphtheria</th>
+      <th>HIV/AIDS</th>
+      <th>infant deaths</th>
+      <th>under-five deaths</th>
+      <th>Total expenditure</th>
+      <th>GDP</th>
+      <th>BMI</th>
+      <th>thinness  1-19 years</th>
+      <th>Alcohol</th>
+      <th>Schooling</th>
+      <th>Life expectancy</th>
+      <th>Predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>2015</td>
+      <td>0</td>
+      <td>33736494.0</td>
+      <td>65.0</td>
+      <td>1154</td>
+      <td>6.0</td>
+      <td>65.0</td>
+      <td>0.1</td>
+      <td>62</td>
+      <td>83</td>
+      <td>8.16</td>
+      <td>584.259210</td>
+      <td>19.1</td>
+      <td>17.2</td>
+      <td>0.01</td>
+      <td>10.1</td>
+      <td>65.0</td>
+      <td>63.284932</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>2014</td>
+      <td>0</td>
+      <td>327582.0</td>
+      <td>62.0</td>
+      <td>492</td>
+      <td>58.0</td>
+      <td>62.0</td>
+      <td>0.1</td>
+      <td>64</td>
+      <td>86</td>
+      <td>8.18</td>
+      <td>612.696514</td>
+      <td>18.6</td>
+      <td>17.5</td>
+      <td>0.01</td>
+      <td>10.0</td>
+      <td>59.9</td>
+      <td>64.277697</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>2013</td>
+      <td>0</td>
+      <td>31731688.0</td>
+      <td>64.0</td>
+      <td>430</td>
+      <td>62.0</td>
+      <td>64.0</td>
+      <td>0.1</td>
+      <td>66</td>
+      <td>89</td>
+      <td>8.13</td>
+      <td>631.744976</td>
+      <td>18.1</td>
+      <td>17.7</td>
+      <td>0.01</td>
+      <td>9.9</td>
+      <td>59.9</td>
+      <td>64.248596</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Albania</td>
+      <td>2015</td>
+      <td>0</td>
+      <td>28873.0</td>
+      <td>99.0</td>
+      <td>0</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6.00</td>
+      <td>3954.227830</td>
+      <td>58.0</td>
+      <td>1.2</td>
+      <td>4.60</td>
+      <td>14.2</td>
+      <td>77.8</td>
+      <td>75.270338</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Albania</td>
+      <td>2014</td>
+      <td>0</td>
+      <td>288914.0</td>
+      <td>98.0</td>
+      <td>0</td>
+      <td>98.0</td>
+      <td>98.0</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5.88</td>
+      <td>4575.763787</td>
+      <td>57.2</td>
+      <td>1.2</td>
+      <td>4.51</td>
+      <td>14.2</td>
+      <td>77.5</td>
+      <td>75.095462</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2802</th>
+      <td>Yemen</td>
+      <td>2013</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>73.0</td>
+      <td>400</td>
+      <td>67.0</td>
+      <td>73.0</td>
+      <td>0.1</td>
+      <td>36</td>
+      <td>46</td>
+      <td>5.78</td>
+      <td>NaN</td>
+      <td>39.6</td>
+      <td>13.7</td>
+      <td>0.04</td>
+      <td>9.0</td>
+      <td>65.4</td>
+      <td>65.319521</td>
+    </tr>
+    <tr>
+      <th>2817</th>
+      <td>Zambia</td>
+      <td>2014</td>
+      <td>0</td>
+      <td>1562974.0</td>
+      <td>86.0</td>
+      <td>9</td>
+      <td>78.0</td>
+      <td>86.0</td>
+      <td>4.3</td>
+      <td>28</td>
+      <td>41</td>
+      <td>4.99</td>
+      <td>1738.882200</td>
+      <td>22.8</td>
+      <td>6.3</td>
+      <td>0.01</td>
+      <td>12.5</td>
+      <td>61.1</td>
+      <td>67.084850</td>
+    </tr>
+    <tr>
+      <th>2818</th>
+      <td>Zambia</td>
+      <td>2013</td>
+      <td>0</td>
+      <td>1515321.0</td>
+      <td>79.0</td>
+      <td>35</td>
+      <td>74.0</td>
+      <td>79.0</td>
+      <td>4.8</td>
+      <td>29</td>
+      <td>42</td>
+      <td>4.99</td>
+      <td>185.793359</td>
+      <td>22.3</td>
+      <td>6.4</td>
+      <td>2.41</td>
+      <td>12.5</td>
+      <td>63.0</td>
+      <td>66.216580</td>
+    </tr>
+    <tr>
+      <th>2833</th>
+      <td>Zimbabwe</td>
+      <td>2014</td>
+      <td>0</td>
+      <td>15411675.0</td>
+      <td>91.0</td>
+      <td>0</td>
+      <td>92.0</td>
+      <td>91.0</td>
+      <td>6.3</td>
+      <td>23</td>
+      <td>34</td>
+      <td>6.44</td>
+      <td>127.474620</td>
+      <td>31.3</td>
+      <td>5.9</td>
+      <td>6.50</td>
+      <td>10.3</td>
+      <td>59.2</td>
+      <td>63.358353</td>
+    </tr>
+    <tr>
+      <th>2834</th>
+      <td>Zimbabwe</td>
+      <td>2013</td>
+      <td>0</td>
+      <td>155456.0</td>
+      <td>95.0</td>
+      <td>0</td>
+      <td>95.0</td>
+      <td>95.0</td>
+      <td>6.8</td>
+      <td>25</td>
+      <td>36</td>
+      <td>6.88</td>
+      <td>111.227396</td>
+      <td>3.8</td>
+      <td>6.2</td>
+      <td>6.39</td>
+      <td>10.4</td>
+      <td>58.0</td>
+      <td>61.794550</td>
+    </tr>
+  </tbody>
+</table>
+<p>334 rows × 19 columns</p>
+</div>
+</div>
+</div>
+<div id="77aafbfb" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.6569e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.888553&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.861984&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="looking-at-error">Looking at Error</h2>
+<p>We are going to use mean absolute error from sklearn to try to
+understand our general loss, that is our variability of our prediction
+to the actual value.</p>
+</div>
+<div id="75b66e21" class="cell code" data-execution_count="22"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:56.943830Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:56.943455Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:56.951780Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:56.950705Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.8593e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:56.953734&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.915141&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_absolute_error</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> mean_absolute_error(df_test[target], df_test[<span class="st">&#39;Predictions&#39;</span>])</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>error</span></code></pre></div>
+<div class="output execute_result" data-execution_count="22">
+<pre><code>3.283831410713536</code></pre>
+</div>
+</div>
+<div id="5471102b" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.7118e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.008200&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:56.981082&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>From the value, we can conclude that on average we were off by about
+3.28 years on the life expectancy. This isn't too bad, and perhaps
+including other features could help the model do better.</p>
+</div>
+<div id="52a73eb4" class="cell code" data-execution_count="23"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.064785Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.064346Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.117227Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.116343Z&quot;}"
+data-papermill="{&quot;duration&quot;:8.3844e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.119487&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.035643&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df_test.describe()[target]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="23">
+<pre><code>count    334.000000
+mean      71.757186
+std        8.227004
+min       48.100000
+25%       66.000000
+50%       73.800000
+75%       76.800000
+max       89.000000
+Name: Life expectancy, dtype: float64</code></pre>
+</div>
+</div>
+<div id="a08d5f87" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.748e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.174338&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.146858&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Also, for our target variable, the standard deviation is higher than
+our error which is what we want, if the error is higher then we have
+made a coding mistake.</p>
+</div>
+<div id="f5059504" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.7659e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.229906&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.202247&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="sklearn-linear-model-analysis">Sklearn Linear Model
+Analysis</h1>
+</div>
+<div id="55ebd836" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.7114e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.284722&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.257608&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Let's take a look at some countries.</p>
+</div>
+<div id="c7808d31" class="cell code" data-execution_count="24"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.341212Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.340844Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.353076Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.352357Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.2923e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.354977&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.312054&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>df_test[df_test[<span class="st">&#39;Country&#39;</span>] <span class="op">==</span> <span class="st">&#39;Grenada&#39;</span>].loc[:, [<span class="st">&#39;Country&#39;</span>, <span class="st">&#39;Life expectancy&#39;</span>, <span class="st">&#39;Predictions&#39;</span>]]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="24">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Life expectancy</th>
+      <th>Predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>993</th>
+      <td>Grenada</td>
+      <td>73.5</td>
+      <td>75.746697</td>
+    </tr>
+    <tr>
+      <th>994</th>
+      <td>Grenada</td>
+      <td>73.3</td>
+      <td>76.132093</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="91ae4bdb" class="cell code" data-execution_count="25"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.411203Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.410809Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.424646Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.423232Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.4755e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.426889&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.382134&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>df_test[df_test[<span class="st">&#39;Country&#39;</span>] <span class="op">==</span> <span class="st">&#39;Central African Republic&#39;</span>].loc[:, [<span class="st">&#39;Country&#39;</span>, <span class="st">&#39;Life expectancy&#39;</span>, <span class="st">&#39;Predictions&#39;</span>]]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Life expectancy</th>
+      <th>Predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>497</th>
+      <td>Central African Republic</td>
+      <td>58.0</td>
+      <td>57.635586</td>
+    </tr>
+    <tr>
+      <th>498</th>
+      <td>Central African Republic</td>
+      <td>49.9</td>
+      <td>55.831822</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="476df8b2" class="cell code" data-execution_count="26"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.485347Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.484961Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.497649Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.496641Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.4668e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.499890&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.455222&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>df_test[df_test[<span class="st">&#39;Country&#39;</span>] <span class="op">==</span> <span class="st">&#39;Poland&#39;</span>].loc[:, [<span class="st">&#39;Country&#39;</span>, <span class="st">&#39;Life expectancy&#39;</span>, <span class="st">&#39;Predictions&#39;</span>]]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="26">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Life expectancy</th>
+      <th>Predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1953</th>
+      <td>Poland</td>
+      <td>77.3</td>
+      <td>80.730755</td>
+    </tr>
+    <tr>
+      <th>1954</th>
+      <td>Poland</td>
+      <td>77.1</td>
+      <td>76.165504</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="0c6040f6" class="cell code" data-execution_count="27"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.560919Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.560021Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.575431Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.574341Z&quot;}"
+data-papermill="{&quot;duration&quot;:4.9298e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.577591&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.528293&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df_test[df_test[<span class="st">&#39;Country&#39;</span>] <span class="op">==</span> <span class="st">&#39;Yemen&#39;</span>].loc[:, [<span class="st">&#39;Country&#39;</span>, <span class="st">&#39;Life expectancy&#39;</span>, <span class="st">&#39;Predictions&#39;</span>]]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="27">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Life expectancy</th>
+      <th>Predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2801</th>
+      <td>Yemen</td>
+      <td>65.4</td>
+      <td>63.288102</td>
+    </tr>
+    <tr>
+      <th>2802</th>
+      <td>Yemen</td>
+      <td>65.4</td>
+      <td>65.319521</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="69849789" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.6972e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.632274&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.605302&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Looking at a few examples, the model seems to be doing quite well in
+predicting both developed and non-developed nations' life
+expectancy.</p>
+</div>
+<div id="c72db8b9" class="cell code" data-execution_count="28"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.703019Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.702522Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.711351Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.710230Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.0313e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.713637&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.663324&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># looking at r^2 correlation</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> r2_score</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>r2 <span class="op">=</span> r2_score(df_test[target], df_test[<span class="st">&#39;Predictions&#39;</span>])</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>r2</span></code></pre></div>
+<div class="output execute_result" data-execution_count="28">
+<pre><code>0.7357140960608528</code></pre>
+</div>
+</div>
+<div id="edaf4ee2" class="cell code" data-execution_count="29"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.775117Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.774755Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.781497Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.780816Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.7378e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.783338&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.745960&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># looking at percent error</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_absolute_percentage_error <span class="im">as</span> mape</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>pe <span class="op">=</span> mape(df_test[target], df_test[<span class="st">&#39;Predictions&#39;</span>])</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>pe</span></code></pre></div>
+<div class="output execute_result" data-execution_count="29">
+<pre><code>0.047400487924007015</code></pre>
+</div>
+</div>
+<div id="2f65a231" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.7343e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.838097&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.810754&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Looking at other metrics from sklearn, the model has a decent
+correlation considering all the possible variables and a low percent
+error.</p>
+</div>
+<div id="6e08f89b" class="cell markdown"
+data-papermill="{&quot;duration&quot;:3.0086e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.895616&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.865530&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="neural-network">Neural Network</h1>
+<p>Now we are going to try and make predictions based on training a
+Neural Network. In this example, a linear regression model might be much
+better at making predictions based on the correlation values, however we
+are going to try and practice.</p>
+</div>
+<div id="e76da298" class="cell code" data-execution_count="30"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:57.952679Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:57.952250Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:57.956596Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:57.955597Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.5861e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:57.958631&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.922770&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> <span class="st">&#39;Life expectancy&#39;</span></span></code></pre></div>
+</div>
+<div id="cdb502aa" class="cell code" data-execution_count="31"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:58.015812Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:58.015052Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:58.023476Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:58.022798Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.9451e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:58.025547&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:57.986096&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use dropna to only drop na&#39;s from the features we are trying to test</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>df_noNA <span class="op">=</span> df.copy().dropna(subset<span class="op">=</span>features)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df_noNA[features].values <span class="co"># extract input features as numpy array</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df_noNA[target].values <span class="co"># extract target variable as numpy array</span></span></code></pre></div>
+</div>
+<div id="b183a89c" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.7527e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:58.080636&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:58.053109&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Split the data into training and validation sets</p>
+</div>
+<div id="19884bd3" class="cell code" data-execution_count="32"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:58.139398Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:58.138660Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:58.144781Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:58.144079Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.8733e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:58.146840&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:58.108107&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>) <span class="co"># random_state is a seed for randomization</span></span></code></pre></div>
+</div>
+<div id="d01118fe" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.814e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:58.203485&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:58.175345&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="normalizing-the-data">Normalizing the Data</h3>
+<p>We want to normalize the data especially for a Neural Network
+implementation because NN's are calculated with weights and biases, so
+we don't want unneccessarily high values to impact the training of the
+model. We are going to normalize</p>
+</div>
+<div id="6f66cbe8" class="cell code" data-execution_count="33"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:58.262761Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:58.262365Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:41:58.269158Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:41:58.268338Z&quot;}"
+data-papermill="{&quot;duration&quot;:3.876e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:58.271205&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:58.232445&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> MinMaxScaler <span class="co"># calculate the percentage that the data is the highest value seen</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> MinMaxScaler()</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> scaler.fit_transform(X_train)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> scaler.fit_transform(X_test)</span></code></pre></div>
+</div>
+<div id="4af26331" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.8156e-2,&quot;end_time&quot;:&quot;2023-08-28T15:41:58.327391&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:58.299235&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="imports">Imports</h3>
+<p>We are going to try and train a seqeuntial neural network model.</p>
+</div>
+<div id="751a5ece" class="cell code" data-execution_count="34"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:41:58.385277Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:41:58.384926Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:06.021823Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:06.020947Z&quot;}"
+data-papermill="{&quot;duration&quot;:7.669124,&quot;end_time&quot;:&quot;2023-08-28T15:42:06.024558&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:41:58.355434&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras <span class="im">import</span> Sequential, Input</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Dense, Dropout</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.losses <span class="im">import</span> MeanAbsoluteError</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.metrics <span class="im">import</span> MeanSquaredError, MeanAbsolutePercentageError</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.optimizers <span class="im">import</span> Adam</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/opt/conda/lib/python3.10/site-packages/tensorflow_io/python/ops/__init__.py:98: UserWarning: unable to load libtensorflow_io_plugins.so: unable to open file: libtensorflow_io_plugins.so, from paths: [&#39;/opt/conda/lib/python3.10/site-packages/tensorflow_io/python/ops/libtensorflow_io_plugins.so&#39;]
+caused by: [&#39;/opt/conda/lib/python3.10/site-packages/tensorflow_io/python/ops/libtensorflow_io_plugins.so: undefined symbol: _ZN3tsl6StatusC1EN10tensorflow5error4CodeESt17basic_string_viewIcSt11char_traitsIcEENS_14SourceLocationE&#39;]
+  warnings.warn(f&quot;unable to load libtensorflow_io_plugins.so: {e}&quot;)
+/opt/conda/lib/python3.10/site-packages/tensorflow_io/python/ops/__init__.py:104: UserWarning: file system plugins are not loaded: unable to open file: libtensorflow_io.so, from paths: [&#39;/opt/conda/lib/python3.10/site-packages/tensorflow_io/python/ops/libtensorflow_io.so&#39;]
+caused by: [&#39;/opt/conda/lib/python3.10/site-packages/tensorflow_io/python/ops/libtensorflow_io.so: undefined symbol: _ZTVN10tensorflow13GcsFileSystemE&#39;]
+  warnings.warn(f&quot;file system plugins are not loaded: {e}&quot;)
+</code></pre>
+</div>
+</div>
+<div id="6b7097c0" class="cell markdown"
+data-papermill="{&quot;duration&quot;:2.7761e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:06.080520&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:06.052759&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="making-the-model">Making the Model</h2>
+</div>
+<div id="e9ad95d9" class="cell code" data-execution_count="35"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:06.139556Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:06.138765Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:06.417205Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:06.416119Z&quot;}"
+data-papermill="{&quot;duration&quot;:0.31206,&quot;end_time&quot;:&quot;2023-08-28T15:42:06.420831&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:06.108771&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> Sequential([</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>    Input(shape<span class="op">=</span>(<span class="dv">11</span>,)), <span class="co"># list of 11 features</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">1024</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">512</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">256</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">128</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">64</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">32</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">16</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">8</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>),</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Dropout(0.1), # drop out a random amount of data to reduce overfitting</span></span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>    Dense(units<span class="op">=</span><span class="dv">1</span>, activation<span class="op">=</span><span class="st">&#39;linear&#39;</span>)</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>model.summary()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Model: &quot;sequential&quot;
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 1024)              12288     
+                                                                 
+ dense_1 (Dense)             (None, 512)               524800    
+                                                                 
+ dense_2 (Dense)             (None, 256)               131328    
+                                                                 
+ dense_3 (Dense)             (None, 128)               32896     
+                                                                 
+ dense_4 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_5 (Dense)             (None, 32)                2080      
+                                                                 
+ dense_6 (Dense)             (None, 16)                528       
+                                                                 
+ dense_7 (Dense)             (None, 8)                 136       
+                                                                 
+ dense_8 (Dense)             (None, 1)                 9         
+                                                                 
+=================================================================
+Total params: 712,321
+Trainable params: 712,321
+Non-trainable params: 0
+_________________________________________________________________
+</code></pre>
+</div>
+</div>
+<div id="58d04884" class="cell code" data-execution_count="36"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:06.482815Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:06.482304Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:06.509570Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:06.508461Z&quot;}"
+data-papermill="{&quot;duration&quot;:6.1308e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:06.511996&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:06.450688&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb51"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">compile</span>(optimizer<span class="op">=</span>Adam(learning_rate<span class="op">=</span><span class="fl">0.0001</span>),</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>             loss<span class="op">=</span>MeanAbsoluteError(),</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>             metrics<span class="op">=</span>[MeanAbsolutePercentageError(), MeanSquaredError()])</span></code></pre></div>
+</div>
+<div id="cdc7bd10" class="cell code" data-execution_count="37"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:06.575810Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:06.575372Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:17.987068Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:17.986027Z&quot;}"
+data-papermill="{&quot;duration&quot;:11.446334,&quot;end_time&quot;:&quot;2023-08-28T15:42:17.989466&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:06.543132&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb52"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># train the model</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>history <span class="op">=</span> model.fit(X_train, y_train, epochs<span class="op">=</span><span class="dv">20</span>, batch_size<span class="op">=</span><span class="dv">32</span>, validation_split<span class="op">=</span><span class="fl">0.2</span>) <span class="co"># use 20% of test data as validation set</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/20
+50/50 [==============================] - 2s 14ms/step - loss: 69.2167 - mean_absolute_percentage_error: 99.8218 - mean_squared_error: 4877.5928 - val_loss: 69.2362 - val_mean_absolute_percentage_error: 99.3120 - val_mean_squared_error: 4876.4375
+Epoch 2/20
+50/50 [==============================] - 0s 9ms/step - loss: 65.6733 - mean_absolute_percentage_error: 94.7047 - mean_squared_error: 4402.0762 - val_loss: 56.8149 - val_mean_absolute_percentage_error: 81.5053 - val_mean_squared_error: 3284.9976
+Epoch 3/20
+50/50 [==============================] - 0s 9ms/step - loss: 25.0307 - mean_absolute_percentage_error: 36.4305 - mean_squared_error: 986.6920 - val_loss: 7.6860 - val_mean_absolute_percentage_error: 11.4856 - val_mean_squared_error: 98.0215
+Epoch 4/20
+50/50 [==============================] - 0s 9ms/step - loss: 7.0749 - mean_absolute_percentage_error: 10.7833 - mean_squared_error: 89.4413 - val_loss: 6.3862 - val_mean_absolute_percentage_error: 9.6860 - val_mean_squared_error: 76.7808
+Epoch 5/20
+50/50 [==============================] - 0s 8ms/step - loss: 6.3036 - mean_absolute_percentage_error: 9.7003 - mean_squared_error: 73.8503 - val_loss: 5.8327 - val_mean_absolute_percentage_error: 8.9319 - val_mean_squared_error: 65.7295
+Epoch 6/20
+50/50 [==============================] - 0s 9ms/step - loss: 5.8760 - mean_absolute_percentage_error: 9.0562 - mean_squared_error: 64.8024 - val_loss: 5.5459 - val_mean_absolute_percentage_error: 8.4371 - val_mean_squared_error: 59.2126
+Epoch 7/20
+50/50 [==============================] - 0s 9ms/step - loss: 5.5682 - mean_absolute_percentage_error: 8.5291 - mean_squared_error: 56.2544 - val_loss: 5.2605 - val_mean_absolute_percentage_error: 8.0554 - val_mean_squared_error: 50.6454
+Epoch 8/20
+50/50 [==============================] - 0s 9ms/step - loss: 5.3243 - mean_absolute_percentage_error: 8.1435 - mean_squared_error: 49.9371 - val_loss: 4.8453 - val_mean_absolute_percentage_error: 7.3663 - val_mean_squared_error: 43.0707
+Epoch 9/20
+50/50 [==============================] - 0s 9ms/step - loss: 4.8359 - mean_absolute_percentage_error: 7.3941 - mean_squared_error: 41.1963 - val_loss: 4.4967 - val_mean_absolute_percentage_error: 6.8485 - val_mean_squared_error: 35.9151
+Epoch 10/20
+50/50 [==============================] - 0s 8ms/step - loss: 4.5136 - mean_absolute_percentage_error: 6.8707 - mean_squared_error: 34.9522 - val_loss: 4.1677 - val_mean_absolute_percentage_error: 6.3064 - val_mean_squared_error: 30.3279
+Epoch 11/20
+50/50 [==============================] - 0s 9ms/step - loss: 4.1954 - mean_absolute_percentage_error: 6.3509 - mean_squared_error: 29.6154 - val_loss: 3.8370 - val_mean_absolute_percentage_error: 5.8113 - val_mean_squared_error: 24.7149
+Epoch 12/20
+50/50 [==============================] - 0s 9ms/step - loss: 3.8855 - mean_absolute_percentage_error: 5.8554 - mean_squared_error: 25.3315 - val_loss: 3.7191 - val_mean_absolute_percentage_error: 5.5382 - val_mean_squared_error: 22.2857
+Epoch 13/20
+50/50 [==============================] - 0s 8ms/step - loss: 3.5984 - mean_absolute_percentage_error: 5.4328 - mean_squared_error: 21.7603 - val_loss: 3.5193 - val_mean_absolute_percentage_error: 5.2182 - val_mean_squared_error: 19.8640
+Epoch 14/20
+50/50 [==============================] - 0s 9ms/step - loss: 3.4322 - mean_absolute_percentage_error: 5.1630 - mean_squared_error: 20.1962 - val_loss: 3.2097 - val_mean_absolute_percentage_error: 4.8029 - val_mean_squared_error: 16.8289
+Epoch 15/20
+50/50 [==============================] - 0s 10ms/step - loss: 3.2997 - mean_absolute_percentage_error: 4.9638 - mean_squared_error: 18.9865 - val_loss: 3.0712 - val_mean_absolute_percentage_error: 4.6136 - val_mean_squared_error: 15.5695
+Epoch 16/20
+50/50 [==============================] - 0s 9ms/step - loss: 3.2265 - mean_absolute_percentage_error: 4.8664 - mean_squared_error: 18.2191 - val_loss: 3.0738 - val_mean_absolute_percentage_error: 4.5953 - val_mean_squared_error: 15.2571
+Epoch 17/20
+50/50 [==============================] - 0s 9ms/step - loss: 3.1924 - mean_absolute_percentage_error: 4.8097 - mean_squared_error: 17.7822 - val_loss: 3.0391 - val_mean_absolute_percentage_error: 4.6023 - val_mean_squared_error: 16.0240
+Epoch 18/20
+50/50 [==============================] - 0s 10ms/step - loss: 3.1822 - mean_absolute_percentage_error: 4.7855 - mean_squared_error: 17.7882 - val_loss: 3.0257 - val_mean_absolute_percentage_error: 4.5304 - val_mean_squared_error: 14.8641
+Epoch 19/20
+50/50 [==============================] - 1s 10ms/step - loss: 3.0891 - mean_absolute_percentage_error: 4.6541 - mean_squared_error: 16.8374 - val_loss: 3.0023 - val_mean_absolute_percentage_error: 4.5382 - val_mean_squared_error: 15.4936
+Epoch 20/20
+50/50 [==============================] - 1s 11ms/step - loss: 3.0944 - mean_absolute_percentage_error: 4.6516 - mean_squared_error: 17.0993 - val_loss: 2.9974 - val_mean_absolute_percentage_error: 4.5360 - val_mean_squared_error: 15.7211
+</code></pre>
+</div>
+</div>
+<div id="e82fd40a" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.3922e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:18.082667&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:18.038745&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="plotting-losses">Plotting Losses</h2>
+</div>
+<div id="8c868b00" class="cell code" data-execution_count="38"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:18.178675Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:18.176809Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:18.959276Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:18.958182Z&quot;}"
+data-papermill="{&quot;duration&quot;:0.832836,&quot;end_time&quot;:&quot;2023-08-28T15:42:18.961641&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:18.128805&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb54"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co"># create figures</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">1</span>, ncols<span class="op">=</span><span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the items between the training and validation set</span></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].plot(history.history[<span class="st">&#39;loss&#39;</span>], label<span class="op">=</span><span class="st">&#39;Training Loss&#39;</span>)</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].plot(history.history[<span class="st">&#39;val_loss&#39;</span>], label<span class="op">=</span><span class="st">&#39;Validation Loss&#39;</span>)</span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].set_xlabel(<span class="st">&#39;Epochs&#39;</span>)</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].set_ylabel(<span class="st">&#39;Loss&#39;</span>)</span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].legend()</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].grid(<span class="va">True</span>)</span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].plot(history.history[<span class="st">&#39;mean_absolute_percentage_error&#39;</span>], label<span class="op">=</span><span class="st">&#39;MAPE&#39;</span>)</span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].plot(history.history[<span class="st">&#39;val_mean_absolute_percentage_error&#39;</span>], label<span class="op">=</span><span class="st">&#39;v_MAPE&#39;</span>)</span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].set_xlabel(<span class="st">&#39;Epochs&#39;</span>)</span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].set_ylabel(<span class="st">&#39;Loss&#39;</span>)</span>
+<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].legend()</span>
+<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].grid(<span class="va">True</span>)</span>
+<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-21"><a href="#cb54-21" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">2</span>].plot(history.history[<span class="st">&#39;mean_squared_error&#39;</span>], label<span class="op">=</span><span class="st">&#39;MSE&#39;</span>)</span>
+<span id="cb54-22"><a href="#cb54-22" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">2</span>].plot(history.history[<span class="st">&#39;val_mean_squared_error&#39;</span>], label<span class="op">=</span><span class="st">&#39;v_MSE&#39;</span>)</span>
+<span id="cb54-23"><a href="#cb54-23" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">2</span>].set_xlabel(<span class="st">&#39;Epochs&#39;</span>)</span>
+<span id="cb54-24"><a href="#cb54-24" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">2</span>].set_ylabel(<span class="st">&#39;Loss&#39;</span>)</span>
+<span id="cb54-25"><a href="#cb54-25" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">2</span>].legend()</span>
+<span id="cb54-26"><a href="#cb54-26" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">2</span>].grid(<span class="va">True</span>)</span>
+<span id="cb54-27"><a href="#cb54-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-28"><a href="#cb54-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Adjust the spacing between subplots</span></span>
+<span id="cb54-29"><a href="#cb54-29" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb54-30"><a href="#cb54-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-31"><a href="#cb54-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the plot</span></span>
+<span id="cb54-32"><a href="#cb54-32" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8fd5836a83714aba8d6411610a7db488/71d40f2217d24e352966d0b3d2438018e4bc2d60.png" /></p>
+</div>
+</div>
+<div id="1e06c22b" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.7216e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.058848&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.011632&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Tweaking and messing around with the parameters of the neural
+network, we get a model that has a little less validation error than
+training error, which might be because of the nature of the problem.
+Let's try to run some predictions on test data. Check out this <a
+href="https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e">article</a>
+to figure out why we might sometimes end up with a lower validation set
+error. Also, the difference is not too much, so we are going to assume
+it's a good model :thumbsup:</p>
+</div>
+<div id="cf53fb62" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.9703e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.155759&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.106056&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="making-predictions">Making Predictions</h2>
+</div>
+<div id="db317e25" class="cell code" data-execution_count="39"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:19.254556Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:19.254079Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:19.513329Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:19.512373Z&quot;}"
+data-papermill="{&quot;duration&quot;:0.311914,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.516136&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.204222&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb55"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> model.predict(X_test)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>16/16 [==============================] - 0s 2ms/step
+</code></pre>
+</div>
+</div>
+<div id="0eb03bd8" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.9288e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.615327&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.566039&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Let's look at the difference between the predictions and the actual
+values of <code>y_test</code></p>
+</div>
+<div id="527b9fc6" class="cell code" data-execution_count="40"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:19.714349Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:19.713969Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:19.719379Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:19.718629Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.7296e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.721414&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.664118&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb57"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_absolute_error</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>mae <span class="op">=</span> mean_absolute_error(y_test, predictions)</span></code></pre></div>
+</div>
+<div id="93c5957f" class="cell code" data-execution_count="41"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:19.821540Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:19.820688Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:19.825836Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:19.824820Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.6024e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.828015&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.771991&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb58"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mae)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>3.2141759477150993
+</code></pre>
+</div>
+</div>
+<div id="090dc926" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.7278e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:19.923557&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.876279&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>On average with the Neural Network, we were able to predict within
+generally 3 years for the life expectancy, a little better but pretty
+much the same as the basic linear regression model which wasn't really
+parameterized like it maybe could be. Also, it is hard to add these
+values to a dataframe and compare the countries side by side. We need to
+know the corresponding indices. For this model, let's try and create
+some fun predictions:</p>
+</div>
+<div id="2294b326" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.6618e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:20.018051&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:19.971433&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>We can also plot a histogram depicting the absolute errors from their
+predicted values.</p>
+</div>
+<div id="0be9ea73" class="cell code" data-execution_count="42"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:20.115713Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:20.115338Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:20.122687Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:20.121757Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.8472e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:20.124731&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:20.066259&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb60"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>np.<span class="bu">abs</span>(predictions<span class="op">-</span>y_test)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="42">
+<pre><code>array([[ 2.7740097 ,  9.9740097 ,  0.2259903 , ...,  4.7259903 ,
+         1.3740097 ,  4.9740097 ],
+       [ 7.60547638,  0.40547638, 10.60547638, ..., 15.10547638,
+         9.00547638,  5.40547638],
+       [ 2.38466644,  9.58466644,  0.61533356, ...,  5.11533356,
+         0.98466644,  4.58466644],
+       ...,
+       [ 8.93292236, 16.13292236,  5.93292236, ...,  1.43292236,
+         7.53292236, 11.13292236],
+       [ 0.3644104 ,  6.8355896 ,  3.3644104 , ...,  7.8644104 ,
+         1.7644104 ,  1.8355896 ],
+       [ 7.70041656, 14.90041656,  4.70041656, ...,  0.20041656,
+         6.30041656,  9.90041656]])</code></pre>
+</div>
+</div>
+<div id="e0664581" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.8605e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:20.221597&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:20.172992&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>I can't plot a histogram apparently. Unlucky.</p>
+</div>
+<div id="9a6403cb" class="cell code" data-execution_count="43"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:20.321920Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:20.321563Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:57.751171Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:57.750040Z&quot;}"
+data-papermill="{&quot;duration&quot;:37.524693,&quot;end_time&quot;:&quot;2023-08-28T15:42:57.797238&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:20.272545&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb62"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>absolute_errors <span class="op">=</span> np.<span class="bu">abs</span>(predictions <span class="op">-</span> y_test)</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">5</span>,<span class="dv">5</span>))</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>plt.hist(absolute_errors, bins<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Absolute Error Distribution&#39;</span>)</span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Absolute Error&#39;</span>)</span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-11"><a href="#cb62-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_8fd5836a83714aba8d6411610a7db488/3d9ffa9baf115088e01d12b4ba5429466c67f12d.png" /></p>
+</div>
+</div>
+<div id="3361fff8" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.8539e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:57.897018&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:57.848479&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Refresher of features: features = ['Status', 'Polio', 'Diphtheria',
+'HIV/AIDS', 'infant deaths',
+'under-five deaths', 'Total expenditure',
+'BMI', 'thinness 1-19 years',
+'Alcohol', 'Schooling']</p>
+</div>
+<div id="0619070a" class="cell code" data-execution_count="44"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:57.998050Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:57.997326Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:58.002390Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:58.001641Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.5593e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.004511&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:57.948918&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb63"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> standardize(array):</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> scaler.transform(array) <span class="co"># use scaler because it is an object trained on previous data</span></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_prediction(array):</span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(model.predict(array))</span></code></pre></div>
+</div>
+<div id="fec9b951" class="cell code" data-execution_count="45"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:58.093581Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:58.092613Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:58.156224Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:58.154942Z&quot;}"
+data-papermill="{&quot;duration&quot;:0.110075,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.158308&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:58.048233&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb64"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>make_prediction(np.array([<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="fl">42.2131</span>, <span class="fl">99.12</span>, <span class="fl">4.901</span>, <span class="fl">4.129</span>, <span class="fl">0.15</span>, <span class="fl">14.123</span>, <span class="dv">78</span>, <span class="dv">78</span>, <span class="dv">19</span>]).reshape(<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>))</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(standardize(np.array([<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="fl">42.2131</span>, <span class="fl">99.12</span>, <span class="fl">4.901</span>, <span class="fl">4.129</span>, <span class="fl">0.15</span>, <span class="fl">14.123</span>, <span class="dv">78</span>, <span class="dv">78</span>, <span class="dv">19</span>]).reshape(<span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>)))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1/1 [==============================] - 0s 17ms/step
+[[1898.2865]]
+[[ 0.00000000e+00 -2.60416667e-02  4.02243158e-01  1.96079208e+00
+   2.88294118e-03  1.87681818e-03 -5.27256479e-02  1.74526749e-01
+   2.86397059e+00  4.36674132e+00  9.35960591e-01]]
+</code></pre>
+</div>
+</div>
+<div id="a290ff9e" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.467e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.248304&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:58.203634&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>Ok so scaling this data and normalizing it is a little bit confusing,
+but we are pretty much done.</p>
+</div>
+<div id="baf4d581" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.2466e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.334151&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:58.291685&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="conclusion">Conclusion</h1>
+<p>From this dataset, we could train 2 types of model to try and predict
+the life expectancy of countries. Both the linear regression from
+sklearn and a keras Neural Network are both effective solutions to this
+problem, decreasing loss on the training set and making good predictions
+on testing data.</p>
+</div>
+<div id="1917b11f" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.3549e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.420466&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:58.376917&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="extra">EXTRA</h1>
+</div>
+<div id="386f4e05" class="cell markdown"
+data-papermill="{&quot;duration&quot;:4.3194e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.506935&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:58.463741&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="not-used">NOT USED</h3>
+<p>Create the filtering function to go through the feature list and
+countries.</p>
+</div>
+<div id="014e5d04" class="cell code" data-execution_count="46"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-28T15:42:58.596227Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-28T15:42:58.595875Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-28T15:42:58.605221Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-28T15:42:58.604279Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.7309e-2,&quot;end_time&quot;:&quot;2023-08-28T15:42:58.607090&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2023-08-28T15:42:58.549781&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb66"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> median_abs_deviation <span class="co"># MAD calculation</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="co"># for each country, modify the column as desired based on threshold</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mod_z_score(df, countries, threshold<span class="op">=</span><span class="fl">3.5</span>):</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>    new_df <span class="op">=</span> pd.DataFrame(columns<span class="op">=</span>features) <span class="co"># create empty dataframe</span></span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> country <span class="kw">in</span> countries:</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (country <span class="op">!=</span> <span class="st">&#39;Afghanistan&#39;</span>):</span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>            new_df.reset_index(drop<span class="op">=</span><span class="va">True</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> new_df</span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># get the corresponding country and column information rows</span></span>
+<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a>        country_data <span class="op">=</span> df[df[<span class="st">&#39;Country&#39;</span>] <span class="op">==</span> country].dropna(subset<span class="op">=</span>features) <span class="co"># returns DataFrame of country with no NaN&#39;s</span></span>
+<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(country_data) <span class="op">==</span> <span class="dv">0</span>: </span>
+<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span> <span class="co"># if all NaN, continue to next country</span></span>
+<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> feature <span class="kw">in</span> features:    </span>
+<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a>            <span class="co"># calculate median along the column</span></span>
+<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a>            median <span class="op">=</span> np.median(country_data[feature])</span>
+<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a>            <span class="co"># calculate median absolute deviation after converting to dataframe</span></span>
+<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a>            mad <span class="op">=</span> median_abs_deviation(country_data[feature])</span>
+<span id="cb66-22"><a href="#cb66-22" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb66-23"><a href="#cb66-23" aria-hidden="true" tabindex="-1"></a>            <span class="co"># calculate modified z-score</span></span>
+<span id="cb66-24"><a href="#cb66-24" aria-hidden="true" tabindex="-1"></a>            modified_z_score <span class="op">=</span> (<span class="fl">0.6745</span> <span class="op">*</span> (country_data[feature] <span class="op">-</span> median)) <span class="op">/</span> mad</span>
+<span id="cb66-25"><a href="#cb66-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-26"><a href="#cb66-26" aria-hidden="true" tabindex="-1"></a>            <span class="co"># create a mask to work around indexing errors</span></span>
+<span id="cb66-27"><a href="#cb66-27" aria-hidden="true" tabindex="-1"></a>            mask <span class="op">=</span> (np.<span class="bu">abs</span>(modified_z_score) <span class="op">&lt;=</span> threshold) <span class="co"># &amp; (pd.notna(modified_z_score)) # (df[&#39;Country&#39;] == country) &amp; </span></span>
+<span id="cb66-28"><a href="#cb66-28" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(mask)</span>
+<span id="cb66-29"><a href="#cb66-29" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb66-30"><a href="#cb66-30" aria-hidden="true" tabindex="-1"></a>            <span class="co"># filter the countries data and remove corresponding rows which don&#39;t meet the threshold</span></span>
+<span id="cb66-31"><a href="#cb66-31" aria-hidden="true" tabindex="-1"></a>            country_data <span class="op">=</span> country_data[mask]</span>
+<span id="cb66-32"><a href="#cb66-32" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb66-33"><a href="#cb66-33" aria-hidden="true" tabindex="-1"></a>        <span class="co"># filter the dataframe and concat it to the new object</span></span>
+<span id="cb66-34"><a href="#cb66-34" aria-hidden="true" tabindex="-1"></a>        new_df <span class="op">=</span> pd.concat([new_df, country_data])</span>
+<span id="cb66-35"><a href="#cb66-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb66-36"><a href="#cb66-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># reset the index of the new dataframe</span></span>
+<span id="cb66-37"><a href="#cb66-37" aria-hidden="true" tabindex="-1"></a>    new_df.reset_index(drop<span class="op">=</span><span class="va">True</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb66-38"><a href="#cb66-38" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb66-39"><a href="#cb66-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> new_df</span>
+<span id="cb66-40"><a href="#cb66-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-41"><a href="#cb66-41" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate with new_df = mod_z_score(df.copy(), df[&#39;Country&#39;].unqiue().tolist())</span></span></code></pre></div>
+</div>
+</body>
+</html>

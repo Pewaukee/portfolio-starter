@@ -71,19 +71,19 @@ export default function Portfolio() {
         <Toggle setType={setType} />
       </div>
       <Web
-        icons={['/svg/portfolio/music_note.svg', '/svg/portfolio/guitar.svg']}
         element={<Video src="/projects/spotify.mp4" />}
+        icons={['/svg/portfolio/music_note.svg', '/svg/portfolio/guitar.svg']}
         title={'Spotify Clone'}
         text={spotifyDescription}
       />
       <Web
-        icons={['/svg/portfolio/temple.svg', '/svg/portfolio/lotus.svg']}
         element={<Video src="/projects/temple.mp4" />}
+        icons={['/svg/portfolio/temple.svg', '/svg/portfolio/lotus.svg']}
         title={'Las Vegas ISKCON Temple Website'}
         text={templeDescription}
       />
       <Web
-        element={<Video src="/projects/stoic.mp4" />}
+        element={<Video src="/projects/ssa.mp4" />}
         icons={['/svg/portfolio/scroll.svg']}
         title={'Stoic Student Association Website'}
         text={stoicDescription}
@@ -93,33 +93,15 @@ export default function Portfolio() {
         element={<Video src="/projects/website.mp4" />}
         title={'Personal Website Project'}
         text={websiteDescription}
-        divider={false}
       />
-
       <ML
-        //TODO: won't render on first load from switching from another option
-        // doesn't have to do with data-type
-        element={
-          <iframe
-            src="https://www.kaggle.com/embed/karthikshankar12/tamil-character-recognition?kernelSessionId=140132743"
-            height="400"
-            style={{ margin: '0 auto', width: '100%', maxWidth: '950px' }}
-            title="Tamil Character Recognition"
-          ></iframe>
-        }
+        iframe={'/html/tamil.html'}
         title={'Tamil Character Recognition'}
         text={tamilDescription}
       />
       <ML
-        element={
-          <iframe
-            src="https://www.kaggle.com/embed/karthikshankar12/life-expectancy?kernelSessionId=140840504"
-            height="400"
-            style={{ margin: '0 auto', width: '100%', maxWidth: '950px;' }}
-            title="Life Expectancy"
-          ></iframe>
-        }
-        title={'Life Expectancy'}
+        iframe={'/html/life_expectancy.html'}
+        title={'Life Expectancy Prediction'}
         text={lifeExpectancyDescription}
       />
     </>
