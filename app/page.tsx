@@ -43,41 +43,38 @@ const Home: React.FC = () => {
       {homeData.map((data, index) => (
         // TODO: fix scrolling issue
         <div key={index}>
-          <FadeUp
-            className="relative flex flex-col md:flex-row justify-between
-            p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 w-full h-auto fade-in-content
-            duration-75 ease-in-out 
-            bg-gradient-radial from-gray-700 to-gray-800"
-          >
-            <div className="flex justify-center items-center relative w-full md:w-[50%]">
-              <div
-                className="w-[80%] md:w-[50%] h-full
+          <div className="relative bg-gradient-radial from-gray-700 to-gray-800">
+            <FadeUp className="flex flex-col md:flex-row justify-between p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 w-full h-auto fade-in-content duration-75 ease-in-out">
+              <div className="flex justify-center items-center relative w-full md:w-[50%]">
+                <div
+                  className="w-[80%] md:w-[50%] h-full
                mb-4 md:mb-0 mt-4 md:mt-8"
-              >
-                <div className="relative">
-                  <Icons srcs={data.icons} />
-                  <Image
-                    src={data.mainImage.src}
-                    alt={data.mainImage.alt}
-                    width={data.mainImage.width}
-                    height={data.mainImage.height}
-                    className="rounded-2xl border-4 border-solid border-gray-400 object-cover"
-                  />
+                >
+                  <div className="relative">
+                    <Icons srcs={data.icons} />
+                    <Image
+                      src={data.mainImage.src}
+                      alt={data.mainImage.alt}
+                      width={data.mainImage.width}
+                      height={data.mainImage.height}
+                      className="rounded-2xl border-4 border-solid border-gray-400 object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div
-              className="w-full md:w-[1px] h-[1px] md:h-auto
+              <div
+                className="w-full md:w-[1px] h-[1px] md:h-auto
                  bg-white left-[50%] flex justify-center items-center"
-            />
-            <div
-              className="w-full md:w-[50%] h-full pl-[5%] flex flex-col 
+              />
+              <div
+                className="w-full md:w-[50%] h-full pl-[5%] flex flex-col 
                  justify-center items-center mt-[20px] md:mt-0"
-            >
-              <Description title={data.title} text={data.text} />
-            </div>
-          </FadeUp>
+              >
+                <Description title={data.title} text={data.text} />
+              </div>
+            </FadeUp>
+          </div>
           {/** if at last index, don't call this function, data is done */}
           {index !== homeData.length - 1 ? renderBreaks(index) : null}
         </div>
