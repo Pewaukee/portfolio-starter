@@ -82,8 +82,8 @@ export default function Portfolio() {
       <div className="flex flex-col justify-center items-center bg-gray-600 py-8">
         <h1 className="text-2xl mb-[10px]">Welcome to my Portfolio!</h1>
         <Toggle setType={setType} />
-        <h3 className="text-xl mt-[10px]">
-          Currently viewing: <span className="underline">{getType()}</span>
+        <h3 className="text-xl mt-[10px] px-4">
+          Viewing <span className="underline">{getType()}</span>
         </h3>
       </div>
       <Web
