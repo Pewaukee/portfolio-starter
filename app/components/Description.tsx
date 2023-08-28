@@ -1,5 +1,5 @@
 // rendering the description text
-import { textShadow } from '../../data/TextShadow';
+import textShadow from '../../data/TextShadow';
 import TypingEffect from './TextAnimation';
 
 function Description({

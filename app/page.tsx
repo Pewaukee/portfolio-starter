@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import { textShadow } from '../data/TextShadow';
+import textShadow from '../data/TextShadow';
 import FadeUp from './components/FadeUp';
 import Description from './components/Description';
 import Divider from './components/Divider';
