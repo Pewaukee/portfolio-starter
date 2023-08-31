@@ -3,15 +3,18 @@ import React from 'react';
 import Divider from '../../components/Divider';
 import Image from 'next/image';
 import textShadow from '../../../data/TextShadow';
+import { ExternalLink } from 'lucide-react';
 
 export default function ML({
   iframe, // source to the html attribute
   title,
   text,
+  externalLink, // link to the source code
 }: {
   iframe: string;
   title: string;
   text: string;
+  externalLink: string;
 }) {
   return (
     // set a custom attribute of data-type to ml,
@@ -35,6 +38,10 @@ export default function ML({
                 height={30}
                 className="ml-1"
               />
+              <a href={externalLink} target='_blank'> {/** link to source is same as iframe */}
+                <ExternalLink className="ml-[5px]" />{' '}
+                {/** external link icon to source */}
+              </a>
             </div>
             <br />
             {text} {/** description of the machine learning project */}

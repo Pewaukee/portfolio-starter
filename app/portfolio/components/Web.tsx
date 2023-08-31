@@ -4,17 +4,20 @@ import Icons from '../../components/Icon';
 import Divider from '../../components/Divider';
 import Image from 'next/image';
 import textShadow from '../../../data/TextShadow';
+import { ExternalLink } from 'lucide-react';
 
 export default function Web({
   icons,
   element,
   title,
   text,
+  externalLink, // link to the live preview
 }: {
   icons?: string[];
   element: JSX.Element;
   title: string;
   text: string;
+  externalLink: string;
 }) {
   return (
     // set a custom attribute of data-type to web,
@@ -57,6 +60,9 @@ export default function Web({
                 height={30}
                 className="ml-1"
               />
+              <a href={externalLink} target="_blank">
+                <ExternalLink className="ml-[5px]" />{' '}
+              </a>
             </div>
             <br />
             {text} {/** description of the web project */}

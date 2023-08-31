@@ -91,34 +91,44 @@ export default function Portfolio() {
         icons={['/svg/portfolio/music_note.svg', '/svg/portfolio/guitar.svg']}
         title={'Spotify Clone'}
         text={spotifyDescription}
+        externalLink={'https://spotify-clone-mocha-ten.vercel.app'}
       />
       <Web
         element={<Video src="/projects/temple.mp4" />}
         icons={['/svg/portfolio/temple.svg', '/svg/portfolio/lotus.svg']}
         title={'Las Vegas ISKCON Temple Website'}
         text={templeDescription}
+        externalLink={'https://iskconlasvegas.com'}
       />
       <Web
         element={<Video src="/projects/ssa.mp4" />}
         icons={['/svg/portfolio/scroll.svg']}
         title={'Stoic Student Association Website'}
         text={stoicDescription}
+        externalLink={'https://stoic-student-association.vercel.app'}
       />
       <Web
         icons={['/svg/portfolio/webdev_1.svg', '/svg/portfolio/webdev_2.svg']}
         element={<Video src="/projects/website.mp4" />}
         title={'Personal Website Project'}
         text={websiteDescription}
+        externalLink={'https://karthikshankar.in'}
       />
       <ML
         iframe={'/html/tamil.html'}
         title={'Tamil Character Recognition'}
         text={tamilDescription}
+        externalLink={
+          'https://www.kaggle.com/code/karthikshankar12/tamil-character-recognition'
+        }
       />
       <ML
         iframe={'/html/life_expectancy.html'}
         title={'Life Expectancy Prediction'}
         text={lifeExpectancyDescription}
+        externalLink={
+          'https://www.kaggle.com/code/karthikshankar12/life-expectancy'
+        }
       />
     </>
   );
