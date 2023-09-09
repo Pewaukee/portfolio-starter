@@ -12,7 +12,7 @@ export default function Blog() {
 
         <div className="h-12"></div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-32 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-16 gap-8">
           {posts.map((post) => (
             <div key={post.id}>
               <PostPreview post={post} />

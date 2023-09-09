@@ -41,7 +41,6 @@ const Home: React.FC = () => {
   return (
     <>
       {homeData.map((data, index) => (
-        // TODO: fix scrolling issue
         <div key={index}>
           <div className="relative bg-gradient-radial from-gray-700 to-gray-800">
             <FadeUp className="flex flex-col md:flex-row justify-between p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 w-full h-auto fade-in-content duration-75 ease-in-out">
