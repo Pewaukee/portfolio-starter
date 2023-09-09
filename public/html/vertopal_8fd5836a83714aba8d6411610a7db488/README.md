@@ -1,0 +1,1 @@
+Corresponding image files for `life_expectancy.html` machine learning project.
