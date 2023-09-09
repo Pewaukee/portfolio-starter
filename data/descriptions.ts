@@ -42,7 +42,8 @@ Selenium WebDriver, I was able to put in a prompt for
 
 export const tamilDescription = `I crafted a Machine Learning model to classify
   Tamil characters. I used a neural network of 3 convolutional blocks and a classifier head
-  to identify 156 different possible characters. `;
+  to identify 156 different possible characters. I learned about convolutional networks and how
+  to apply them to real life problems. Tamil is also my mother tongue, so that's pretty cool!`;
 
 export const lifeExpectancyDescription = `Consisting of a large batch of preliminary data
   analysis and preprocessing, I journied through an exploratory process of prediciting
