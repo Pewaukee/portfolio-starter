@@ -4,7 +4,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Toggle from './components/ToggleGroup';
 import Web from './components/Web';
 import {
+  flowbiteDescription,
   lifeExpectancyDescription,
+  pentestDescription,
   spotifyDescription,
   stoicDescription,
   tamilDescription,
@@ -13,6 +15,11 @@ import {
 } from '../../data/descriptions';
 import Video from './components/Video';
 import ML from './components/ML';
+import textShadow from '../../data/TextShadow';
+import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
+import Other from './components/Other';
+import DefaultCarousel from './components/DefaultCarousel';
 
 export default function Portfolio() {
   const [type, setType] = useState('all');
@@ -128,6 +135,38 @@ export default function Portfolio() {
         text={lifeExpectancyDescription}
         externalLink={
           'https://www.kaggle.com/code/karthikshankar12/life-expectancy'
+        }
+      />
+      <Other
+        concept={<></>}
+        title={'Flowbite React UI'}
+        text={flowbiteDescription}
+        externalLink={'https://github.com/themesberg/flowbite-react/pull/918'}
+        logo={
+          <Image
+            src={'/svg/portfolio/pull_request.svg'}
+            alt={'pull request logo'}
+            width={30}
+            height={30}
+            className="ml-2"
+          />
+        }
+      />
+      <Other
+        concept={<></>}
+        title={'Pentest Practice'}
+        text={pentestDescription}
+        externalLink={
+          'https://karthik-shankar.notion.site/Writeups-3e6f2acadf66436abff848b82441002d?pvs=4'
+        }
+        logo={
+          <Image
+            src={'/svg/portfolio/cyber_security.svg'}
+            alt="cyber security logo"
+            width={30}
+            height={30}
+            className="ml-2"
+          />
         }
       />
     </>

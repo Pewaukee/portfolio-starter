@@ -51,3 +51,19 @@ export const lifeExpectancyDescription = `Consisting of a large batch of prelimi
   variables included trivial data such as alcohol consumption, BMI, and GDP, but also
   more intricate data like 'thinness 1-19 years', total expenditure on healthcare, and 
   a range of diseases like Hep B, Diphtheria, and more.`;
+
+export const flowbiteDescription = `I created a new feature for the Flowbite-React UI
+carousel component. Flowbite-React is an open source UI library with utility classes
+from Tailwind CSS as a starting point for the building blocks of frontend development.
+In this pull request, I added a new feature to the carousel component of rotating images: 
+an option to pause. This provides better accessibility and a better developer
+experience. If you would like to read more, please check out the PR with the 
+external link button above. Below will be a demonstration of the feature. Simply hover 
+your mouse or tap and hold on mobile to pause the carousel.`;
+
+export const pentestDescription = `I used the Kali Linux operating system to perform
+a series of penetration tests on vulnerable machines, in attempt to capture a flag on the system.
+I used the OWASP Top Ten to find vectors for attack and used scanning tools like Nmap 
+and directory busting tools like Dirbuster to enumerate the machines. I also learned
+how to use metasploit to exploit vulnerabilities and gain access to the machines. Overall,
+I am a beginner in this field, but I am excited to learn more about the cyber offensive side soon!`

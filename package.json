@@ -15,6 +15,7 @@
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "filereader": "^0.10.3",
+    "flowbite-react": "^0.6.0",
     "framer-motion": "^10.12.16",
     "gray-matter": "^4.0.3",
     "grey-matter": "^0.0.0",

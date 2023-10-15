@@ -4,3 +4,5 @@ fix the styling, its a little all over the place
 
 the icons for portfolio are not moving past 50%,
 probably conflicts with styling from page.module.css
+
+can't get carousel to show
